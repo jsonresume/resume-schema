@@ -8,7 +8,7 @@ var schema = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'schema.json'), 
 
 
 
-function resumeValidator(resumeJson, callback) {
+function validate(resumeJson, callback) {
 	ZSchema.validate(resumeJson, schema)
 	  .then(function(report){
 	  	callback(report, null);
@@ -17,5 +17,7 @@ function resumeValidator(resumeJson, callback) {
 	  	callback(null, err);
 	  })
 }
-module.exports = resumeValidator;
+module.exports = {
+	validate: validate
+}
 
