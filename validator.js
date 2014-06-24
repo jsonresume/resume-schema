@@ -23,3 +23,8 @@ module.exports = {
     validate: validate,
     resumeJson: resumeJson
 }
+
+
+validate(resumeJson, function(report, err) {
+    console.log(report, err);
+})
