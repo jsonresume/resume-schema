@@ -1,45 +1,47 @@
-    "name": "",
-    "email": "",
-    "phoneNumber": "",
-    "bio": "",
-    "location": {
-        "city": "1",
-        "countryCode": "",
-        "state": "1"
-    },
-    "work": [{
-        "startDate": "",
-        "endDate": "",
-        "position": "",
-        "name": "",
-        "website": "",
-        "description": "",
-        "highlights": [""]
-    }],
-    "education": [{
-        "name": "",
-        "studyType": "",
-        "area": "",
-        "startDate": "",
-        "endDate": "",
-        "courses": ["", ""]
-    }],
-    "awards": [{
-        "name": "",
-        "date": "",
-        "awarder": ""
-    }],
-    "publications": [{
-        "name": "",
-        "publisher": ""
-    }],
-    "profiles": {
-        "github": "1",
-        "twitter": ""
-    },
-    "skills": ["", ""],
-    "hobbies": [""],
-    "references": [{
-        "name": "",
-        "reference": ""
-    }]
+   {
+       "name": "",
+       "email": "",
+       "phoneNumber": "",
+       "bio": "",
+       "location": {
+           "city": "1",
+           "countryCode": "",
+           "state": "1"
+       },
+       "work": [{
+           "startDate": "",
+           "endDate": "",
+           "position": "",
+           "name": "",
+           "website": "",
+           "description": "",
+           "highlights": [""]
+       }],
+       "education": [{
+           "name": "",
+           "studyType": "",
+           "area": "",
+           "startDate": "",
+           "endDate": "",
+           "courses": ["", ""]
+       }],
+       "awards": [{
+           "name": "",
+           "date": "",
+           "awarder": ""
+       }],
+       "publications": [{
+           "name": "",
+           "publisher": ""
+       }],
+       "profiles": {
+           "github": "1",
+           "twitter": ""
+       },
+       "skills": ["", ""],
+       "hobbies": [""],
+       "references": [{
+           "name": "",
+           "reference": ""
+       }]
+   }
