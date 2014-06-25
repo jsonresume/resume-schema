@@ -1,6 +1,8 @@
 schema
 ======
+
 [![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)
+
 Standard, Specification, Schema
 
 
