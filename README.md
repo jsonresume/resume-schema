@@ -27,3 +27,7 @@ var resumeSchema  = require('resume-schema');
 var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
 resumeSchema.validate(resumeObject);
 ```
+
+### Research
+
+file:///home/roland/Downloads/A+more+professional+recruitment+process+with+structured+CV+data.pdf

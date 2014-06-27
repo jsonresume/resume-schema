@@ -1,47 +1,73 @@
-   {
-       "name": "",
-       "email": "",
-       "phoneNumber": "",
-       "bio": "",
-       "location": {
-           "city": "1",
-           "countryCode": "",
-           "state": "1"
-       },
-       "work": [{
-           "startDate": "",
-           "endDate": "",
-           "position": "",
-           "name": "",
-           "website": "",
-           "description": "",
-           "highlights": [""]
-       }],
-       "education": [{
-           "name": "",
-           "studyType": "",
-           "area": "",
-           "startDate": "",
-           "endDate": "",
-           "courses": ["", ""]
-       }],
-       "awards": [{
-           "name": "",
-           "date": "",
-           "awarder": ""
-       }],
-       "publications": [{
-           "name": "",
-           "publisher": ""
-       }],
-       "profiles": {
-           "github": "1",
-           "twitter": ""
-       },
-       "skills": ["", ""],
-       "hobbies": [""],
-       "references": [{
-           "name": "",
-           "reference": ""
-       }]
-   }
+{
+  "bio":{
+    "name":"",
+    "email":"",
+    "phone":"",
+    "summary":"",
+    "location":{
+      "city":"",
+      "countryCode":"",
+      "state":""
+    },
+    "website": "",
+    "profiles":{
+      "github":"",
+      "twitter":""
+    },
+  },
+  "work":[
+    {
+      "startDate":"",
+      "endDate":"",
+      "position":"",
+      "name":"",
+      "website":"",
+      "description":"",
+      "highlights":[
+        ""
+      ]
+    }
+  ],
+  "education":[
+    {
+      "name":"",
+      "studyType":"",
+      "area":"",
+      "startDate":"",
+      "endDate":"",
+      "courses":[""]
+    }
+  ],
+  "awards":[
+    {
+      "name":"",
+      "date":"",
+      "awarder":""
+    }
+  ],
+  "publications":[
+    {
+      "name":"",
+      "publisher":"",
+      "releaseDate":""
+    }
+  ],
+  "skills":[
+    {
+      "name":"",
+      "keywords":[""]
+    }
+  ],
+  "hobbies":[
+    {
+      "name":"",
+      "keywords":[""]
+    }
+  ],
+  "references":[
+    {
+      "name":"",
+      "reference":""
+    }
+  ]
+}
