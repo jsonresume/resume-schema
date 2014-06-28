@@ -3,12 +3,12 @@
     "firstName":"",
     "lastName":"",
     "email": {
-      "work": null,
-      "personal": null
+      "work": "",
+      "personal": ""
     },
     "phone": {
-      "work": null,
-      "personal": null
+      "work": "",
+      "personal": ""
     },
     "summary":"",
     "location":{
@@ -17,7 +17,7 @@
       "state":""
     },
     "websites": {
-      "blog": null
+      "blog": ""
     },
     "profiles":{
       "github":"",

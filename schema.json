@@ -1,4 +1,5 @@
 {
+	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Resume Schema",
 	"type": "object",
 	"properties": {
@@ -10,7 +11,224 @@
 				},
 				"lastName": {
 					"type": "string"
+				},
+				"email": {
+					"type": "object",
+					"properties": {
+						"work": {
+							"type": "string"
+						},
+						"personal": {
+							"type": "string"
+						}
+					}
+				},
+				"phone": {
+					"type": "object",
+					"properties": {
+						"work": {
+							"type": "string"
+						},
+						"personal": {
+							"type": "string"
+						}
+					}
+				},
+				"summary": {
+					"type": "string"
+				},
+				"location": {
+					"type": "object",
+					"properties": {
+						"city": {
+							"type": "string"
+						},
+						"countryCode": {
+							"type": "string"
+						},
+						"state": {
+							"type": "string"
+						}
+					}
+				},
+				"websites": {
+					"type": "object",
+					"properties": {
+						"blog": {
+							"type": "string"
+						}
+					}
+				},
+				"profiles": {
+					"type": "object",
+					"properties": {
+						"twitter": {
+							"type": "string"
+						},
+						"github": {
+							"type": "string"
+						}
+					}
 				}
+			}
+		},
+		"work": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"company": {
+			  		"type": "string"
+			  	},
+			  	"position": {
+			  		"type": "string"
+			  	},
+			  	"summary": {
+			  		"type": "string"
+			  	},
+			  	"website": {
+			  		"type": "string"
+			  	},
+			  	"startDate": {
+			  		"type": "string"
+			  	},
+			  	"endDate": {
+			  		"type": "string"
+			  	},
+			  	"highlights": {
+			  		"type": "array",
+			  		"items": {
+			  			"type": "string"
+			  		}
+			  	}
+			  }
+				
+			}
+		},
+		"education": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"institution": {
+			  		"type": "string"
+			  	},
+			  	"area": {
+			  		"type": "string"
+			  	},
+			  	"studyType": {
+			  		"type": "string"
+			  	},
+			  	"startDate": {
+			  		"type": "string"
+			  	},
+			  	"endDate": {
+			  		"type": "string"
+			  	},
+			  	"courses": {
+			  		"type": "array",
+			  		"items": {
+			  			"type": "string"
+			  		}
+			  	}
+			  }
+				
+			}
+		},
+		"awards": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"title": {
+			  		"type": "string"
+			  	},
+			  	"awardDate": {
+			  		"type": "string"
+			  	},
+			  	"awarder": {
+			  		"type": "string"
+			  	}
+			  }
+				
+			}
+		},
+		"publications": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"name": {
+			  		"type": "string"
+			  	},
+			  	"publisher": {
+			  		"type": "string"
+			  	},
+			  	"releaseDate": {
+			  		"type": "string"
+			  	},
+			  	"website": {
+			  		"type": "string"
+			  	}
+			  }
+				
+			}
+		},
+		"skills": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"name": {
+			  		"type": "string"
+			  	},
+			  	"level": {
+			  		"type": "string"
+			  	},
+			  	"releaseDate": {
+			  		"type": "string"
+			  	},
+			  	"keywords": {
+			  		"type": "array",
+			  		"items": {
+			  			"type": "string"
+			  		}
+			  	}
+			  }
+				
+			}
+		},
+		"hobbies": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"name": {
+			  		"type": "string"
+			  	},
+			  	"keywords": {
+			  		"type": "array",
+			  		"items": {
+			  			"type": "string"
+			  		}
+			  	}
+			  }
+				
+			}
+		},
+		"references": {
+			"type": "array",
+			"items": {
+		  	"type": "object",	  
+				 "properties": {
+			  	"name": {
+			  		"type": "string"
+			  	},
+			  	"reference": {
+			  		"type": "string"
+			  	}
+			  }
+				
 			}
 		}
 	}
