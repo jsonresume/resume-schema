@@ -1,15 +1,24 @@
 {
   "bio":{
-    "name":"",
-    "email":"",
-    "phone":"",
+    "firstName":"",
+    "lastName":"",
+    "email": {
+      "work": null,
+      "personal": null
+    },
+    "phone": {
+      "work": null,
+      "personal": null
+    },
     "summary":"",
     "location":{
       "city":"",
       "countryCode":"",
       "state":""
     },
-    "website": "",
+    "websites": {
+      "blog": null
+    },
     "profiles":{
       "github":"",
       "twitter":""
@@ -20,9 +29,9 @@
       "startDate":"",
       "endDate":"",
       "position":"",
-      "name":"",
+      "company":"",
       "website":"",
-      "description":"",
+      "summary":"",
       "highlights":[
         ""
       ]
@@ -30,17 +39,17 @@
   ],
   "education":[
     {
-      "name":"",
-      "studyType":"",
-      "area":"",
+      "institution":"",
       "startDate":"",
       "endDate":"",
+      "area":"",
+      "studyType":"",
       "courses":[""]
     }
   ],
   "awards":[
     {
-      "name":"",
+      "title":"",
       "date":"",
       "awarder":""
     }
@@ -49,12 +58,14 @@
     {
       "name":"",
       "publisher":"",
-      "releaseDate":""
+      "releaseDate":"",
+      "website": ""
     }
   ],
   "skills":[
     {
       "name":"",
+      "level": "",
       "keywords":[""]
     }
   ],

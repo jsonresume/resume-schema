@@ -1,4 +1,17 @@
 {
 	"title": "Resume Schema",
-	"type": "object"
+	"type": "object",
+	"properties": {
+		"bio": {
+			"type": "object",
+			"properties": {
+				"firstName": {
+					"type": "string"
+				},
+				"lastName": {
+					"type": "string"
+				}
+			}
+		}
+	}
 }

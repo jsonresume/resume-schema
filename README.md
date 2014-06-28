@@ -28,6 +28,10 @@ var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
 resumeSchema.validate(resumeObject);
 ```
 
+### People
+
+* Julian Shapiro for 1.0 Draft revisions
+
 ### Research
 
 file:///home/roland/Downloads/A+more+professional+recruitment+process+with+structured+CV+data.pdf
