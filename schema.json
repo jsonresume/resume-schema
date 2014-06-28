@@ -1,13 +1,4 @@
 {
 	"title": "Resume Schema",
-	"type": "object",
-	"properties": {
-		"name": {
-			"type": "string"
-		},
-		"email": {
-			"type": "integer"
-		}
-	},
-	"required": ["name"]
+	"type": "object"
 }
