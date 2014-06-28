@@ -1,0 +1,129 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--force' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 warn using --force I sure hope you know what you are doing.
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/samot/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+13 verbose folder .
+14 info prepublish resume-schema@0.0.4
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/samot/.npm/1f1177db-tar.lock
+17 silly lockFile 06ebc134-0292-0-14914643787778914-tmp-tgz tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+18 verbose lock tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz /home/samot/.npm/06ebc134-0292-0-14914643787778914-tmp-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 06ebc134-0292-0-14914643787778914-tmp-tgz tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+22 silly lockFile 06ebc134-0292-0-14914643787778914-tmp-tgz tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+23 verbose tar unpack /home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+24 silly lockFile b9faaea4--npm-resume-schema-0-0-4-package tar:///home/samot/.npm/resume-schema/0.0.4/package
+25 verbose lock tar:///home/samot/.npm/resume-schema/0.0.4/package /home/samot/.npm/b9faaea4--npm-resume-schema-0-0-4-package.lock
+26 silly lockFile 06ebc134-0292-0-14914643787778914-tmp-tgz tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+27 verbose lock tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz /home/samot/.npm/06ebc134-0292-0-14914643787778914-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+33 silly gunzTarPerm extractEntry README.md
+34 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+35 silly gunzTarPerm extractEntry validator.js
+36 silly gunzTarPerm modified mode [ 'validator.js', 436, 420 ]
+37 silly gunzTarPerm extractEntry .travis.yml
+38 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+39 silly gunzTarPerm extractEntry docs/templates/default.jade
+40 silly gunzTarPerm modified mode [ 'docs/templates/default.jade', 436, 420 ]
+41 silly gunzTarPerm extractEntry resume.json
+42 silly gunzTarPerm modified mode [ 'resume.json', 436, 420 ]
+43 silly gunzTarPerm extractEntry schema.json
+44 silly gunzTarPerm modified mode [ 'schema.json', 436, 420 ]
+45 silly gunzTarPerm extractEntry test/index.js
+46 silly gunzTarPerm modified mode [ 'test/index.js', 436, 420 ]
+47 silly lockFile b9faaea4--npm-resume-schema-0-0-4-package tar:///home/samot/.npm/resume-schema/0.0.4/package
+48 silly lockFile b9faaea4--npm-resume-schema-0-0-4-package tar:///home/samot/.npm/resume-schema/0.0.4/package
+49 silly lockFile 06ebc134-0292-0-14914643787778914-tmp-tgz tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+50 silly lockFile 06ebc134-0292-0-14914643787778914-tmp-tgz tar:///home/samot/tmp/npm-20811-mmxBcEnO/1403949440292-0.14914643787778914/tmp.tgz
+51 silly lockFile 3a52ce78- .
+52 silly lockFile 3a52ce78- .
+53 silly publish { name: 'resume-schema',
+53 silly publish   version: '0.0.4',
+53 silly publish   description: 'schema ======',
+53 silly publish   main: 'validator.js',
+53 silly publish   scripts: { test: 'node ./test/index.js | tap-spec' },
+53 silly publish   repository:
+53 silly publish    { type: 'git',
+53 silly publish      url: 'git://github.com/jsonresume/resume-schema.git' },
+53 silly publish   author: '',
+53 silly publish   license: 'BSD-2-Clause',
+53 silly publish   bugs: { url: 'https://github.com/jsonresume/resume-schema/issues' },
+53 silly publish   dependencies: { 'z-schema': '~2.4.8' },
+53 silly publish   devDependencies: { 'tap-spec': '^0.2.0', tape: '^2.13.3' },
+53 silly publish   readme: 'schema\n======\n\n[![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)\n\nStandard, Specification, Schema\n\n\n### Getting Started\n\n```\nnpm install --save resume-schema\n```\n\nTo use\n\n```\nvar resumeSchema  = require(\'resume-schema\');\nresumeSchema.validate({name: "Thomas"});\n```\n\nMore likely\n\n```\n\nvar resumeSchema  = require(\'resume-schema\');\nvar resumeObject = JSON.parse(fs.readFileSync(\'resume.json\', \'utf8\'));\nresumeSchema.validate(resumeObject);\n```\n\n### Research\n\nfile:///home/roland/Downloads/A+more+professional+recruitment+process+with+structured+CV+data.pdf',
+53 silly publish   readmeFilename: 'README.md',
+53 silly publish   homepage: 'https://github.com/jsonresume/resume-schema',
+53 silly publish   _id: 'resume-schema@0.0.4',
+53 silly publish   _shasum: '649fa3866e4d8231cfd673971e8b765af622c423',
+53 silly publish   _from: '.' }
+54 verbose url raw resume-schema
+55 verbose url resolving [ 'https://registry.npmjs.org/', './resume-schema' ]
+56 verbose url resolved https://registry.npmjs.org/resume-schema
+57 info trying registry request attempt 1 at 19:57:20
+58 http PUT https://registry.npmjs.org/resume-schema
+59 http 403 https://registry.npmjs.org/resume-schema
+60 verbose headers { date: 'Sat, 28 Jun 2014 09:57:20 GMT',
+60 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+60 verbose headers   'content-type': 'application/json',
+60 verbose headers   'cache-control': 'max-age=30',
+60 verbose headers   'content-length': '3021',
+60 verbose headers   'accept-ranges': 'bytes',
+60 verbose headers   via: '1.1 varnish',
+60 verbose headers   'x-served-by': 'cache-syd1620-SYD',
+60 verbose headers   'x-cache': 'MISS',
+60 verbose headers   'x-cache-hits': '0',
+60 verbose headers   'x-timer': 'S1403949439.631981,VS0,VE731',
+60 verbose headers   'keep-alive': 'timeout=10, max=50',
+60 verbose headers   connection: 'Keep-Alive' }
+61 error publish Failed PUT 403
+62 error Error: forbidden cannot modify pre-existing version: 0.0.4
+62 error old={"name":"resume-schema","version":"0.0.4","description":"schema ======","main":"validator.js","scripts":{"test":"node ./test/index.js | tap-spec"},"repository":{"type":"git","url":"git://github.com/jsonresume/resume-schema.git"},"author":"","license":"BSD-2-Clause","bugs":{"url":"https://github.com/jsonresume/resume-schema/issues"},"dependencies":{"z-schema":"~2.4.8"},"devDependencies":{"tap-spec":"^0.2.0","tape":"^2.13.3"},"homepage":"https://github.com/jsonresume/resume-schema","_id":"resume-schema@0.0.4","_shasum":"026785bbaa1257885884e6a0296954a77ff28d44","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"thomasdavis","email":"thomasalwyndavis@gmail.com"},"maintainers":[{"name":"thomasdavis","email":"thomasalwyndavis@gmail.com"},{"name":"rolandnsharp","email":"rolandnsharp@gmail.com"}],"dist":{"shasum":"026785bbaa1257885884e6a0296954a77ff28d44","tarball":"http://registry.npmjs.org/resume-schema/-/resume-schema-0.0.4.tgz"}}
+62 error new={"name":"resume-schema","version":"0.0.4","description":"schema ======","main":"validator.js","scripts":{"test":"node ./test/index.js | tap-spec"},"repository":{"type":"git","url":"git://github.com/jsonresume/resume-schema.git"},"author":"","license":"BSD-2-Clause","bugs":{"url":"https://github.com/jsonresume/resume-schema/issues"},"dependencies":{"z-schema":"~2.4.8"},"devDependencies":{"tap-spec":"^0.2.0","tape":"^2.13.3"},"readme":"schema\u000a======\u000a\u000a[![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)\u000a\u000aStandard, Specification, Schema\u000a\u000a\u000a### Getting Started\u000a\u000a```\u000anpm install --save resume-schema\u000a```\u000a\u000aTo use\u000a\u000a```\u000avar resumeSchema  = require('resume-schema');\u000aresumeSchema.validate({name: \"Thomas\"});\u000a```\u000a\u000aMore likely\u000a\u000a```\u000a\u000avar resumeSchema  = require('resume-schema');\u000avar resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));\u000aresumeSchema.validate(resumeObject);\u000a```\u000a\u000a### Research\u000a\u000afile:///home/roland/Downloads/A+more+professional+recruitment+process+with+structured+CV+data.pdf","readmeFilename":"README.md","homepage":"https://github.com/jsonresume/resume-schema","_id":"resume-schema@0.0.4","_shasum":"649fa3866e4d8231cfd673971e8b765af622c423","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"thomasdavis","email":"thomasalwyndavis@gmail.com"},"maintainers":[{"name":"thomasdavis","email":"thomasalwyndavis@gmail.com"}],"dist":{"shasum":"649fa3866e4d8231cfd673971e8b765af622c423","tarball":"http://registry.npmjs.org/resume-schema/-/resume-schema-0.0.4.tgz"}}: resume-schema
+62 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+62 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+62 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+62 error     at Request.EventEmitter.emit (events.js:98:17)
+62 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+62 error     at Request.EventEmitter.emit (events.js:117:20)
+62 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+62 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+62 error     at _stream_readable.js:919:16
+62 error     at process._tickCallback (node.js:419:13)
+63 error If you need help, you may report this *entire* log,
+63 error including the npm and node versions, at:
+63 error     <http://github.com/npm/npm/issues>
+64 error System Linux 3.13.0-29-generic
+65 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--force"
+66 error cwd /home/samot/repos/resume-schema
+67 error node -v v0.10.28
+68 error npm -v 1.4.9
+69 verbose exit [ 1, true ]
