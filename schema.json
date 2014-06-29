@@ -185,9 +185,6 @@
 			  	"level": {
 			  		"type": "string"
 			  	},
-			  	"releaseDate": {
-			  		"type": "string"
-			  	},
 			  	"keywords": {
 			  		"type": "array",
 			  		"items": {
