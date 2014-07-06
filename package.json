@@ -1,6 +1,6 @@
 {
     "name": "resume-schema",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "schema ======",
     "main": "validator.js",
     "scripts": {

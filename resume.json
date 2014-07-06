@@ -1,84 +1,72 @@
 {
-  "bio":{
-    "firstName":"",
-    "lastName":"",
+  "bio": {
+    "firstName": "Richard",
+    "lastName": "Hendriks",
     "email": {
-      "work": "",
-      "personal": ""
+      "work": "richard@piedpiper.com",
+      "personal": "richard.hendriks@gmail.com"
     },
     "phone": {
-      "work": "",
-      "personal": ""
+      "work": "(912) 555-1234",
+      "personal": "(912) 555-4321"
     },
-    "summary":"",
-    "location":{
-      "city":"",
-      "countryCode":"",
-      "state":""
+    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "location": {
+      "city": "San Francisco",
+      "countryCode": "US",
+      "state": "California"
     },
     "websites": {
-      "blog": ""
+      "blog": "http://richardhendricks.com"
     },
-    "profiles":{
-      "github":"",
-      "twitter":""
+    "profiles": {
+      "github": "richardhendricks",
+      "twitter": "richardhendricks"
     }
   },
-  "work":[
-    {
-      "startDate":"",
-      "endDate":"",
-      "position":"",
-      "company":"",
-      "website":"",
-      "summary":"",
-      "highlights":[
-        ""
-      ]
-    }
-  ],
-  "education":[
-    {
-      "institution":"",
-      "startDate":"",
-      "endDate":"",
-      "area":"",
-      "studyType":"",
-      "courses":[""]
-    }
-  ],
-  "awards":[
-    {
-      "title":"",
-      "date":"",
-      "awarder":""
-    }
-  ],
-  "publications":[
-    {
-      "name":"",
-      "publisher":"",
-      "releaseDate":"",
-      "website": ""
-    }
-  ],
-  "skills":[
-    {
-      "name":"",
-      "level": "",
-      "keywords":[""]
-    }
-  ],
-  "hobbies":[
-    {
-      "name":"",
-      "keywords":[""]
-    }
-  ],
-  "references":[
-    {
-      "name":"",
-      "reference":""
-    }
-  ]
+  "work": [{
+    "startDate": "2013-12-01",
+    "endDate": null,
+    "position": "CEO/President",
+    "company": "Pied Piper",
+    "website": "http://piedpiper.com",
+    "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+    "highlights": [
+      "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+      "Successfully won Techcrunch Disrupt",
+      "Optimized an algorithm that holds the current world record for Weisman Scores"
+    ]
+  }],
+  "education": [{
+    "institution": "University of Oklahoma",
+    "startDate": "2011-06-01",
+    "endDate": "2014-01-01",
+    "area": "Information Technology",
+    "studyType": "Bachelor",
+    "courses": ["DB1101 - Basic SQL", "CS2011 - Java Introduction"]
+  }],
+  "awards": [{
+    "title": "Digital Compression Pioneer Award",
+    "date": "2014-11-01",
+    "awarder": "Techcrunch"
+  }],
+  "publications": [{
+    "name": "Video compression for 3d media",
+    "publisher": "Hooli",
+    "releaseDate": "2014-10-01",
+    "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": ["HTML", "CSS", "Javascript"]
+  },{
+    "name": "Compression",
+    "level": "Master",
+    "keywords": ["Mpeg", "MP4", "GIF"]
+  }],
+  "references": [{
+    "name": "Erlich Bachman",
+    "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+  }]
 }
