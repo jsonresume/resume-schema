@@ -42,7 +42,7 @@
 				"label": {
 					"type": "string",
 					"description": "e.g. Web Developer"
-				}
+				},
 				"summary": {
 					"type": "string",
 					"description": "Write a short 2-3 sentence biography about yourself"
