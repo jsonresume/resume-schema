@@ -163,7 +163,7 @@
 				  	},
 				  	"courses": {
 				  		"type": "array",
-				  		"description": "List an notable courses/subjects",
+				  		"description": "List notable courses/subjects",
 				  		"items": {
 				  			"type": "string",
 				  			"description": "e.g. H1302 - Introduction to American history"
