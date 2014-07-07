@@ -59,7 +59,7 @@
 						},
 						"region": {
 							"type": "string",
-							"description": "If you specify a region, you don't need a state e.g. Queensland"
+							"description": "If you specify a region, you don't need a state e.g. Brittany"
 						},
 						"state": {
 							"type": "string",
