@@ -34,4 +34,4 @@ resumeSchema.validate(resumeObject);
 
 ### Research
 
-[A more professional recruitment process with structured data](/research/A%20more%20professional%20recruitment%20process%20with%20structured%20CV%20data.pdf)
+- [A more professional recruitment process with structured data](/research/A%20more%20professional%20recruitment%20process%20with%20structured%20CV%20data.pdf).
