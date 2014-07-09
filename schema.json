@@ -14,7 +14,7 @@
 				"pictureURL": {
 					"type": "string",
 					"description": "picture in JPEG or PNG format (URL as per RFC 3986)"
-				}
+				},
 				"email": {
 					"type": "object",
 					"properties": {
