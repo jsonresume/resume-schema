@@ -41,7 +41,7 @@ resumeSchema.validate(resumeObject);
 
 ### People
 
-* Julian Shapiro for 1.0 Draft revisions
+* Julian Shapiro for early prototype revisions
 
 ### Research
 
