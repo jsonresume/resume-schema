@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "title": "schema:name",
+    "firstName": "schema:givenName",
+    "lastName": "schema:familyName",
+    "email": {
+      "@container": "@index",
+      "@id": "schema:email"
+    },
+    "phone": {
+      "@container": "@index",
+      "@id": "schema:telephone"
+    },
+    "summary": "schema:description",
+    "website": "schema:url",
+    "websites": {
+      "@container": "@index",
+      "@id": "schema:url"
+    },
+    "position": "schema:namedPosition",
+    "startDate": "schema:startDate",
+    "endDate": "schema:endDate",
+    "location": {
+      "@reverse": "schema:homeLocation"
+    },
+    "work": {
+      "@reverse": "schema:member"
+    },
+    "awards": {
+      "@reverse": "schema:winner"
+    },
+    "publications": {
+      "@reverse": "schema:contributor"
+    },
+    "references": {
+      "@reverse": "schema:reviewedBy"
+      },
+    "bio": {
+      "@reverse": "schema:sameAs"
+    }
+  }
+}
