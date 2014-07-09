@@ -2,6 +2,10 @@
 	"title": "Resume Schema",
 	"type": "object",
 	"properties": {
+		"canonicalURL": {
+			"type": "string",
+			"description": "approved source for latest version of this document (URL as per RFC 3986)"
+		},
 		"bio": {
 			"type": "object",
 			"properties": {
