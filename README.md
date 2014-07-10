@@ -61,3 +61,4 @@ We encourage anyone who's interested in participating in the formation of this s
 
 ### Other Resume Standards
 * [HR-XML](https://hr-xml.site-ym.com/store/default.aspx?)
+* [Europass](http://europass.cedefop.europa.eu/en/about)
