@@ -126,8 +126,13 @@
 			  		"type": "array",
 			  		"description": "Specify multiple accomplishments",
 			  		"items": {
-			  			"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising",
-			  			"type": "string"
+			  			"type": "object",
+			  			"properties": {
+			  				"accomplishment": {
+			  					"type": "string",
+			  					"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
+			  				}
+			  			}
 			  		}
 			  	}
 			  }
