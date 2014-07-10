@@ -11,9 +11,9 @@
 				"lastName": {
 					"type": "string"
 				},
-				"pictureURL": {
+				"picture": {
 					"type": "string",
-					"description": "picture in JPEG or PNG format (URL as per RFC 3986)"
+					"description": "URL (as per RFC 3986) to a picture in JPEG or PNG format"
 				},
 				"email": {
 					"type": "object",
