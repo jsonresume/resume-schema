@@ -56,7 +56,7 @@ We encourage anyone who's interested in participating in the formation of this s
 ### Proposals to reinvestigate
 
 * [#69 - Standard format for phone numbers](https://github.com/jsonresume/resume-schema/issues/69)
-* 
+* [#44 - Person-Job Fit ](https://github.com/jsonresume/resume-schema/issues/44)
 
 
 ### Other Resume Standards
