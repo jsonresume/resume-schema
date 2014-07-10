@@ -1,4 +1,4 @@
-schema
+JSON Resume Schema
 ======
 
 [![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)
@@ -57,3 +57,7 @@ We encourage anyone who's interested in participating in the formation of this s
 
 * [#69 - Standard format for phone numbers](https://github.com/jsonresume/resume-schema/issues/69)
 * 
+
+
+### Other Resume Standards
+* [HR-XML](https://hr-xml.site-ym.com/store/default.aspx?)
