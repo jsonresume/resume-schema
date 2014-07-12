@@ -9,32 +9,12 @@
 					"type": "string"
 				},
 				"email": {
-					"type": "object",
-					"properties": {
-						"work": {
-							"type": "string",
-							"description": "e.g. thomas@facebook.com"
-						},
-						"personal": {
-							"type": "string",
-							"description": "thomas@gmail.com"
-						}
-					}
+					"type": "string",
+					"description": "e.g. thomas@gmail.com"
 				},
 				"phone": {
-					"type": "object",
-					"description": "Phone numbers are stored as strings so use any format you like",
-					"properties": {
-						"work": {
-							"type": "string",
-							"description": "e.g. 732-757-2923"
-						},
-						"personal": {
-							"type": "string",
-							"description": "e.g. 712-117-2923"
-
-						}
-					}
+					"type": "string",
+					"description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
 				},
 				"label": {
 					"type": "string",
