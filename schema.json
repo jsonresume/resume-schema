@@ -5,10 +5,7 @@
 		"bio": {
 			"type": "object",
 			"properties": {
-				"firstName": {
-					"type": "string"	
-				},
-				"lastName": {
+				"name": {
 					"type": "string"
 				},
 				"email": {
@@ -25,7 +22,7 @@
 					}
 				},
 				"phone": {
-					"type": "object", 
+					"type": "object",
 					"description": "Phone numbers are stored as strings so use any format you like",
 					"properties": {
 						"work": {
@@ -96,14 +93,14 @@
 		"work": {
 			"type": "array",
 			"items": {
-		  	"type": "object",	  
+		  	"type": "object",
 				 "properties": {
 			  	"company": {
 			  		"type": "string",
 			  		"description": "e.g. Facebook"
 			  	},
 			  	"position": {
-			  		"type": "string", 
+			  		"type": "string",
 			  		"description": "e.g. Software Engineer"
 			  	},
 			  	"website": {
@@ -131,13 +128,13 @@
 			  		}
 			  	}
 			  }
-				
+
 			}
 		},
 		"education": {
 			"type": "array",
 			"items": {
-		  	"type": "object",	  
+		  	"type": "object",
 				"properties": {
 				  	"institution": {
 				  		"type": "string",
@@ -170,15 +167,15 @@
 				  		}
 				  	}
 			  	}
-			  
-				
+
+
 			}
 		},
 		"awards": {
 			"type": "array",
 			"description": "Specify any awards you have received throughout your professional career",
 			"items": {
-			  	"type": "object",	  
+			  	"type": "object",
 				"properties": {
 				  	"title": {
 				  		"type": "string",
@@ -199,7 +196,7 @@
 			"type": "array",
 			"description": "Specify your publications through your career",
 			"items": {
-		  	"type": "object",	  
+		  	"type": "object",
 				"properties": {
 				  	"name": {
 				  		"type": "string",
@@ -224,7 +221,7 @@
 			"type": "array",
 			"description": "List out your professional skill-set",
 			"items": {
-			  	"type": "object",	  
+			  	"type": "object",
 				"properties": {
 				  	"name": {
 				  		"type": "string",
@@ -248,7 +245,7 @@
 		"hobbies": {
 			"type": "array",
 			"items": {
-		  	"type": "object",	  
+		  	"type": "object",
 				 "properties": {
 			  	"name": {
 			  		"type": "string",
@@ -262,14 +259,14 @@
 			  		}
 			  	}
 			  }
-				
+
 			}
 		},
 		"references": {
 			"type": "array",
 			"description": "List references you have received",
 			"items": {
-		  	"type": "object",	  
+		  	"type": "object",
 				 "properties": {
 			  	"name": {
 			  		"type": "string",
@@ -280,7 +277,7 @@
 			  		"description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
 			  	}
 			  }
-				
+
 			}
 		}
 	}
