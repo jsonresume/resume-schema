@@ -9,7 +9,8 @@ We are still currently un-versioned, some core changes are being pushed out, and
 
 ### Change Log
 
-* 2014-7-12 - `firstName` and `lastName` were merged into `name` - [Discusion](https://github.com/jsonresume/resume-schema/issues/4) - [Commit](https://github.com/jsonresume/resume-schema/commit/717b2a525f4f42e9994c54bfa3cdbe0cea5776a6)
+* 2014-7-12 - `email` and `phone` were changed from objects into strings - [Discussion](https://github.com/jsonresume/resume-schema/issues/27) - [Commit](https://github.com/jsonresume/resume-schema/pull/98)
+* 2014-7-12 - `firstName` and `lastName` were merged into `name` - [Discussion](https://github.com/jsonresume/resume-schema/issues/4) - [Commit](https://github.com/jsonresume/resume-schema/commit/717b2a525f4f42e9994c54bfa3cdbe0cea5776a6)
 
 ### IRC
 
