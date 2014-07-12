@@ -38,13 +38,9 @@
 							"description": "e.g. US, AU, IN",
 							"type": "string"
 						},
-						"region": {
-							"type": "string",
-							"description": "If you specify a region, you don't need a state e.g. Brittany"
-						},
-						"state": {
-							"type": "string",
-							"description":"If you specify a state, you don't need a region e.g. Texas"
+						"territory": {
+							"type": { "enum": [ "region", "state" ] },
+							"description": "either a region (e.g. Brittany) or a state (e.g. Texas)"
 						}
 					}
 				},
