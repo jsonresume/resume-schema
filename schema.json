@@ -8,6 +8,10 @@
 				"name": {
 					"type": "string"
 				},
+				"picture": {
+					"type": "string",
+					"description": "URL (as per RFC 3986) to a picture in JPEG or PNG format"
+				},
 				"email": {
 					"type": "string",
 					"description": "e.g. thomas@gmail.com"
