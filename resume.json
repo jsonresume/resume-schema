@@ -7,7 +7,7 @@
     "location": {
       "city": "San Francisco",
       "countryCode": "US",
-      "state": "California"
+      "region": "California"
     },
     "websites": {
       "blog": "http://richardhendricks.com"

@@ -40,11 +40,7 @@
 						},
 						"region": {
 							"type": "string",
-							"description": "If you specify a region, you don't need a state e.g. Brittany"
-						},
-						"state": {
-							"type": "string",
-							"description":"If you specify a state, you don't need a region e.g. Texas"
+							"description": "The general region where you live. Can be a US state, or a province, for instance."
 						}
 					}
 				},
