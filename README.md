@@ -78,6 +78,7 @@ Constraint with two digits of precision.
 
 * [#69 - Standard format for phone numbers](https://github.com/jsonresume/resume-schema/issues/69)
 * [#44 - Person-Job Fit ](https://github.com/jsonresume/resume-schema/issues/44)
+* [#51 - Support multimple positions within one job](https://github.com/jsonresume/resume-schema/issues/51)
 
 
 ### Other Resume Standards
