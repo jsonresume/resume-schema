@@ -9,9 +9,7 @@
       "countryCode": "US",
       "region": "California"
     },
-    "websites": {
-      "blog": "http://richardhendricks.com"
-    },
+    "website": "http://richardhendricks.com",
     "profiles": {
       "github": "richardhendricks",
       "twitter": "richardhendricks"
