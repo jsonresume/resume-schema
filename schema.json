@@ -44,15 +44,9 @@
 						}
 					}
 				},
-				"websites": {
-					"type": "object",
-					"description": "The value you use as your key, will generally become the label",
-					"properties": {
-						"blog": {
-							"type": "string",
-							"description": "e.g. http://blog.joebloggs.com"
-						}
-					}
+				"website": {
+					"type": "string",
+					"description": "URL (as per RFC 3986) to your website, e.g. personal homepage"
 				},
 				"profiles": {
 					"type": "object",
