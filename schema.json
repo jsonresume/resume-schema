@@ -35,7 +35,7 @@
 							"type": "string"
 						},
 						"countryCode": {
-							"description": "e.g. US, AU, IN",
+							"description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN",
 							"type": "string"
 						},
 						"region": {
