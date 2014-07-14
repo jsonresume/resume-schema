@@ -153,6 +153,7 @@
 				  	"courses": {
 				  		"type": "array",
 				  		"description": "List notable courses/subjects",
+				  		"additionalItems": false,
 				  		"items": {
 				  			"type": "string",
 				  			"description": "e.g. H1302 - Introduction to American history"
@@ -233,6 +234,7 @@
 				  	"keywords": {
 				  		"type": "array",
 				  		"description": "List some keywords pertaining to this skill",
+				  		"additionalItems": false,
 				  		"items": {
 				  			"type": "string",
 				  			"description": "e.g. HTML"
