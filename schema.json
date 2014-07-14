@@ -176,7 +176,7 @@
 				  		"type": "string",
 				  		"description": "e.g. One of the 100 greatest minds of the century"
 				  	},
-				  	"awardDate": {
+				  	"date": {
 				  		"type": "string",
 				  		"description": "e.g. 1989-06-12",
 				  		"format": "date"
