@@ -37,7 +37,8 @@
 					"additionalProperties": false,
 					"properties": {
 						"address": {
-							"type": "string"
+							"type": "string",
+							"description": "To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li."
 						},
 						"postalCode": {
 							"type": "string"
