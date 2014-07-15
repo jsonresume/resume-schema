@@ -1,9 +1,12 @@
 {
+	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Resume Schema",
 	"type": "object",
+	"additionalProperties": false,
 	"properties": {
 		"bio": {
 			"type": "object",
+			"additionalProperties": false,
 			"properties": {
 				"name": {
 					"type": "string"
@@ -14,7 +17,8 @@
 				},
 				"email": {
 					"type": "string",
-					"description": "e.g. thomas@gmail.com"
+					"description": "e.g. thomas@gmail.com",
+					"format": "email"
 				},
 				"phone": {
 					"type": "string",
@@ -30,13 +34,14 @@
 				},
 				"location": {
 					"type": "object",
+					"additionalProperties": false,
 					"properties": {
 						"city": {
 							"type": "string"
 						},
 						"countryCode": {
-							"description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN",
-							"type": "string"
+							"type": "string",
+							"description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN"
 						},
 						"region": {
 							"type": "string",
@@ -46,7 +51,8 @@
 				},
 				"website": {
 					"type": "string",
-					"description": "URL (as per RFC 3986) to your website, e.g. personal homepage"
+					"description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
+					"format": "uri"
 				},
 				"profiles": {
 					"type": "object",
@@ -66,9 +72,11 @@
 		},
 		"work": {
 			"type": "array",
+			"additionalItems": false,
 			"items": {
 		  	"type": "object",
-				 "properties": {
+		  	"additionalProperties": false,
+			"properties": {
 			  	"company": {
 			  		"type": "string",
 			  		"description": "e.g. Facebook"
@@ -79,15 +87,18 @@
 			  	},
 			  	"website": {
 			  		"type": "string",
-			  		"description": "e.g. http://facebook.com"
+			  		"description": "e.g. http://facebook.com",
+			  		"format": "uri"
 			  	},
 			  	"startDate": {
 			  		"type": "string",
-			  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29"
+			  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+			  		"format": "date"
 			  	},
 			  	"endDate": {
 			  		"type": "string",
-			  		"description": "e.g. 2012-06-29"
+			  		"description": "e.g. 2012-06-29",
+			  		"format": "date"
 			  	},
 			  	"summary": {
 			  		"type": "string",
@@ -96,9 +107,10 @@
 			  	"highlights": {
 			  		"type": "array",
 			  		"description": "Specify multiple accomplishments",
+			  		"additionalItems": false,
 			  		"items": {
-			  			"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising",
-			  			"type": "string"
+			  			"type": "string",
+			  			"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
 			  		}
 			  	}
 			  }
@@ -107,9 +119,11 @@
 		},
 		"education": {
 			"type": "array",
+			"additionalItems": false,
 			"items": {
 		  	"type": "object",
-				"properties": {
+		  	"additionalProperties": false,
+			"properties": {
 				  	"institution": {
 				  		"type": "string",
 				  		"description": "e.g. Massachusetts Institute of Technology"
@@ -124,13 +138,13 @@
 				  	},
 				  	"startDate": {
 				  		"type": "string",
-			  			"description": "e.g. 2014-06-29"
-
+			  			"description": "e.g. 2014-06-29",
+			  			"format": "date"
 				  	},
 				  	"endDate": {
 				  		"type": "string",
-			  			"description": "e.g. 2012-06-29"
-
+			  			"description": "e.g. 2012-06-29",
+			  			"format": "date"
 				  	},
 				  	"gpa": {
 				  		"type": "string",
@@ -139,6 +153,7 @@
 				  	"courses": {
 				  		"type": "array",
 				  		"description": "List notable courses/subjects",
+				  		"additionalItems": false,
 				  		"items": {
 				  			"type": "string",
 				  			"description": "e.g. H1302 - Introduction to American history"
@@ -152,16 +167,19 @@
 		"awards": {
 			"type": "array",
 			"description": "Specify any awards you have received throughout your professional career",
+			"additionalItems": false,
 			"items": {
 			  	"type": "object",
+			  	"additionalProperties": false,
 				"properties": {
 				  	"title": {
 				  		"type": "string",
 				  		"description": "e.g. One of the 100 greatest minds of the century"
 				  	},
-				  	"awardDate": {
+				  	"date": {
 				  		"type": "string",
-				  		"description": "e.g. 1989-06-12"
+				  		"description": "e.g. 1989-06-12",
+				  		"format": "date"
 				  	},
 				  	"awarder": {
 				  		"type": "string",
@@ -173,8 +191,10 @@
 		"publications": {
 			"type": "array",
 			"description": "Specify your publications through your career",
+			"additionalItems": false,
 			"items": {
-		  	"type": "object",
+		  		"type": "object",
+		  		"additionalProperties": false,
 				"properties": {
 				  	"name": {
 				  		"type": "string",
@@ -198,8 +218,10 @@
 		"skills": {
 			"type": "array",
 			"description": "List out your professional skill-set",
+			"additionalItems": false,
 			"items": {
 			  	"type": "object",
+			  	"additionalProperties": false,
 				"properties": {
 				  	"name": {
 				  		"type": "string",
@@ -212,6 +234,7 @@
 				  	"keywords": {
 				  		"type": "array",
 				  		"description": "List some keywords pertaining to this skill",
+				  		"additionalItems": false,
 				  		"items": {
 				  			"type": "string",
 				  			"description": "e.g. HTML"
@@ -222,15 +245,18 @@
 		},
 		"hobbies": {
 			"type": "array",
+			"additionalItems": false,
 			"items": {
 		  	"type": "object",
-				 "properties": {
+		  	"additionalProperties": false,
+			"properties": {
 			  	"name": {
 			  		"type": "string",
 			  		"description": "e.g. Philosophy"
 			  	},
 			  	"keywords": {
 			  		"type": "array",
+			  		"additionalItems": false,
 			  		"items": {
 			  			"type": "string",
 			  			"description": "e.g. Friedrich Nietzsche"
@@ -243,9 +269,11 @@
 		"references": {
 			"type": "array",
 			"description": "List references you have received",
+			"additionalItems": false,
 			"items": {
 		  	"type": "object",
-				 "properties": {
+		  	"additionalProperties": false,
+			"properties": {
 			  	"name": {
 			  		"type": "string",
 			  		"description": "e.g. Timothy Cook"
