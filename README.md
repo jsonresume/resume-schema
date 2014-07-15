@@ -10,6 +10,7 @@ We are still currently un-versioned, some core changes are being pushed out, and
 
 ### Change Log
 
+* 2014-07-15 - `address` and `postalCode` added to `location` - [Discussion](https://github.com/jsonresume/resume-schema/issues/76) - [Commit](https://github.com/jsonresume/resume-schema/pull/110)
 * 2014-07-15 - `awardDate` changed to `date` - [Discussion](https://github.com/jsonresume/resume-schema/pull/107) - [Commit](https://github.com/jsonresume/resume-schema/pull/107)
 * 2014-07-13 - `websites` changed to `website`, changed from object into string - [Discussion](https://github.com/jsonresume/resume-schema/issues/10) - [Commit](https://github.com/jsonresume/resume-schema/pull/101)
 * 2014-07-13 - specified that `countryCode` should conform to ISO standard - [Discussion](https://github.com/jsonresume/resume-schema/pull/78) - [Commit](https://github.com/jsonresume/resume-schema/pull/78)
