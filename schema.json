@@ -36,6 +36,12 @@
 					"type": "object",
 					"additionalProperties": false,
 					"properties": {
+						"address": {
+							"type": "string"
+						},
+						"postalCode": {
+							"type": "string"
+						},
 						"city": {
 							"type": "string"
 						},
