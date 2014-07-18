@@ -171,6 +171,34 @@
 
 			}
 		},
+		"certificates": {
+			"type": "array",
+			"description": "Specify any certificates you have been awarded",
+			"additionalItems": false,
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"properties": {
+					"name": {
+						"type": "string",
+						"description": "e.g. M101P: MongoDB for Developers"
+					},
+					"institution": {
+						"type": "string",
+						"description": "e.g. MongoDB University"
+					},
+					"receiveDate": {
+						"type": "string",
+						"description": "e.g. 2014-03-25",
+						"format": "date"
+					},
+					"website": {
+						"type": "string",
+						"description": "e.g. https://s3.amazonaws.com/edu-cert.10gen.com/downloads/b5f42dc3aa1d4add9f1dc6ed290f1c81/Certificate.pdf"
+					}
+				}
+			}
+		},
 		"awards": {
 			"type": "array",
 			"description": "Specify any awards you have received throughout your professional career",
