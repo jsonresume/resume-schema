@@ -4,7 +4,7 @@
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
-		"bio": {
+		"basics": {
 			"type": "object",
 			"additionalProperties": false,
 			"properties": {
