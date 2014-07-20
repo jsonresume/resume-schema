@@ -12,10 +12,21 @@
       "region": "California"
     },
     "website": "http://richardhendricks.com",
-    "profiles": {
-      "github": "richardhendricks",
-      "twitter": "richardhendricks"
-    }
+    "profiles": [
+      {
+        "network": "Facebook",
+        "username": "neutralthoughts"
+      },
+      {
+        "network": "Twitter",
+        "url": "https://www.facebook.com/1231453342"
+      },
+      {
+        "network": "SoundCloud",
+        "username": "dandymusicnl",
+        "url": "https://soundcloud.com/dandymusicnl"
+      }
+    ]
   },
   "work": [{
     "startDate": "2013-12-01",
