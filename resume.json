@@ -1,4 +1,4 @@
-{
+﻿{
   "bio": {
     "name": "Richard Hendriks",
     "email": "richard.hendriks@gmail.com",
@@ -11,7 +11,14 @@
       "countryCode": "US",
       "region": "California"
     },
-    "website": "http://richardhendricks.com",
+    "websites": [{
+        "type": "homepage",
+        "url": "http://richardhendricks.com"
+      },{
+        "type": "blog",
+        "url": "http://blog.richardhendricks.com"
+      }
+    ],
     "profiles": {
       "github": "richardhendricks",
       "twitter": "richardhendricks"
@@ -40,7 +47,8 @@
   "awards": [{
     "title": "Digital Compression Pioneer Award",
     "date": "2014-11-01",
-    "awarder": "Techcrunch"
+    "awarder": "Techcrunch",
+    "description": "Given to a single individual per year"
   }],
   "publications": [{
     "name": "Video compression for 3d media",

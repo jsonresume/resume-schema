@@ -1,4 +1,4 @@
-{
+﻿{
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Resume Schema",
 	"type": "object",
@@ -56,10 +56,25 @@
 						}
 					}
 				},
-				"website": {
-					"type": "string",
-					"description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
-					"format": "uri"
+				"websites": {
+					"type": "array",
+					"description": "Specify any number of independent websites you maintain",
+					"additionalItems": false,
+					"items": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"type": {
+								"type": "string",
+								"description": "e.g. blog, homepage, portfolio"
+							},
+							"url": {
+								"type": "string",
+								"description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
+								"format": "uri"
+							}
+						}
+					}
 				},
 				"profiles": {
 					"type": "object",
@@ -191,6 +206,10 @@
 				  	"awarder": {
 				  		"type": "string",
 				  		"description": "e.g. Time Magazine"
+				  	},
+				  	"description": {
+				  		"type": "string",
+				  		"description": "e.g. One hundred awards given per centrury to individual people"
 				  	}
 				}
 			}
