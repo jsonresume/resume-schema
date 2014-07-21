@@ -253,9 +253,9 @@
 				  		"type": "string",
 				  		"description": "e.g. Web Development"
 				  	},
-				  	"level": {
+				  	"experience": {
 				  		"type": "string",
-				  		"description": "e.g. Master"
+				  		"description": "e.g. 10+ years"
 				  	},
 				  	"keywords": {
 				  		"type": "array",

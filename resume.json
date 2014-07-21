@@ -58,11 +58,11 @@
   }],
   "skills": [{
     "name": "Web Development",
-    "level": "Master",
+    "experience": "10+ years",
     "keywords": ["HTML", "CSS", "Javascript"]
   },{
     "name": "Compression",
-    "level": "Master",
+    "experience": "10+ years",
     "keywords": ["Mpeg", "MP4", "GIF"]
   }],
   "references": [{
