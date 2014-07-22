@@ -9,7 +9,9 @@ Standard, Specification, Schema
 We are still currently un-versioned, some core changes are being pushed out, and then a version 0.0.0 will be released following SemVer.org best practises. We will be experimenting with a migration.js system, each change below will be represented with a function that can update an older version of resume.json to the newer versions.
 
 ### Change Log
-
+
+* 2014-07-22 - `bio` has been renamed to `basics` - [Disccusion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
+* 2014-07-22 - `profiles` is now type array instead of object - [Disccusion](https://github.com/jsonresume/resume-schema/issues/6) - [Commit](https://github.com/jsonresume/resume-schema/issues/6)
 * 2014-07-15 - `address` and `postalCode` added to `location` - [Discussion](https://github.com/jsonresume/resume-schema/issues/76) - [Commit](https://github.com/jsonresume/resume-schema/pull/110)
 * 2014-07-15 - `awardDate` changed to `date` - [Discussion](https://github.com/jsonresume/resume-schema/pull/107) - [Commit](https://github.com/jsonresume/resume-schema/pull/107)
 * 2014-07-13 - `websites` changed to `website`, changed from object into string - [Discussion](https://github.com/jsonresume/resume-schema/issues/10) - [Commit](https://github.com/jsonresume/resume-schema/pull/101)
