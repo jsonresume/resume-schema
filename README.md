@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/jsonresume/resume-schema.png?label=ready&title=Ready)](https://waffle.io/jsonresume/resume-schema)
 JSON Resume Schema
 ======
 
