@@ -315,7 +315,7 @@
 						"description": "e.g. World Economic Forums"
 					},
 					"description": {
-						"type": "string",
+						"type": "string"
 					},
 					"location": {
 						"type": "object",
@@ -368,7 +368,7 @@
 								},
 								"url": {
 									"type": "string",
-									"description": "e.g. http://slideshare.com/a-presentation",
+									"description": "e.g. http://slideshare.com/a-presentation"
 								}
 							}
 						}
