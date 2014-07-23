@@ -282,6 +282,32 @@
 
 			}
 		},
+		"projects": {
+			"type": "array",
+			"description": "About your professionals or personals projects",
+			"additionalItems": false,
+			"items": {
+		  		"type": "object",
+		  		"additionalProperties": false,
+				"properties": {
+				  	"name": {
+				  		"type": "string",
+				  		"description": "e.g. Zend Framework"
+				  	},
+				  	"description": {
+				  		"type": "string",
+				  	},
+				  	"role": {
+				  		"type": "string",
+				  		"description": "e.g. developer, designer, ..."
+			  		},
+				  	"url": {
+				  		"type": "string",
+				  		"description": "e.g. https://github.com/lilobase/resume-schema"
+				  	}
+			  	}
+			}
+		},
 		"references": {
 			"type": "array",
 			"description": "List references you have received",
