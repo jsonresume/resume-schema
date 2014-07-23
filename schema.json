@@ -295,7 +295,7 @@
 				  		"description": "e.g. Zend Framework"
 				  	},
 				  	"description": {
-				  		"type": "string",
+				  		"type": "string"
 				  	},
 				  	"role": {
 				  		"type": "string",
