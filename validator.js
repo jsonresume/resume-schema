@@ -12,14 +12,14 @@ var schema = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'schema.json'), 
 function validate(resumeJson, callback) {
     ZSchema.validate(resumeJson, schema)
         .then(function(report) {
-            callback(report, null);
+            callback(null, report);
         })
         .
     catch (function(err) {
-        callback(null, err);
-    })
+        callback(err, null);
+    });
 }
 module.exports = {
     validate: validate,
     resumeJson: resumeJson
-}
+};
