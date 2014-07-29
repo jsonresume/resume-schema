@@ -9,9 +9,9 @@ We are still currently un-versioned, some core changes are being pushed out, and
 
 ### Change Log
 
-* 2014-07-30 - `summary`was added to `publications` - [Disccusion](https://github.com/jsonresume/resume-schema/issues/126) - [Commit](https://github.com/jsonresume/resume-schema/pull/129)
-* 2014-07-22 - `bio` has been renamed to `basics` - [Disccusion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
-* 2014-07-22 - `profiles` is now type array instead of object - [Disccusion](https://github.com/jsonresume/resume-schema/issues/6) - [Commit](https://github.com/jsonresume/resume-schema/issues/6)
+* 2014-07-30 - `summary` was added to `publications` - [Discussion](https://github.com/jsonresume/resume-schema/issues/126) - [Commit](https://github.com/jsonresume/resume-schema/pull/129)
+* 2014-07-22 - `bio` has been renamed to `basics` - [Discussion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
+* 2014-07-22 - `profiles` is now type array instead of object - [Discussion](https://github.com/jsonresume/resume-schema/issues/6) - [Commit](https://github.com/jsonresume/resume-schema/issues/6)
 * 2014-07-15 - `address` and `postalCode` added to `location` - [Discussion](https://github.com/jsonresume/resume-schema/issues/76) - [Commit](https://github.com/jsonresume/resume-schema/pull/110)
 * 2014-07-15 - `awardDate` changed to `date` - [Discussion](https://github.com/jsonresume/resume-schema/pull/107) - [Commit](https://github.com/jsonresume/resume-schema/pull/107)
 * 2014-07-13 - `websites` changed to `website`, changed from object into string - [Discussion](https://github.com/jsonresume/resume-schema/issues/10) - [Commit](https://github.com/jsonresume/resume-schema/pull/101)
