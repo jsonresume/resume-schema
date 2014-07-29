@@ -57,7 +57,8 @@
     "name": "Video compression for 3d media",
     "publisher": "Hooli",
     "releaseDate": "2014-10-01",
-    "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+    "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+    "summary": "Innovative middle-out compression algorithm that changes the way we store data."
   }],
   "skills": [{
     "name": "Web Development",
