@@ -8,6 +8,7 @@ We are still currently un-versioned, some core changes are being pushed out, and
 
 ### Change Log
 
+* 2014-07-30 - `volunteer` was added  - [Discussion](https://github.com/jsonresume/resume-schema/issues/43) - [Commit](https://github.com/jsonresume/resume-schema/commit/dee007c2e373645b6b67d07a92aebf22fda5b95a)
 * 2014-07-30 - `summary` was added to `awards` - [Discussion](https://github.com/jsonresume/resume-schema/issues/119) - [Commit](https://github.com/jsonresume/resume-schema/commit/db5e7bcfa3f373d1293d6af073753ee41e3c3ba9)
 * 2014-07-30 - `summary` was added to `publications` - [Discussion](https://github.com/jsonresume/resume-schema/issues/126) - [Commit](https://github.com/jsonresume/resume-schema/pull/129)
 * 2014-07-22 - `bio` has been renamed to `basics` - [Discussion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
