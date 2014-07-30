@@ -200,6 +200,10 @@
 				  	"awarder": {
 				  		"type": "string",
 				  		"description": "e.g. Time Magazine"
+				  	},
+				  	"summary": {
+				  		"type": "string",
+				  		"description": "e.g. Received for my work with Quantum Physics"
 				  	}
 				}
 			}
