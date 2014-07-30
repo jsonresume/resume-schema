@@ -1,5 +1,4 @@
-JSON Resume Schema
-======
+# JSON Resume Schema
 
 [![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)
 
@@ -32,7 +31,6 @@ Everyone working on the early stages of the project should join our Freenode cha
 
 You can use the web client [http://webchat.freenode.net/](http://webchat.freenode.net/)
 
-
 ### Getting Started
 
 ```
@@ -49,7 +47,6 @@ resumeSchema.validate({name: "Thomas"});
 More likely
 
 ```
-
 var fs = require('fs');
 var resumeSchema  = require('resume-schema');
 var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
@@ -84,7 +81,6 @@ Constraint with two digits of precision.
 * [#69 - Standard format for phone numbers](https://github.com/jsonresume/resume-schema/issues/69)
 * [#44 - Person-Job Fit ](https://github.com/jsonresume/resume-schema/issues/44)
 * [#51 - Support multimple positions within one job](https://github.com/jsonresume/resume-schema/issues/51)
-
 
 ### Other Resume Standards
 * [HR-XML](https://hr-xml.site-ym.com/store/default.aspx?)
