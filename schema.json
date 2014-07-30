@@ -314,25 +314,21 @@
 				}
 			}
 		},
-		"profiles": {
+		"languages": {
 			"type": "array",
-			"description": "Specify any number of social networks that you participate in",
+			"description": "List any other languages you speak",
 			"additionalItems": false,
 			"items": {
 				"type": "object",
 				"additionalProperties": false,
 				"properties": {
-					"network": {
+					"language": {
 						"type": "string",
-						"description": "e.g. Facebook or Twitter"
+						"description": "e.g. English, Spanish"
 					},
-					"username": {
+					"fluency": {
 						"type": "string",
-						"description": "e.g. neutralthoughts"
-					},
-					"url": {
-						"type": "string",
-						"description": "e.g. http://twitter.com/neutralthoughts"
+						"description": "e.g. Fluent, Beginner"
 					}
 				}
 			}
