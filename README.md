@@ -1,9 +1,25 @@
-JSON Resume Schema
-======
+# JSON Resume Schema
 
 [![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)
 
 Standard, Specification, Schema
+
+We are still currently un-versioned, some core changes are being pushed out, and then a version 0.0.0 will be released following SemVer.org best practises. We will be experimenting with a migration.js system, each change below will be represented with a function that can update an older version of resume.json to the newer versions.
+
+### Change Log
+
+* 2014-07-30 - `summary` was added to `publications` - [Discussion](https://github.com/jsonresume/resume-schema/issues/126) - [Commit](https://github.com/jsonresume/resume-schema/pull/129)
+* 2014-07-22 - `bio` has been renamed to `basics` - [Discussion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
+* 2014-07-22 - `profiles` is now type array instead of object - [Discussion](https://github.com/jsonresume/resume-schema/issues/6) - [Commit](https://github.com/jsonresume/resume-schema/issues/6)
+* 2014-07-15 - `address` and `postalCode` added to `location` - [Discussion](https://github.com/jsonresume/resume-schema/issues/76) - [Commit](https://github.com/jsonresume/resume-schema/pull/110)
+* 2014-07-15 - `awardDate` changed to `date` - [Discussion](https://github.com/jsonresume/resume-schema/pull/107) - [Commit](https://github.com/jsonresume/resume-schema/pull/107)
+* 2014-07-13 - `websites` changed to `website`, changed from object into string - [Discussion](https://github.com/jsonresume/resume-schema/issues/10) - [Commit](https://github.com/jsonresume/resume-schema/pull/101)
+* 2014-07-13 - specified that `countryCode` should conform to ISO standard - [Discussion](https://github.com/jsonresume/resume-schema/pull/78) - [Commit](https://github.com/jsonresume/resume-schema/pull/78)
+* 2014-07-13 - `region` will replace `state` as the default - [Discussion](https://github.com/jsonresume/resume-schema/issues/19) - [Commit](https://github.com/jsonresume/resume-schema/pull/99)
+* 2014-07-12 - `picture` was added to the `bio` object - [Discussion](https://github.com/jsonresume/resume-schema/issues/29) - [Commit](https://github.com/jsonresume/resume-schema/pull/80)
+* 2014-07-12 - `gpa` was added to `education` objects - [Discussion](https://github.com/jsonresume/resume-schema/issues/7) - [Commit](https://github.com/jsonresume/resume-schema/pull/97)
+* 2014-07-12 - `email` and `phone` were changed from objects into strings - [Discussion](https://github.com/jsonresume/resume-schema/issues/27) - [Commit](https://github.com/jsonresume/resume-schema/pull/98)
+* 2014-07-12 - `firstName` and `lastName` were merged into `name` - [Discussion](https://github.com/jsonresume/resume-schema/issues/4) - [Commit](https://github.com/jsonresume/resume-schema/commit/717b2a525f4f42e9994c54bfa3cdbe0cea5776a6)
 
 ### IRC
 
@@ -14,7 +30,6 @@ Everyone working on the early stages of the project should join our Freenode cha
 ```
 
 You can use the web client [http://webchat.freenode.net/](http://webchat.freenode.net/)
-
 
 ### Getting Started
 
@@ -32,7 +47,6 @@ resumeSchema.validate({name: "Thomas"});
 More likely
 
 ```
-
 var fs = require('fs');
 var resumeSchema  = require('resume-schema');
 var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
@@ -67,7 +81,7 @@ Constraint with two digits of precision.
 * [#69 - Standard format for phone numbers](https://github.com/jsonresume/resume-schema/issues/69)
 * [#44 - Person-Job Fit ](https://github.com/jsonresume/resume-schema/issues/44)
 * [#12 - geotag location in work ](https://github.com/jsonresume/resume-schema/issues/12)
-
+* [#51 - Support multiple positions within one job](https://github.com/jsonresume/resume-schema/issues/51)
 
 ### Other Resume Standards
 * [HR-XML](https://hr-xml.site-ym.com/store/default.aspx?)
