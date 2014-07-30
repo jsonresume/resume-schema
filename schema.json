@@ -314,6 +314,29 @@
 				}
 			}
 		},
+		"profiles": {
+			"type": "array",
+			"description": "Specify any number of social networks that you participate in",
+			"additionalItems": false,
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"properties": {
+					"network": {
+						"type": "string",
+						"description": "e.g. Facebook or Twitter"
+					},
+					"username": {
+						"type": "string",
+						"description": "e.g. neutralthoughts"
+					},
+					"url": {
+						"type": "string",
+						"description": "e.g. http://twitter.com/neutralthoughts"
+					}
+				}
+			}
+		},
 		"interests": {
 			"type": "array",
 			"additionalItems": false,
