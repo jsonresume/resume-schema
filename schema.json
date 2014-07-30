@@ -314,7 +314,7 @@
 				}
 			}
 		},
-		"hobbies": {
+		"interests": {
 			"type": "array",
 			"additionalItems": false,
 			"items": {
