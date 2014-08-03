@@ -6,7 +6,7 @@ Standard, Specification, Schema
 
 We are still currently un-versioned, some core changes are being pushed out, and then a version 0.0.0 will be released following SemVer.org best practises. We will be experimenting with a migration.js system, each change below will be represented with a function that can update an older version of resume.json to the newer versions.
 
-### Major Versions
+### Major versions
 
 There will be a learning curve for the next few months as to how the ecosystem will revolve around versions. 
 
@@ -14,7 +14,7 @@ To keep things simply, *JSON Resume tools are only expected react to major versi
 
 * [0.0.0 - First official version](https://github.com/jsonresume/resume-schema/blob/0.0.0/schema.json)
 
-### Change Log
+### Change log
 
 * 2014-07-30 - `languages` was added - [Dicussions](https://github.com/jsonresume/resume-schema/issues/34) - [Commit](https://github.com/jsonresume/resume-schema/commit/f02300e36ba076787d008928b29963c3ffce6121)
 * 2014-07-30 - `hobbies` renamed to `interests`
@@ -43,7 +43,7 @@ Everyone working on the early stages of the project should join our Freenode cha
 
 You can use the web client [http://webchat.freenode.net/](http://webchat.freenode.net/)
 
-### Getting Started
+### Getting started
 
 ```
 npm install --save resume-schema
@@ -95,6 +95,6 @@ Constraint with two digits of precision.
 * [#12 - geotag location in work ](https://github.com/jsonresume/resume-schema/issues/12)
 * [#51 - Support multiple positions within one job](https://github.com/jsonresume/resume-schema/issues/51)
 
-### Other Resume Standards
+### Other resume standards
 * [HR-XML](https://hr-xml.site-ym.com/store/default.aspx?)
 * [Europass](http://europass.cedefop.europa.eu/en/about)
