@@ -4,30 +4,30 @@
 
 Standard, Specification, Schema
 
-We are still currently un-versioned, some core changes are being pushed out, and then a version 0.0.0 will be released following SemVer.org best practises. We will be experimenting with a migration.js system, each change below will be represented with a function that can update an older version of resume.json to the newer versions.
+We are still currently un-versioned, some core changes are being pushed out, and a version 0.0.0 will be released following [Semantic Versioning 2.0.0](SemVer.org) best practices. We will be experimenting with a `migration.js` system, where each change below will be represented with a function that can update an older version of `resume.json` to the newer versions.
 
 ### Major versions
 
-There will be a learning curve for the next few months as to how the ecosystem will revolve around versions. 
+There will be a learning curve for the next few months as to how the ecosystem will revolve around versions.
 
-To keep things simply, *JSON Resume tools are only expected react to major version changes*, therefore only when we hit version `1.0.0` should everything follow suit. The process for patches and fixes will be much more informal. Though we will try make everything work for the major versions.
+To keep things simple, *JSON Resume tools are only expected to react to major version changes*, everything will follow suit only after we reach version `1.0.0`. The process for patches and fixes will be informal, and we will try to make everything work for major versions.
 
 * [0.0.0 - First official version](https://github.com/jsonresume/resume-schema/blob/0.0.0/schema.json)
 
 ### Change log
 
 * 2014-07-30 - `languages` was added - [Dicussions](https://github.com/jsonresume/resume-schema/issues/34) - [Commit](https://github.com/jsonresume/resume-schema/commit/f02300e36ba076787d008928b29963c3ffce6121)
-* 2014-07-30 - `hobbies` renamed to `interests`
-* 2014-07-30 - `volunteer` was added  - [Discussion](https://github.com/jsonresume/resume-schema/issues/43) - [Commit](https://github.com/jsonresume/resume-schema/commit/dee007c2e373645b6b67d07a92aebf22fda5b95a)
+* 2014-07-30 - `hobbies` was renamed to `interests`
+* 2014-07-30 - `volunteer` was added - [Discussion](https://github.com/jsonresume/resume-schema/issues/43) - [Commit](https://github.com/jsonresume/resume-schema/commit/dee007c2e373645b6b67d07a92aebf22fda5b95a)
 * 2014-07-30 - `summary` was added to `awards` - [Discussion](https://github.com/jsonresume/resume-schema/issues/119) - [Commit](https://github.com/jsonresume/resume-schema/commit/db5e7bcfa3f373d1293d6af073753ee41e3c3ba9)
 * 2014-07-30 - `summary` was added to `publications` - [Discussion](https://github.com/jsonresume/resume-schema/issues/126) - [Commit](https://github.com/jsonresume/resume-schema/pull/129)
-* 2014-07-22 - `bio` has been renamed to `basics` - [Discussion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
-* 2014-07-22 - `profiles` is now type array instead of object - [Discussion](https://github.com/jsonresume/resume-schema/issues/6) - [Commit](https://github.com/jsonresume/resume-schema/issues/6)
-* 2014-07-15 - `address` and `postalCode` added to `location` - [Discussion](https://github.com/jsonresume/resume-schema/issues/76) - [Commit](https://github.com/jsonresume/resume-schema/pull/110)
-* 2014-07-15 - `awardDate` changed to `date` - [Discussion](https://github.com/jsonresume/resume-schema/pull/107) - [Commit](https://github.com/jsonresume/resume-schema/pull/107)
-* 2014-07-13 - `websites` changed to `website`, changed from object into string - [Discussion](https://github.com/jsonresume/resume-schema/issues/10) - [Commit](https://github.com/jsonresume/resume-schema/pull/101)
-* 2014-07-13 - specified that `countryCode` should conform to ISO standard - [Discussion](https://github.com/jsonresume/resume-schema/pull/78) - [Commit](https://github.com/jsonresume/resume-schema/pull/78)
-* 2014-07-13 - `region` will replace `state` as the default - [Discussion](https://github.com/jsonresume/resume-schema/issues/19) - [Commit](https://github.com/jsonresume/resume-schema/pull/99)
+* 2014-07-22 - `bio` was renamed to `basics` - [Discussion](https://github.com/jsonresume/resume-schema/issues/68) - [Commit](https://github.com/jsonresume/resume-schema/pull/117)
+* 2014-07-22 - `profiles` was changed to a type array instead of an object - [Discussion](https://github.com/jsonresume/resume-schema/issues/6) - [Commit](https://github.com/jsonresume/resume-schema/issues/6)
+* 2014-07-15 - `address` and `postalCode` were added to `location` - [Discussion](https://github.com/jsonresume/resume-schema/issues/76) - [Commit](https://github.com/jsonresume/resume-schema/pull/110)
+* 2014-07-15 - `awardDate` was changed to `date` - [Discussion](https://github.com/jsonresume/resume-schema/pull/107) - [Commit](https://github.com/jsonresume/resume-schema/pull/107)
+* 2014-07-13 - `websites` was changed to `website`, changed from object into string - [Discussion](https://github.com/jsonresume/resume-schema/issues/10) - [Commit](https://github.com/jsonresume/resume-schema/pull/101)
+* 2014-07-13 - specified that `countryCode` conforms to ISO standard - [Discussion](https://github.com/jsonresume/resume-schema/pull/78) - [Commit](https://github.com/jsonresume/resume-schema/pull/78)
+* 2014-07-13 - `region` replaced `state` as the default - [Discussion](https://github.com/jsonresume/resume-schema/issues/19) - [Commit](https://github.com/jsonresume/resume-schema/pull/99)
 * 2014-07-12 - `picture` was added to the `bio` object - [Discussion](https://github.com/jsonresume/resume-schema/issues/29) - [Commit](https://github.com/jsonresume/resume-schema/pull/80)
 * 2014-07-12 - `gpa` was added to `education` objects - [Discussion](https://github.com/jsonresume/resume-schema/issues/7) - [Commit](https://github.com/jsonresume/resume-schema/pull/97)
 * 2014-07-12 - `email` and `phone` were changed from objects into strings - [Discussion](https://github.com/jsonresume/resume-schema/issues/27) - [Commit](https://github.com/jsonresume/resume-schema/pull/98)
@@ -35,13 +35,13 @@ To keep things simply, *JSON Resume tools are only expected react to major versi
 
 ### IRC
 
-Everyone working on the early stages of the project should join our Freenode channel
+Everyone working on the early stages of the project should join our Freenode channel:
 
 ```
 #jsonresume on freenode
 ```
 
-You can use the web client [http://webchat.freenode.net/](http://webchat.freenode.net/)
+You can use the web client [http://webchat.freenode.net](http://webchat.freenode.net/).
 
 ### Getting started
 
@@ -71,7 +71,7 @@ resumeSchema.validate(resumeObject);
 
 ### Contribute
 
-We encourage anyone who's interested in participating in the formation of this standard, to join us on IRC, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas that you feel are a needed addition to the jsonresume standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
+We encourage anyone who's interested in participating in the formation of this standard, to join us on IRC, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas that you feel are a needed in addition to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
 
 ### Versioning
 
