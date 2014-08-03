@@ -35,9 +35,7 @@ To keep things simple, *JSON Resume tools are only expected to react to major ve
 
 ### IRC
 
-Everyone working on the early stages of the project should join our Freenode channel `#jsonresume`.
-
-You can use the web client [http://webchat.freenode.net](http://webchat.freenode.net/).
+Everyone working on the early stages of the project should join our Freenode channel `#jsonresume`. You can use the web client [http://webchat.freenode.net](http://webchat.freenode.net/).
 
 ### Getting started
 
