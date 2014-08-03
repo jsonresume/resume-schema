@@ -71,7 +71,7 @@ resumeSchema.validate(resumeObject);
 
 ### Contribute
 
-We encourage anyone who's interested in participating in the formation of this standard, to join us on IRC, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas that you feel are a needed in addition to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
+We encourage anyone who's interested in participating in the formation of this standard, to join us on IRC, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
 
 ### Versioning
 
