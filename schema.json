@@ -254,7 +254,7 @@
 				}
 			}
 		},
-		"certifications":{
+		"qualifications":{
 			"type": "array",
 			"description": "List your valid and current certifications, licences, and accreditations",
 			"additionalItems": false,
