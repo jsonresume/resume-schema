@@ -322,11 +322,11 @@
 				"type": "object",
 				"additionalProperties": true,
 				"properties": {
-					"language": {
+					"name": {
 						"type": "string",
 						"description": "e.g. English, Spanish"
 					},
-					"fluency": {
+					"level": {
 						"type": "string",
 						"description": "e.g. Fluent, Beginner"
 					}
