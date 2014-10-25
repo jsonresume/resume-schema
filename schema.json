@@ -109,12 +109,12 @@
 			  	"startDate": {
 			  		"type": "string",
 			  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
-			  		"format": "date"
+			  		"format": "resume-date"
 			  	},
 			  	"endDate": {
 			  		"type": "string",
 			  		"description": "e.g. 2012-06-29",
-			  		"format": "date"
+			  		"format": "resume-date"
 			  	},
 			  	"summary": {
 			  		"type": "string",
@@ -156,12 +156,12 @@
 			  	"startDate": {
 			  		"type": "string",
 			  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
-			  		"format": "date"
+			  		"format": "resume-date"
 			  	},
 			  	"endDate": {
 			  		"type": "string",
 			  		"description": "e.g. 2012-06-29",
-			  		"format": "date"
+			  		"format": "resume-date"
 			  	},
 			  	"summary": {
 			  		"type": "string",
@@ -202,12 +202,12 @@
 				  	"startDate": {
 				  		"type": "string",
 			  			"description": "e.g. 2014-06-29",
-			  			"format": "date"
+			  			"format": "resume-date"
 				  	},
 				  	"endDate": {
 				  		"type": "string",
 			  			"description": "e.g. 2012-06-29",
-			  			"format": "date"
+			  			"format": "resume-date"
 				  	},
 				  	"gpa": {
 				  		"type": "string",
@@ -242,7 +242,7 @@
 				  	"date": {
 				  		"type": "string",
 				  		"description": "e.g. 1989-06-12",
-				  		"format": "date"
+				  		"format": "resume-date"
 				  	},
 				  	"awarder": {
 				  		"type": "string",
