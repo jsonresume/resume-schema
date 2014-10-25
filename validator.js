@@ -5,16 +5,25 @@ var resumeJson = require('./resume');
 
 
 /* Register custom validators */
+
+/**
+ * Register a custom date validator "resume-date" that allows:
+ *
+ * - "YYYY-MM-DD" : year, month, and day
+ * - "YYYY-MM"    : year and month
+ * - "YYYY"       : year
+ * - ""           : empty string represents the present
+ */
 ZSchema.registerFormat('resume-date', function (date) {
   if (typeof date !== 'string') {
     return true;
   }
-  var matches = /^[0-9]{4}(-([0-9]{2})(-([0-9]{2}))?)?$/.exec(date);
+  var matches = /^([0-9]{4}(-([0-9]{2})(-([0-9]{2}))?)?)?$/.exec(date);
   if (matches === null) {
     return false
   }
-  var month = matches[2];
-  var day = matches[4];
+  var month = matches[3];
+  var day = matches[5];
   return !(month < '01' || month > '12' || day < '01' || day > '31');
 });
 
