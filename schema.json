@@ -251,7 +251,12 @@
 				  	"summary": {
 				  		"type": "string",
 				  		"description": "e.g. Received for my work with Quantum Physics"
-				  	}
+				  	},
+					"website": {
+						"type": "string",
+			  			"description": "e.g. http://www.nobelprize.org/",
+			  			"format": "uri"
+                                        }
 				}
 			}
 		},
