@@ -47,8 +47,8 @@
       "organization": "CoderDojo",
       "position": "Teacher",
       "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "2012-01",
+      "endDate": "2013-01",
       "summary": "Global movement of free coding clubs for young people.",
       "highlights": [
         "Awarded 'Teacher of the Month'"
@@ -60,8 +60,8 @@
       "institution": "University of Oklahoma",
       "area": "Information Technology",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
+      "startDate": "2011-06",
+      "endDate": "2014",
       "gpa": "4.0",
       "courses": [
         "DB1101 - Basic SQL",
