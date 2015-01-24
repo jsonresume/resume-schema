@@ -221,6 +221,10 @@
 				  			"type": "string",
 				  			"description": "e.g. H1302 - Introduction to American history"
 				  		}
+				  	},
+				  	"dissertation":{
+				  		"type":"string",
+				  		"description": "e.g. Analysis of the role of women in american history"
 				  	}
 			  	}
 
