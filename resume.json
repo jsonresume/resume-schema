@@ -42,6 +42,68 @@
       ]
     }
   ],
+  "vocational": [
+    {
+      "issuingAuthority": "Oracle Inc.",
+      "website": "http://oracle.com",
+      "accreditations": [
+        {
+          "title": "Oracle Database 11g Administrator Certified Associate",
+          "website": "http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=653&get_params=p_id:50",
+          "verification": "https://education.oracle.com",
+          "achievedDate": "2014-01-08",
+          "expireDate": "",
+          "doesNotExpire": true
+        },
+        {
+          "title": "Oracle Certified Associate, Oracle WebLogic Server 11g System Administrator ",
+          "website": "https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=653&get_params=p_id:195",
+          "verification": "",
+          "achievedDate": "2013-05-08",
+          "expireDate": "",
+          "doesNotExpire": true
+        }
+      ],
+      "exams": [
+        {
+          "code": "1Z0-052",
+          "title": "Oracle Database 11g: Administration I",
+          "website": "http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-052",
+          "verification": "",
+          "achievedDate": "2015-04-08",
+          "expireDate": "",
+          "doesNotExpire": true
+        },
+        {
+          "code": "1Z0-051",
+          "title": "Oracle Database 11g: SQL Fundamentals I",
+          "website": "http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-051",
+          "verification": "",
+          "achievedDate": "2015-04-06",
+          "expireDate": "",
+          "doesNotExpire": true
+        },
+        {
+          "code": "1Z0-102",
+          "title": "Oracle Weblogic Server 11g: System Administration",
+          "website": "http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-102",
+          "verification": "",
+          "achievedDate": "2015-04-13",
+          "expireDate": "",
+          "doesNotExpire": true
+        }
+      ],
+      "courses": [
+        {
+          "title": "Oracle WebLogic Server 11g: Administration Essentials",
+          "trainingProvidor": "Oracle inc.",
+          "providorWebsite": "http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=609&p_org_id=28&lang=US&get_params=dc:D75641GC21,p_preview:N",
+          "startDate": "2015-03-02",
+          "endDate": "2015-03-06"
+        }
+      ]
+    }
+  ],
   "volunteer": [
     {
       "organization": "CoderDojo",
