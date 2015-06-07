@@ -5,6 +5,7 @@ var resumeJson = require('./resume');
 
 // TODO - Remove this sync call
 var schema = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'schema.json'), 'utf8'));
+var context = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'resume.jsonld'), 'utf8'));
 
 function validate(resumeJson, callback) {
     ZSchema.validate(resumeJson, schema)
@@ -16,7 +17,9 @@ function validate(resumeJson, callback) {
         callback(null, err);
     })
 }
+
 module.exports = {
     validate: validate,
     resumeJson: resumeJson
-}
+    context: context
+};
