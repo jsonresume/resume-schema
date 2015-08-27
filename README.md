@@ -47,7 +47,13 @@ To use
 
 ```
 var resumeSchema  = require('resume-schema');
-resumeSchema.validate({name: "Thomas"});
+resumeSchema.validate({ name: "Thomas" }, function (err, report) {
+  if (err) {
+    console.error('The resume was invalid:', err);
+    return;
+  }
+  console.log('Resume validated successfully:', report);
+});
 ```
 
 More likely
