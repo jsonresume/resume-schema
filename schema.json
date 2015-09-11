@@ -43,14 +43,14 @@
 					"type": "string",
 					"description": "Write a short 2-3 sentence biography about yourself"
 				},
-				"location": {
-					"$ref": "http://json-schema.org/address#"
-				},
 				"additionalInfo": {
 					"type": "object",
 					"description": "Requesting this information in a VC might be illegal in various regions",
 					"additionalProperties": true,
 					"properties": {
+						"location": {
+							"$ref": "http://json-schema.org/address#"
+						},
 						"citizenship": {
 							"type": "array",
 							"additionalItems": false,
@@ -86,7 +86,17 @@
 						"gender": {
 							"type": "string",
 							"description": "Provide information about your gender, e.g. male, female, other, $custom"
+						},
+						"labels": {
+						  	"type": "array",
+							"description": "Meta-data labels",
+							"additionalItems": false,
+							"items": {
+								"type": "string",
+								"description": "e.g. recruiter, non-profit"
+						  	}
 						}
+
 					}
 				},
 				"profiles": {
