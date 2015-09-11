@@ -238,7 +238,7 @@
 				  		"additionalItems": false,
 				  		"items": {
 				  			"type": "string",
-				  			"description": "e.g. HTML"
+				  			"description": "e.g. recruiter, non-profit"
 				  		}
 				  	},
 				  	"courses": {
@@ -458,7 +458,7 @@
 		  		"type": "object",
 		  		"additionalProperties": true,
 				"properties": {
-				  	"name": {
+				  	"title": {
 				  		"type": "string",
 				  		"description": "e.g. The World Wide Web"
 				  	},
