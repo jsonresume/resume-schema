@@ -266,13 +266,8 @@
 						"description": "worst possible score on the scale, e.g. 5.0"
 					},
 					"keywords": {
-						"type": "array",
-						"description": "List some keywords pertaining to this education",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. HTML"
-						}
+						"type": "object",
+						"$ref": "#/definitions/keywords"
 					},
 					"courses": {
 						"type": "array",
@@ -429,6 +424,10 @@
 									"description": "e.g. http://google.com/84s7f8d",
 									"format" : "uri"
 								},
+								"keywords": {
+									"type": "object",
+									"$ref": "#/definitions/keywords"
+								},
 								"labels": {
 									"type": "object",
 									"$ref": "#/definitions/labels"
@@ -568,13 +567,8 @@
 						"description": "e.g. null (undisclosed [default]), Beginner, Competent, Advanced, Master"
 					},
 					"keywords": {
-						"type": "array",
-						"description": "List some keywords pertaining to this skill",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. HTML"
-						}
+						"type": "object",
+						"$ref": "#/definitions/keywords"
 					},
 					"labels": {
 						"type": "object",
@@ -618,12 +612,8 @@
 						"description": "e.g. Philosophy"
 					},
 					"keywords": {
-						"type": "array",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. Friedrich Nietzsche"
-						}
+						"type": "object",
+						"$ref": "#/definitions/keywords"
 					},
 					"labels": {
 						"type": "object",
@@ -748,6 +738,14 @@
 			"items": {
 				"type": "string",
 				"description": "e.g. recruiter, non-profit"
+		},
+		"keywords": {
+			"type": "array",
+			"description": "List some keywords pertaining to this education",
+			"additionalItems": false,
+			"items": {
+				"type": "string",
+				"description": "e.g. HTML"
 			}
 		}
 	}
