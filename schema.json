@@ -218,7 +218,7 @@
 				}
 			}
 		},
-		"projects": {
+		"project": {
 			"type": "array",
 			"additionalItems": false,
 			"items": {
@@ -256,9 +256,63 @@
 						"type": "boolean",
 						"description": "Specify if the project was pure volunteer, non-profit work"
 					},
+					"activities": {
+						"type": "array",
+						"description": "Specify your different projects/events for this experience",
+						"additionalItems": false,
+						"items": {
+							"type": "object",
+							"additionalProperties": true,
+							"properties": {
+								"name": {
+									"type": "string",
+									"description": "e.g. Marketing campaign 2011-2012"
+								},
+								"summary": {
+									"type": "string",
+									"description": "Give an overview of your responsibilities at the company"
+								},
+								"role": {
+									"type": "string",
+									"description": "e.g. Team lead, Reviewer"
+								},
+								"url": {
+									"type": "string",
+									"description": "Showcase your project/product e.g. http://facebook.com/product",
+									"format": "uri"
+								},
+								"startDate": {
+									"type": "string",
+									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+									"format": "date"
+								},
+								"endDate": {
+									"type": "string",
+									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+									"format": "date"
+								},
+								"highlights": {
+									"type": "object",
+									"$ref": "#/definitions/highlights"
+								},
+								"keywords": {
+									"type": "object",
+									"$ref": "#/definitions/keywords"
+								},
+								"labels": {
+									"type": "object",
+									"$ref": "#/definitions/labels"
+								}
+							}
+						}
+					},
 					"highlights": {
 						"type": "object",
 						"$ref": "#/definitions/highlights"
+					},
+					"labels": {
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
