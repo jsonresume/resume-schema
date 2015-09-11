@@ -70,7 +70,7 @@
 							"properties": {
 								"date": {
 									"type": "string",
-									"description": "e.g. 1970-12-31",
+									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 									"format": "date"
 								},
 								"location": {
@@ -741,7 +741,52 @@
 					  	}
 					}
 				}
+			},
+		"authorizations": {
+			"type": "array",
+			"additionalItems": false,
+			"items": {
+		  		"type": "object",
+		  		"additionalProperties": true,
+				"properties": {
+				  	"name": {
+				  		"type": "string",
+				  		"description": "e.g. H1B"
+				  	},
+				  	"summary": {
+				  		"type": "string",
+				  		"description": "Thanks to $authorization I am allowed to work/work as $profession"
+					},
+				  	"regions": {
+						"type": "array",
+						"description": "List of regions for authorization",
+						"additionalItems": false,
+						"items": {
+				  			"type": "string",
+				  			"description": "e.g. United-States, New-York"
+				  		}
+					},
+					"expirationDate": {
+				  		"type": "string",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+			  			"format": "date"
+					},
+					"permanent": {
+						"type": "boolean",
+						"description": "Specify permanency, e.g. false, true"
+					},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+					  	}
+					}
+				}
 			}
+		},
 		},
 		"meta-data": {
 			"type": "array",
