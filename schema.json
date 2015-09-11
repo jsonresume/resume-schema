@@ -544,51 +544,6 @@
 				}
 			}
 		},
-		"experiences": {
-			"type": "array",
-			"description": "List notable experiences such as abroad experiences",
-			"additionalItems": false,
-			"items": {
-				"type": "object",
-				"additionalProperties": false,
-				"properties": {
-					"type": {
-						"type": "string",
-						"description": "e.g. abroad experience, student exchange, language stay"
-					},
-					"summary": {
-						"type": "string",
-						"description": "Short summary what it brought you for skills etc."
-					},
-					"url": {
-						"type": "string",
-						"description": "e.g. http://example.com/",
-						"format": "uri"
-					},
-					"location": {
-						"$ref": "http://json-schema.org/address#"
-					},
-					"startDate": {
-						"type": "string",
-						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-						"format": "date"
-					},
-					"endDate": {
-						"type": "string",
-						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-						"format": "date"
-					},
-					"roles": {
-						"type": "string",
-						"description": "e.g. student, hero"
-					},
-					"labels": {
-						"type": "object",
-						"$ref": "#/definitions/labels"
-					}
-				}
-			}
-		},
 		"awards": {
 			"type": "array",
 			"description": "Specify any awards you have received throughout your professional career",
