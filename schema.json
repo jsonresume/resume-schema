@@ -11,7 +11,7 @@
 				"name": {
 					"type": "string"
 				},
-				"label": {
+				"tagline": {
 					"type": "string",
 					"description": "e.g. Web Developer"
 				},
