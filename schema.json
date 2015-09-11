@@ -46,6 +46,49 @@
 				"location": {
 					"$ref": "http://json-schema.org/address#"
 				},
+				"additionalInfo": {
+					"type": "object",
+					"description": "Requesting this information in a VC might be illegal in various regions",
+					"additionalProperties": true,
+					"properties": {
+						"citizenship": {
+							"type": "array",
+							"additionalItems": false,
+							"items": {
+								"type": "string",
+								"description": "Information about your nationality, e.g. Canadian"
+							}
+						},
+						"maritalStatus": {
+							"type": "string",
+							"description": "Information about your civil status, e.g. married, single, divorced or widowed"
+						},
+						"birth": {
+							"type": "object",
+							"description": "Information about the date and place of your birth",
+							"additionalProperties": false,
+							"properties": {
+								"date": {
+									"type": "string",
+									"description": "e.g. 1970-12-31",
+									"format": "date"
+								},
+								"location": {
+									"type": "string",
+									"description": "Place of birth e.g. New York"
+								}
+							}
+						},
+						"children": {
+							"type": "string",
+							"description": "Provide information about your children, e.g. number of children and their age"
+						},
+						"gender": {
+							"type": "string",
+							"description": "Provide information about your gender, e.g. male, female, other, $custom"
+						}
+					}
+				},
 				"profiles": {
 					"type": "array",
 					"description": "Specify any number of social networks that you participate in",
