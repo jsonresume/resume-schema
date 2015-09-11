@@ -177,9 +177,9 @@
 			"type": "array",
 			"additionalItems": false,
 			"items": {
-		  	"type": "object",
-		  	"additionalProperties": true,
-			"properties": {
+		  		"type": "object",
+		  		"additionalProperties": true,
+				"properties": {
 				  	"institution": {
 				  		"type": "string",
 				  		"description": "e.g. Massachusetts Institute of Technology"
