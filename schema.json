@@ -80,6 +80,15 @@
 							"url": {
 								"type": "string",
 								"description": "e.g. http://twitter.com/neutralthoughts"
+							},
+						  	"label": {
+						  		"type": "array",
+						  		"description": "List meta-data label",
+						  		"additionalItems": false,
+						  		"items": {
+						  			"type": "string",
+						  			"description": "e.g. recruiter, non-profit"
+						  		}
 							}
 						}
 					}
