@@ -782,46 +782,7 @@
 				}
 			}
 		},
-		"authorizations": {
-			"type": "array",
-			"additionalItems": false,
-			"items": {
-				"type": "object",
-				"additionalProperties": true,
-				"properties": {
-					"name": {
-						"type": "string",
-						"description": "e.g. H1B"
-					},
-					"summary": {
-						"type": "string",
-						"description": "Thanks to $authorization I am allowed to work/work as $profession"
-					},
-					"regions": {
-						"type": "array",
-						"description": "List of regions for authorization",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. United-States, New-York"
-						}
-					},
-					"expirationDate": {
-						"type": "string",
-						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-						"format": "date"
-					},
-					"permanent": {
-						"type": "boolean",
-						"description": "Specify permanency, e.g. false, true"
-					},
-					"labels": {
-						"type": "object",
-						"$ref": "#/definitions/labels"
-					}
-				}
-			}
-		},
+
 		"certification": {
 			"type": "array",
 			"additionalItems": false,
@@ -830,47 +791,71 @@
 				"additionalProperties": true,
 				"properties": {
 					"authority": {
+						"type": "string",
+						"description": "e.g. Oracle Inc., Institute of Mechanical Engineering, CIPD, United-States Immigration"
+					},
+					"url": {
+						"type": "string",
+						"description": "e.g. http://example-authority.com/",
+						"format": "uri"
+					},
+					"summary": {
+						"type": "string",
+						"description": "Short summary who this authority is"
+					},
+					"certificates": {
 						"type": "object",
 						"additionalProperties": true,
 						"properties": {
 							"name": {
 								"type": "string",
-								"description": "e.g. Oracle Inc., Institute of Mechanical Engineering, CIPD"
-							},
-							"url": {
-								"type": "string",
-								"description": "e.g. http://example-authority.com/",
-								"format": "uri"
+								"description": "e.g. Oracle Database 12c Administrator Certified Associate, H1B"
 							},
 							"summary": {
 								"type": "string",
-								"description": "Short summary who this authority is"
+								"description": "Thanks to $authorization/$certificate I am allowed to work/work as $profession/am qualified"
 							},
-							"_item": {
-								"type": "object",
-								"additionalProperties": true,
-								"properties": {
-									"title": {
-										"type": "string",
-										"description": "e.g. Oracle Database 12c Administrator Certified Associate"
-									},
-									"verification": {
-										"type": "string",
-										"description": "e.g. http://example-authority.com/verify",
-										"format": "uri"
-									},
-									"expirationDate": {
-										"type": "string",
-										"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-										"format": "date"
-									},
-									"permanent": {
-										"type": "boolean",
-										"description": "Specify permanency, e.g. false, true"
-									}
+							"verification": {
+								"type": "string",
+								"description": "e.g. http://example-authority.com/verify",
+								"format": "uri"
+							},
+							"regions": {
+								"type": "array",
+								"description": "List of regions for authorization",
+								"additionalItems": false,
+								"items": {
+									"type": "string",
+									"description": "e.g. United-States, New-York"
 								}
+							},
+							"startDate": {
+								"type": "string",
+								"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+								"format": "date"
+							},
+							"expirationDate": {
+								"type": "string",
+								"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+								"format": "date"
+							},
+							"permanent": {
+								"type": "boolean",
+								"description": "Specify permanency, e.g. false, true"
+							},
+							"keywords": {
+								"type": "object",
+								"$ref": "#/definitions/keywords"
+							},
+							"labels": {
+								"type": "object",
+								"$ref": "#/definitions/labels"
 							}
 						}
+					},
+					"labels": {
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
