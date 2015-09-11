@@ -488,14 +488,34 @@
 						"type": "array",
 						"additionalProperties": true,
 						"properties": {
-							"DOI": "",
-							"ISBN10": "",
-							"ISBN13": "",
-							"ISSN": "",
-							"ISTC": "",
-							"ISRN": "",
-							"GTIN": "",
-							"EAN": ""
+							"DOI": {
+				  				"type": "string",
+				  				"description": "e.g. 10.1000/182"
+							},
+							"ISBN": {
+				  				"type": "string",
+				  				"description": "e.g. 978-3-16-148410-0"
+							},
+							"ISSN": {
+				  				"type": "string",
+				  				"description": "e.g. 0000-0000"
+							},
+							"ISTC": {
+				  				"type": "string",
+				  				"description": "e.g. A02-2009-000004BE-A"
+							},
+							"ISRN": {
+				  				"type": "string",
+				  				"description": "e.g. UIUCLIS--2001/9+EARCH"
+							},
+							"GTIN": {
+				  				"type": "string",
+				  				"description": "e.g. 403456789012 1"
+							},
+							"EAN": {
+				  				"type": "string",
+				  				"description": "e.g. 4 003994 155486"
+							}
 						}
 					}
 			  	}
