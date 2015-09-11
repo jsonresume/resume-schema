@@ -466,6 +466,10 @@
 				  		"type": "string",
 				  		"description": "e.g. IEEE, Computer Magazine"
 				  	},
+				  	"role": {
+				  		"type": "string",
+				  		"description": "e.g. author, co-author, editor, producer"
+				  	},
 				  	"releaseDate": {
 				  		"type": "string",
 				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
