@@ -578,7 +578,7 @@
 				  	},
 				  	"level": {
 				  		"type": "string",
-				  		"description": "e.g. Master"
+				  		"description": "e.g. null (undisclosed [default]), Beginner, Competent, Advanced, Master"
 				  	},
 				  	"keywords": {
 				  		"type": "array",
