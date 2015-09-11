@@ -345,6 +345,11 @@
 				  		"description": "e.g. 1989-06-12",
 				  		"format": "date"
 				  	},
+					"url": {
+				  		"type": "string",
+				  		"description": "e.g. http://nobelprize.org",
+						"format": "uri"
+				  	},
 				  	"awarder": {
 				  		"type": "string",
 				  		"description": "e.g. Time Magazine"
