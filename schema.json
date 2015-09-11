@@ -193,13 +193,8 @@
 									"format": "date"
 								},
 								"highlights": {
-									"type": "array",
-									"description": "Specify multiple accomplishments",
-									"additionalItems": false,
-									"items": {
-										"type": "string",
-										"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-									}
+									"type": "object",
+									"$ref": "#/definitions/highlights"
 								},
 								"keywords": {
 									"type": "object",
@@ -213,13 +208,8 @@
 						}
 					},
 					"highlights": {
-						"type": "array",
-						"description": "Specify multiple accomplishments",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-						}
+						"type": "object",
+						"$ref": "#/definitions/highlights"
 					},
 					"labels": {
 						"type": "object",
@@ -263,13 +253,8 @@
 						"description": "Give an overview of your responsibilities at the company"
 					},
 					"highlights": {
-						"type": "array",
-						"description": "Specify multiple accomplishments",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-						}
+						"type": "object",
+						"$ref": "#/definitions/highlights"
 					}
 				}
 			}
@@ -806,6 +791,15 @@
 			"items": {
 				"type": "string",
 				"description": "e.g. HTML"
+			}
+		},
+		"highlights": {
+			"type": "array",
+			"description": "Specify multiple accomplishments",
+			"additionalItems": false,
+			"items": {
+				"type": "string",
+				"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
 			}
 		}
 	}
