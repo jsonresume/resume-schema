@@ -67,9 +67,9 @@
 								"description": "e.g. http://twitter.com/neutralthoughts",
 								"format": "uri"
 							},
-						  	"label": {
+						  	"labels": {
 						  		"type": "array",
-						  		"description": "List meta-data label",
+						  		"description": "Meta-data labels",
 						  		"additionalItems": false,
 						  		"items": {
 						  			"type": "string",
@@ -232,9 +232,9 @@
 				  			"description": "e.g. HTML"
 				  		}
 				  	},
-				  	"label": {
+				  	"labels": {
 				  		"type": "array",
-				  		"description": "List meta-data label",
+				  		"description": "Meta-data labels",
 				  		"additionalItems": false,
 				  		"items": {
 				  			"type": "string",
@@ -270,9 +270,9 @@
 							  		"type": "string",
 							  		"description": "worst possible score on the scale, e.g. 5.0"
 							  	},
-							  	"label": {
+							  	"labels": {
 							  		"type": "array",
-							  		"description": "List meta-data label",
+							  		"description": "Meta-data labels",
 							  		"additionalItems": false,
 							  		"items": {
 							  			"type": "string",
@@ -313,9 +313,9 @@
 							  		"type": "string",
 							  		"description": "worst possible score on the scale, e.g. 5.0"
 							  	},
-							  	"label": {
+							  	"labels": {
 							  		"type": "array",
-							  		"description": "List meta-data label",
+							  		"description": "Meta-data labels",
 							  		"additionalItems": false,
 							  		"items": {
 							  			"type": "string",
@@ -402,9 +402,9 @@
 									"description": "e.g. http://google.com/84s7f8d",
 									"format" : "uri"
 								},
-							  	"label": {
+							  	"labels": {
 							  		"type": "array",
-							  		"description": "List meta-data label",
+							  		"description": "Meta-data labels",
 							  		"additionalItems": false,
 							  		"items": {
 							  			"type": "string",
@@ -595,9 +595,9 @@
 							}
 						}
 					},
-					"label": {
+					"labels": {
 						"type": "array",
-						"description": "Meta-data label",
+						"description": "Meta-data labels",
 						"additionalItems": false,
 						"items": {
 							"type": "string",
