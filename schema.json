@@ -157,6 +157,61 @@
 						"type": "string",
 						"description": "Give an overview of your responsibilities at the company"
 					},
+					"projects": {
+						"type": "array",
+						"description": "Specify your different projects/products/clients for this employer",
+						"additionalItems": false,
+						"items": {
+							"type": "object",
+							"additionalProperties": true,
+							"properties": {
+								"name": {
+									"type": "string",
+									"description": "e.g. Marketing campaign 2011-2012"
+								},
+								"summary": {
+									"type": "string",
+									"description": "Give an overview of your responsibilities at the company"
+								},
+								"role": {
+									"type": "string",
+									"description": "e.g. Team lead, Reviewer"
+								},
+								"url": {
+									"type": "string",
+									"description": "Showcase your project/product e.g. http://facebook.com/product",
+									"format": "uri"
+								},
+								"startDate": {
+									"type": "string",
+									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+									"format": "date"
+								},
+								"endDate": {
+									"type": "string",
+									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+									"format": "date"
+								},
+								"highlights": {
+									"type": "array",
+									"description": "Specify multiple accomplishments",
+									"additionalItems": false,
+									"items": {
+										"type": "string",
+										"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
+									}
+								},
+								"keywords": {
+									"type": "object",
+									"$ref": "#/definitions/keywords"
+								},
+								"labels": {
+									"type": "object",
+									"$ref": "#/definitions/labels"
+								}
+							}
+						}
+					},
 					"highlights": {
 						"type": "array",
 						"description": "Specify multiple accomplishments",
@@ -165,6 +220,10 @@
 							"type": "string",
 							"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
 						}
+					},
+					"labels": {
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -738,6 +797,7 @@
 			"items": {
 				"type": "string",
 				"description": "e.g. recruiter, non-profit"
+			}
 		},
 		"keywords": {
 			"type": "array",
