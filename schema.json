@@ -88,13 +88,13 @@
 							"description": "Provide information about your gender, e.g. male, female, other, $custom"
 						},
 						"labels": {
-						  	"type": "array",
+							"type": "array",
 							"description": "Meta-data labels",
 							"additionalItems": false,
 							"items": {
 								"type": "string",
 								"description": "e.g. recruiter, non-profit"
-						  	}
+							}
 						}
 
 					}
@@ -120,14 +120,14 @@
 								"description": "e.g. http://twitter.com/neutralthoughts",
 								"format": "uri"
 							},
-						  	"labels": {
-						  		"type": "array",
-						  		"description": "Meta-data labels",
-						  		"additionalItems": false,
-						  		"items": {
-						  			"type": "string",
-						  			"description": "e.g. recruiter, non-profit"
-						  		}
+							"labels": {
+								"type": "array",
+								"description": "Meta-data labels",
+								"additionalItems": false,
+								"items": {
+									"type": "string",
+									"description": "e.g. recruiter, non-profit"
+								}
 							}
 						}
 					}
@@ -138,45 +138,45 @@
 			"type": "array",
 			"additionalItems": false,
 			"items": {
-			  	"type": "object",
-			  	"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"company": {
-				  		"type": "string",
-				  		"description": "e.g. Facebook"
-				  	},
-				  	"position": {
-				  		"type": "string",
-				  		"description": "e.g. Software Engineer"
-				  	},
-				  	"url": {
-				  		"type": "string",
-				  		"description": "e.g. http://facebook.com",
-				  		"format": "uri"
-				  	},
-				  	"startDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-				  		"format": "date"
-				  	},
-				  	"endDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-				  		"format": "date"
-				  	},
-				  	"summary": {
-				  		"type": "string",
-				  		"description": "Give an overview of your responsibilities at the company"
-				  	},
-				  	"highlights": {
-				  		"type": "array",
-				  		"description": "Specify multiple accomplishments",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-				  		}
-				  	}
+					"company": {
+						"type": "string",
+						"description": "e.g. Facebook"
+					},
+					"position": {
+						"type": "string",
+						"description": "e.g. Software Engineer"
+					},
+					"url": {
+						"type": "string",
+						"description": "e.g. http://facebook.com",
+						"format": "uri"
+					},
+					"startDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
+					"endDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
+					"summary": {
+						"type": "string",
+						"description": "Give an overview of your responsibilities at the company"
+					},
+					"highlights": {
+						"type": "array",
+						"description": "Specify multiple accomplishments",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
+						}
+					}
 				}
 			}
 		},
@@ -184,45 +184,45 @@
 			"type": "array",
 			"additionalItems": false,
 			"items": {
-			  	"type": "object",
-			  	"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"organization": {
-				  		"type": "string",
-				  		"description": "e.g. Facebook"
-				  	},
-				  	"position": {
-				  		"type": "string",
-				  		"description": "e.g. Software Engineer"
-				  	},
-				  	"url": {
-				  		"type": "string",
-				  		"description": "e.g. http://facebook.com",
-				  		"format": "uri"
-				  	},
-				  	"startDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-				  		"format": "date"
-				  	},
-				  	"endDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-				  		"format": "date"
-				  	},
-				  	"summary": {
-				  		"type": "string",
-				  		"description": "Give an overview of your responsibilities at the company"
-				  	},
-				  	"highlights": {
-				  		"type": "array",
-				  		"description": "Specify multiple accomplishments",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-				  		}
-				  	}
+					"organization": {
+						"type": "string",
+						"description": "e.g. Facebook"
+					},
+					"position": {
+						"type": "string",
+						"description": "e.g. Software Engineer"
+					},
+					"url": {
+						"type": "string",
+						"description": "e.g. http://facebook.com",
+						"format": "uri"
+					},
+					"startDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
+					"endDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
+					"summary": {
+						"type": "string",
+						"description": "Give an overview of your responsibilities at the company"
+					},
+					"highlights": {
+						"type": "array",
+						"description": "Specify multiple accomplishments",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
+						}
+					}
 				}
 			}
 		},
@@ -230,155 +230,155 @@
 			"type": "array",
 			"additionalItems": false,
 			"items": {
-		  		"type": "object",
-		  		"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"institution": {
-				  		"type": "string",
-				  		"description": "e.g. Massachusetts Institute of Technology"
-				  	},
-				  	"url": {
-				  		"type": "string",
-				  		"description": "e.g. http://example-university.com",
-				  		"format": "uri"
-				  	},
-				  	"area": {
-				  		"type": "string",
-				  		"description": "e.g. Arts"
-				  	},
-				  	"studyType": {
-				  		"type": "string",
-				  		"description": "e.g. Bachelor"
-				  	},
+					"institution": {
+						"type": "string",
+						"description": "e.g. Massachusetts Institute of Technology"
+					},
+					"url": {
+						"type": "string",
+						"description": "e.g. http://example-university.com",
+						"format": "uri"
+					},
+					"area": {
+						"type": "string",
+						"description": "e.g. Arts"
+					},
+					"studyType": {
+						"type": "string",
+						"description": "e.g. Bachelor"
+					},
 					"summary": {
 						"type": "string",
 						"description": "Write a short summary"
 					},
-				  	"startDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-			  			"format": "date"
-				  	},
-				  	"endDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-			  			"format": "date"
-				  	},
-				  	"score": {
-				  		"type": "string",
-				  		"description": "score point average, e.g. 1.5"
-				  	},
-				  	"score_best": {
-				  		"type": "string",
-				  		"description": "best possible score on the scale, e.g. 1.0"
-				  	},
-				  	"score_worst": {
-				  		"type": "string",
-				  		"description": "worst possible score on the scale, e.g. 5.0"
-				  	},
-				  	"keywords": {
-				  		"type": "array",
-				  		"description": "List some keywords pertaining to this education",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. HTML"
-				  		}
-				  	},
-				  	"courses": {
-				  		"type": "array",
-				  		"description": "List notable courses/subjects",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "object",
-		  					"additionalProperties": false,
+					"startDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
+					"endDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
+					"score": {
+						"type": "string",
+						"description": "score point average, e.g. 1.5"
+					},
+					"score_best": {
+						"type": "string",
+						"description": "best possible score on the scale, e.g. 1.0"
+					},
+					"score_worst": {
+						"type": "string",
+						"description": "worst possible score on the scale, e.g. 5.0"
+					},
+					"keywords": {
+						"type": "array",
+						"description": "List some keywords pertaining to this education",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. HTML"
+						}
+					},
+					"courses": {
+						"type": "array",
+						"description": "List notable courses/subjects",
+						"additionalItems": false,
+						"items": {
+							"type": "object",
+							"additionalProperties": false,
 							"properties": {
 								"description": {
 									"type": "string",
 									"description": "e.g. H1302 - Introduction to American history"
 								},
-							  	"url": {
-							  		"type": "string",
-							  		"description": "e.g. http://example-university.com/course/example42",
-							  		"format": "uri"
-							  	},
-							  	"score": {
-							  		"type": "string",
-							  		"description": "score point average, e.g. 1.5"
-							  	},
-							  	"score_best": {
-							  		"type": "string",
-							  		"description": "best possible score on the scale, e.g. 1.0"
-							  	},
-							  	"score_worst": {
-							  		"type": "string",
-							  		"description": "worst possible score on the scale, e.g. 5.0"
-							  	},
-							  	"labels": {
-							  		"type": "array",
-							  		"description": "Meta-data labels",
-							  		"additionalItems": false,
-							  		"items": {
-							  			"type": "string",
-							  			"description": "e.g. recruiter, non-profit"
-							  		}
-							  	}
+								"url": {
+									"type": "string",
+									"description": "e.g. http://example-university.com/course/example42",
+									"format": "uri"
+								},
+								"score": {
+									"type": "string",
+									"description": "score point average, e.g. 1.5"
+								},
+								"score_best": {
+									"type": "string",
+									"description": "best possible score on the scale, e.g. 1.0"
+								},
+								"score_worst": {
+									"type": "string",
+									"description": "worst possible score on the scale, e.g. 5.0"
+								},
+								"labels": {
+									"type": "array",
+									"description": "Meta-data labels",
+									"additionalItems": false,
+									"items": {
+										"type": "string",
+										"description": "e.g. recruiter, non-profit"
+									}
+								}
 							}
-				  		}
-				  	},
+						}
+					},
 					"exams": {
-				  		"type": "array",
-				  		"description": "List notable exams",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "object",
-		  					"additionalProperties": false,
+						"type": "array",
+						"description": "List notable exams",
+						"additionalItems": false,
+						"items": {
+							"type": "object",
+							"additionalProperties": false,
 							"properties": {
-				  				"description": {
+								"description": {
 									"type": "string",
 									"description": "e.g. year-end exam 2015"
 								},
-							  	"url": {
-							  		"type": "string",
-							  		"description": "e.g. http://example-university.com/exams/2015/year-end-exam",
-							  		"format": "uri"
-							  	},
-							  	"score": {
-							  		"type": "string",
-							  		"description": "score point average, e.g. 1.5"
+								"url": {
+									"type": "string",
+									"description": "e.g. http://example-university.com/exams/2015/year-end-exam",
+									"format": "uri"
+								},
+								"score": {
+									"type": "string",
+									"description": "score point average, e.g. 1.5"
 
-							  	},
-							  	"score_best": {
-							  		"type": "string",
-							  		"description": "best possible score on the scale, e.g. 1.0"
+								},
+								"score_best": {
+									"type": "string",
+									"description": "best possible score on the scale, e.g. 1.0"
 
-							  	},
-							  	"score_worst": {
-							  		"type": "string",
-							  		"description": "worst possible score on the scale, e.g. 5.0"
-							  	},
-							  	"labels": {
-							  		"type": "array",
-							  		"description": "Meta-data labels",
-							  		"additionalItems": false,
-							  		"items": {
-							  			"type": "string",
-							  			"description": "e.g. recruiter, non-profit"
-							  		}
-							  	}
-				  			}
+								},
+								"score_worst": {
+									"type": "string",
+									"description": "worst possible score on the scale, e.g. 5.0"
+								},
+								"labels": {
+									"type": "array",
+									"description": "Meta-data labels",
+									"additionalItems": false,
+									"items": {
+										"type": "string",
+										"description": "e.g. recruiter, non-profit"
+									}
+								}
+							}
 						}
-				  	},
-				  	"labels": {
-				  		"type": "array",
-				  		"description": "Meta-data labels",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. recruiter, non-profit"
-				  		}
-				  	}
-			  	}
+					},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+						}
+					}
+				}
 			}
 		},
 		"events": {
@@ -398,22 +398,22 @@
 						"description": "Forum about world economics"
 					},
 					"url": {
-				  		"type": "string",
-				  		"description": "e.g. http://example.com/",
+						"type": "string",
+						"description": "e.g. http://example.com/",
 						"format": "uri"
-				  	},
+					},
 					"location": {
 						"$ref": "http://json-schema.org/address#"
 					},
 					"startDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-			  			"format": "date"
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
 					},
 					"endDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-			  			"format": "date"
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
 					},
 					"roles": {
 						"type": "string",
@@ -436,14 +436,14 @@
 									"description": "Awesome presentation about the state of the world"
 								},
 								"url": {
-							  		"type": "string",
-							  		"description": "Product showcase related to talk e.g. http://example.com/fancy_world_product",
+									"type": "string",
+									"description": "Product showcase related to talk e.g. http://example.com/fancy_world_product",
 									"format": "uri"
-							  	},
+								},
 								"date": {
-							  		"type": "string",
-							  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-						  			"format": "date"
+									"type": "string",
+									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+									"format": "date"
 								},
 								"slides": {
 									"type": "string",
@@ -455,14 +455,14 @@
 									"description": "e.g. http://google.com/84s7f8d",
 									"format" : "uri"
 								},
-							  	"labels": {
-							  		"type": "array",
-							  		"description": "Meta-data labels",
-							  		"additionalItems": false,
-							  		"items": {
-							  			"type": "string",
-							  			"description": "e.g. recruiter, non-profit"
-							  		}
+								"labels": {
+									"type": "array",
+									"description": "Meta-data labels",
+									"additionalItems": false,
+									"items": {
+										"type": "string",
+										"description": "e.g. recruiter, non-profit"
+									}
 								}
 							}
 						}
@@ -475,31 +475,31 @@
 			"description": "Specify any awards you have received throughout your professional career",
 			"additionalItems": false,
 			"items": {
-			  	"type": "object",
-			  	"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"title": {
-				  		"type": "string",
-				  		"description": "e.g. One of the 100 greatest minds of the century"
-				  	},
-				  	"date": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-				  		"format": "date"
-				  	},
+					"title": {
+						"type": "string",
+						"description": "e.g. One of the 100 greatest minds of the century"
+					},
+					"date": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
 					"url": {
-				  		"type": "string",
-				  		"description": "e.g. http://nobelprize.org",
+						"type": "string",
+						"description": "e.g. http://nobelprize.org",
 						"format": "uri"
-				  	},
-				  	"awarder": {
-				  		"type": "string",
-				  		"description": "e.g. Time Magazine"
-				  	},
-				  	"summary": {
-				  		"type": "string",
-				  		"description": "e.g. Received for my work with Quantum Physics"
-				  	},
+					},
+					"awarder": {
+						"type": "string",
+						"description": "e.g. Time Magazine"
+					},
+					"summary": {
+						"type": "string",
+						"description": "e.g. Received for my work with Quantum Physics"
+					},
 					"labels": {
 						"type": "array",
 						"description": "Meta-data labels",
@@ -507,7 +507,7 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
 				}
 			}
@@ -517,66 +517,66 @@
 			"description": "Specify your publications through your career",
 			"additionalItems": false,
 			"items": {
-		  		"type": "object",
-		  		"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"title": {
-				  		"type": "string",
-				  		"description": "e.g. The World Wide Web"
-				  	},
-				  	"summary": {
-				  		"type": "string",
-				  		"description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
-				  	},
-				  	"role": {
-				  		"type": "string",
-				  		"description": "e.g. author, co-author, editor, producer"
-				  	},
-				  	"releaseDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+					"title": {
+						"type": "string",
+						"description": "e.g. The World Wide Web"
+					},
+					"summary": {
+						"type": "string",
+						"description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
+					},
+					"role": {
+						"type": "string",
+						"description": "e.g. author, co-author, editor, producer"
+					},
+					"releaseDate": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 						"format": "date"
-				  	},
-				  	"url": {
-				  		"type": "string",
-				  		"description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html",
+					},
+					"url": {
+						"type": "string",
+						"description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html",
 						"format": "uri"
-				  	},
-				  	"publisher": {
-				  		"type": "string",
-				  		"description": "e.g. IEEE, Computer Magazine"
-				  	},
+					},
+					"publisher": {
+						"type": "string",
+						"description": "e.g. IEEE, Computer Magazine"
+					},
 					"identifiers": {
 						"type": "array",
 						"additionalProperties": true,
 						"properties": {
 							"DOI": {
-				  				"type": "string",
-				  				"description": "e.g. 10.1000/182"
+								"type": "string",
+								"description": "e.g. 10.1000/182"
 							},
 							"ISBN": {
-				  				"type": "string",
-				  				"description": "e.g. 978-3-16-148410-0"
+								"type": "string",
+								"description": "e.g. 978-3-16-148410-0"
 							},
 							"ISSN": {
-				  				"type": "string",
-				  				"description": "e.g. 0000-0000"
+								"type": "string",
+								"description": "e.g. 0000-0000"
 							},
 							"ISTC": {
-				  				"type": "string",
-				  				"description": "e.g. A02-2009-000004BE-A"
+								"type": "string",
+								"description": "e.g. A02-2009-000004BE-A"
 							},
 							"ISRN": {
-				  				"type": "string",
-				  				"description": "e.g. UIUCLIS--2001/9+EARCH"
+								"type": "string",
+								"description": "e.g. UIUCLIS--2001/9+EARCH"
 							},
 							"GTIN": {
-				  				"type": "string",
-				  				"description": "e.g. 403456789012 1"
+								"type": "string",
+								"description": "e.g. 403456789012 1"
 							},
 							"EAN": {
-				  				"type": "string",
-				  				"description": "e.g. 4 003994 155486"
+								"type": "string",
+								"description": "e.g. 4 003994 155486"
 							}
 						}
 					},
@@ -587,9 +587,9 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
-			  	}
+				}
 			}
 		},
 		"skills": {
@@ -597,26 +597,26 @@
 			"description": "List out your professional skill-set",
 			"additionalItems": false,
 			"items": {
-			  	"type": "object",
-			  	"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"name": {
-				  		"type": "string",
-				  		"description": "e.g. Web Development"
-				  	},
-				  	"level": {
-				  		"type": "string",
-				  		"description": "e.g. null (undisclosed [default]), Beginner, Competent, Advanced, Master"
-				  	},
-				  	"keywords": {
-				  		"type": "array",
-				  		"description": "List some keywords pertaining to this skill",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. HTML"
-				  		}
-				  	},
+					"name": {
+						"type": "string",
+						"description": "e.g. Web Development"
+					},
+					"level": {
+						"type": "string",
+						"description": "e.g. null (undisclosed [default]), Beginner, Competent, Advanced, Master"
+					},
+					"keywords": {
+						"type": "array",
+						"description": "List some keywords pertaining to this skill",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. HTML"
+						}
+					},
 					"labels": {
 						"type": "array",
 						"description": "Meta-data labels",
@@ -624,7 +624,7 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
 				}
 			}
@@ -652,7 +652,7 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
 				}
 			}
@@ -661,21 +661,21 @@
 			"type": "array",
 			"additionalItems": false,
 			"items": {
-		  		"type": "object",
-		  		"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"name": {
-				  		"type": "string",
-				  		"description": "e.g. Philosophy"
-				  	},
-				  	"keywords": {
-				  		"type": "array",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. Friedrich Nietzsche"
-				  		}
-				  	},
+					"name": {
+						"type": "string",
+						"description": "e.g. Philosophy"
+					},
+					"keywords": {
+						"type": "array",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. Friedrich Nietzsche"
+						}
+					},
 					"labels": {
 						"type": "array",
 						"description": "Meta-data labels",
@@ -683,7 +683,7 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
 				}
 			}
@@ -693,29 +693,29 @@
 			"description": "List references you have received",
 			"additionalItems": false,
 				"items": {
-			  	"type": "object",
-			  	"additionalProperties": false,
+				"type": "object",
+				"additionalProperties": false,
 				"properties": {
-				  	"name": {
-				  		"type": "string",
-				  		"description": "e.g. Timothy Cook"
-				  	},
+					"name": {
+						"type": "string",
+						"description": "e.g. Timothy Cook"
+					},
 					"relationship": {
 						"type": "string",
 						"description": "e.g. My Mentor"
 					},
-				  	"testimonial": {
-				  		"type": "string",
-				  		"description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
-				  	},
-				  	"date": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-				  		"format": "date"
-				  	},
+					"testimonial": {
+						"type": "string",
+						"description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
+					},
+					"date": {
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
+					},
 					"contactInfo": {
 						"type": "object",
-			  			"additionalProperties": true,
+						"additionalProperties": true,
 						"properties": {
 							"phone": {
 								"type": "string",
@@ -738,38 +738,39 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
 				}
-			},
+			}
+		},
 		"authorizations": {
 			"type": "array",
 			"additionalItems": false,
 			"items": {
-		  		"type": "object",
-		  		"additionalProperties": true,
+				"type": "object",
+				"additionalProperties": true,
 				"properties": {
-				  	"name": {
-				  		"type": "string",
-				  		"description": "e.g. H1B"
-				  	},
-				  	"summary": {
-				  		"type": "string",
-				  		"description": "Thanks to $authorization I am allowed to work/work as $profession"
+					"name": {
+						"type": "string",
+						"description": "e.g. H1B"
 					},
-				  	"regions": {
+					"summary": {
+						"type": "string",
+						"description": "Thanks to $authorization I am allowed to work/work as $profession"
+					},
+					"regions": {
 						"type": "array",
 						"description": "List of regions for authorization",
 						"additionalItems": false,
 						"items": {
-				  			"type": "string",
-				  			"description": "e.g. United-States, New-York"
-				  		}
+							"type": "string",
+							"description": "e.g. United-States, New-York"
+						}
 					},
 					"expirationDate": {
-				  		"type": "string",
-				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-			  			"format": "date"
+						"type": "string",
+						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
 					},
 					"permanent": {
 						"type": "boolean",
@@ -782,11 +783,10 @@
 						"items": {
 							"type": "string",
 							"description": "e.g. recruiter, non-profit"
-					  	}
+						}
 					}
 				}
 			}
-		},
 		},
 		"meta-data": {
 			"type": "array",
