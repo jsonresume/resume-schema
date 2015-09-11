@@ -462,9 +462,9 @@
 				  		"type": "string",
 				  		"description": "e.g. The World Wide Web"
 				  	},
-				  	"publisher": {
+				  	"summary": {
 				  		"type": "string",
-				  		"description": "e.g. IEEE, Computer Magazine"
+				  		"description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
 				  	},
 				  	"role": {
 				  		"type": "string",
@@ -480,10 +480,24 @@
 				  		"description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html",
 						"format": "uri"
 				  	},
-				  	"summary": {
+				  	"publisher": {
 				  		"type": "string",
-				  		"description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
-				  	}
+				  		"description": "e.g. IEEE, Computer Magazine"
+				  	},
+					"identifiers": {
+						"type": "array",
+						"additionalProperties": true,
+						"properties": {
+							"DOI": "",
+							"ISBN10": "",
+							"ISBN13": "",
+							"ISSN": "",
+							"ISTC": "",
+							"ISRN": "",
+							"GTIN": "",
+							"EAN": ""
+						}
+					}
 			  	}
 			}
 		},
