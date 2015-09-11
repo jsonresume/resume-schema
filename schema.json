@@ -88,15 +88,9 @@
 							"description": "Provide information about your gender, e.g. male, female, other, $custom"
 						},
 						"labels": {
-							"type": "array",
-							"description": "Meta-data labels",
-							"additionalItems": false,
-							"items": {
-								"type": "string",
-								"description": "e.g. recruiter, non-profit"
-							}
+							"type": "object",
+							"$ref": "#/definitions/labels"
 						}
-
 					}
 				},
 				"profiles": {
@@ -121,13 +115,8 @@
 								"format": "uri"
 							},
 							"labels": {
-								"type": "array",
-								"description": "Meta-data labels",
-								"additionalItems": false,
-								"items": {
-									"type": "string",
-									"description": "e.g. recruiter, non-profit"
-								}
+								"type": "object",
+								"$ref": "#/definitions/labels"
 							}
 						}
 					}
@@ -315,13 +304,8 @@
 									"description": "worst possible score on the scale, e.g. 5.0"
 								},
 								"labels": {
-									"type": "array",
-									"description": "Meta-data labels",
-									"additionalItems": false,
-									"items": {
-										"type": "string",
-										"description": "e.g. recruiter, non-profit"
-									}
+									"type": "object",
+									"$ref": "#/definitions/labels"
 								}
 							}
 						}
@@ -358,25 +342,15 @@
 									"description": "worst possible score on the scale, e.g. 5.0"
 								},
 								"labels": {
-									"type": "array",
-									"description": "Meta-data labels",
-									"additionalItems": false,
-									"items": {
-										"type": "string",
-										"description": "e.g. recruiter, non-profit"
-									}
+									"type": "object",
+									"$ref": "#/definitions/labels"
 								}
 							}
 						}
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -456,13 +430,8 @@
 									"format" : "uri"
 								},
 								"labels": {
-									"type": "array",
-									"description": "Meta-data labels",
-									"additionalItems": false,
-									"items": {
-										"type": "string",
-										"description": "e.g. recruiter, non-profit"
-									}
+									"type": "object",
+									"$ref": "#/definitions/labels"
 								}
 							}
 						}
@@ -501,13 +470,8 @@
 						"description": "e.g. Received for my work with Quantum Physics"
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -581,13 +545,8 @@
 						}
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -618,13 +577,8 @@
 						}
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -646,13 +600,8 @@
 						"description": "e.g. Beginner, Fluent, Native"
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -677,13 +626,8 @@
 						}
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -732,13 +676,8 @@
 						}
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -777,13 +716,8 @@
 						"description": "Specify permanency, e.g. false, true"
 					},
 					"labels": {
-						"type": "array",
-						"description": "Meta-data labels",
-						"additionalItems": false,
-						"items": {
-							"type": "string",
-							"description": "e.g. recruiter, non-profit"
-						}
+						"type": "object",
+						"$ref": "#/definitions/labels"
 					}
 				}
 			}
@@ -803,6 +737,17 @@
 						"description": "https://piwik.example.com/piwik.php?idsite=1"
 					}
 				}
+			}
+		}
+	},
+	"definitions": {
+		"labels": {
+			"type": "array",
+			"description": "Meta-data labels",
+			"additionalItems": false,
+			"items": {
+				"type": "string",
+				"description": "e.g. recruiter, non-profit"
 			}
 		}
 	}
