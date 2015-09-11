@@ -275,15 +275,6 @@
 				  			"description": "e.g. HTML"
 				  		}
 				  	},
-				  	"labels": {
-				  		"type": "array",
-				  		"description": "Meta-data labels",
-				  		"additionalItems": false,
-				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. recruiter, non-profit"
-				  		}
-				  	},
 				  	"courses": {
 				  		"type": "array",
 				  		"description": "List notable courses/subjects",
@@ -367,6 +358,15 @@
 							  	}
 				  			}
 						}
+				  	},
+				  	"labels": {
+				  		"type": "array",
+				  		"description": "Meta-data labels",
+				  		"additionalItems": false,
+				  		"items": {
+				  			"type": "string",
+				  			"description": "e.g. recruiter, non-profit"
+				  		}
 				  	}
 			  	}
 			}
@@ -489,7 +489,16 @@
 				  	"summary": {
 				  		"type": "string",
 				  		"description": "e.g. Received for my work with Quantum Physics"
-				  	}
+				  	},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+					  	}
+					}
 				}
 			}
 		},
@@ -560,6 +569,15 @@
 				  				"description": "e.g. 4 003994 155486"
 							}
 						}
+					},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+					  	}
 					}
 			  	}
 			}
@@ -588,7 +606,16 @@
 				  			"type": "string",
 				  			"description": "e.g. HTML"
 				  		}
-				  	}
+				  	},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+					  	}
+					}
 				}
 			}
 		},
@@ -607,6 +634,15 @@
 					"fluency": {
 						"type": "string",
 						"description": "e.g. Beginner, Fluent, Native"
+					},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+					  	}
 					}
 				}
 			}
