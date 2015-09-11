@@ -629,7 +629,16 @@
 				  			"type": "string",
 				  			"description": "e.g. Friedrich Nietzsche"
 				  		}
-				  	}
+				  	},
+					"labels": {
+						"type": "array",
+						"description": "Meta-data labels",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+					  	}
+					}
 				}
 			}
 		},
