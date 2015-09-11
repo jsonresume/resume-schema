@@ -331,13 +331,13 @@
 				"type": "object",
 				"additionalProperties": true,
 				"properties": {
-					"language": {
+					"name": {
 						"type": "string",
 						"description": "e.g. English, Spanish"
 					},
 					"fluency": {
 						"type": "string",
-						"description": "e.g. Fluent, Beginner"
+						"description": "e.g. Beginner, Fluent, Native"
 					}
 				}
 			}
