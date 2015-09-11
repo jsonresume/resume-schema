@@ -384,6 +384,23 @@
 			  }
 
 			}
+		},
+		"meta-data": {
+			"type": "array",
+			"additionalItems": false,
+			"items": {
+				"type": "object",
+				"properties": {
+					"googleAnalytics": {
+						"type": "string",
+						"description": "analytics ID"
+						},
+					"piwikAnalytics": {
+						"type": "string",
+						"description": "https://piwik.example.com/piwik.php?idsite=1"
+					}
+				}
+			}
 		}
 	}
 }
