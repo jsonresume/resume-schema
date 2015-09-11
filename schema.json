@@ -218,20 +218,20 @@
 				}
 			}
 		},
-		"volunteer": {
+		"projects": {
 			"type": "array",
 			"additionalItems": false,
 			"items": {
 				"type": "object",
 				"additionalProperties": true,
 				"properties": {
-					"organization": {
+					"entity": {
 						"type": "string",
-						"description": "e.g. Facebook"
+						"description": "e.g. greenpeace, jsonresume, $open-source community"
 					},
-					"position": {
+					"role": {
 						"type": "string",
-						"description": "e.g. Software Engineer"
+						"description": "e.g. sponsorship officer, contributor"
 					},
 					"url": {
 						"type": "string",
@@ -250,7 +250,11 @@
 					},
 					"summary": {
 						"type": "string",
-						"description": "Give an overview of your responsibilities at the company"
+						"description": "Give an overview of your non work projects such as volunteering, open-source or so"
+					},
+					"non-profit": {
+						"type": "boolean",
+						"description": "Specify if the project was pure volunteer, non-profit work"
 					},
 					"highlights": {
 						"type": "object",
