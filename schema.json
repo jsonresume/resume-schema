@@ -6,7 +6,7 @@
 	"properties": {
 		"url": {
 			"type": "string",
-			"description": "approved source for latest version of this document (URL as per RFC 3986)",
+			"description": "URL (as per RFC 3986) to latest version of this document",
 			"format": "uri"
 		},
 		"basics": {
@@ -15,7 +15,7 @@
 			"properties": {
 				"name": {
 					"type": "string",
-					"description": "Max Power"
+					"description": "e.g. Max Power"
 				},
 				"tagline": {
 					"type": "string",
@@ -103,12 +103,12 @@
 				  	},
 				  	"startDate": {
 				  		"type": "string",
-				  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 				  		"format": "date"
 				  	},
 				  	"endDate": {
 				  		"type": "string",
-				  		"description": "e.g. 2012-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 				  		"format": "date"
 				  	},
 				  	"summary": {
@@ -149,12 +149,12 @@
 				  	},
 				  	"startDate": {
 				  		"type": "string",
-				  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 				  		"format": "date"
 				  	},
 				  	"endDate": {
 				  		"type": "string",
-				  		"description": "e.g. 2012-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 				  		"format": "date"
 				  	},
 				  	"summary": {
@@ -203,12 +203,12 @@
 					},
 				  	"startDate": {
 				  		"type": "string",
-			  			"description": "e.g. 2014-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 			  			"format": "date"
 				  	},
 				  	"endDate": {
 				  		"type": "string",
-			  			"description": "e.g. 2012-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 			  			"format": "date"
 				  	},
 				  	"score": {
@@ -354,12 +354,12 @@
 					},
 					"startDate": {
 				  		"type": "string",
-			  			"description": "e.g. 2012-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 			  			"format": "date"
 					},
 					"endDate": {
 				  		"type": "string",
-			  			"description": "e.g. 2012-06-29",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 			  			"format": "date"
 					},
 					"roles": {
@@ -387,6 +387,11 @@
 							  		"description": "Product showcase related to talk e.g. http://example.com/fancy_world_product",
 									"format": "uri"
 							  	},
+								"date": {
+							  		"type": "string",
+							  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						  			"format": "date"
+								},
 								"slides": {
 									"type": "string",
 									"description": "e.g. http://slideshare.com/a-presentation",
@@ -426,7 +431,7 @@
 				  	},
 				  	"date": {
 				  		"type": "string",
-				  		"description": "e.g. 1989-06-12",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
 				  		"format": "date"
 				  	},
 					"url": {
@@ -463,7 +468,8 @@
 				  	},
 				  	"releaseDate": {
 				  		"type": "string",
-				  		"description": "e.g. 1990-08-01"
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+						"format": "date"
 				  	},
 				  	"url": {
 				  		"type": "string",
@@ -565,6 +571,11 @@
 				  	"testimonial": {
 				  		"type": "string",
 				  		"description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
+				  	},
+				  	"date": {
+				  		"type": "string",
+				  		"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+				  		"format": "date"
 				  	},
 					"contactInfo": {
 						"type": "object",
