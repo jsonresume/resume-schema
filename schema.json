@@ -4,6 +4,14 @@
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
+		"schemaVersion": {
+			"type": "string",
+			"description": "Version of the schema used, e.g. 1.0.1"
+		},
+		"documentVersion": {
+			"type": "string",
+			"description": "Version/Revision of current document, e.g. 0.5.0",
+		},
 		"url": {
 			"type": "string",
 			"description": "URL (as per RFC 3986) to latest version of this document",
