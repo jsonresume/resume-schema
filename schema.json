@@ -254,7 +254,7 @@
 					},
 					"non-profit": {
 						"type": "boolean",
-						"description": "Specify if the project was pure volunteer, non-profit work"
+						"description": "Specify if the project was a pure volunteer, non-profit activity"
 					},
 					"activities": {
 						"type": "array",
@@ -266,19 +266,19 @@
 							"properties": {
 								"name": {
 									"type": "string",
-									"description": "e.g. Marketing campaign 2011-2012"
+									"description": "e.g. Sponsor Acquisition"
 								},
 								"summary": {
 									"type": "string",
-									"description": "Give an overview of your responsibilities at the company"
+									"description": "Acquiring sponsors and maintaining the sponsorship relations"
 								},
 								"role": {
 									"type": "string",
-									"description": "e.g. Team lead, Reviewer"
+									"description": "e.g. sponsoring officer, volunteer, contributor"
 								},
 								"url": {
 									"type": "string",
-									"description": "Showcase your project/product e.g. http://facebook.com/product",
+									"description": "Showcase your project/activity e.g. http://greenpeace.com/run-for-nature-2015",
 									"format": "uri"
 								},
 								"startDate": {
@@ -457,7 +457,7 @@
 		},
 		"events": {
 			"type": "array",
-			"description": "list notable events you attended or you have been a speaker",
+			"description": "List notable events you attended or you have been a speaker",
 			"additionalItems": false,
 			"items": {
 				"type": "object",
@@ -465,7 +465,7 @@
 				"properties": {
 					"name": {
 						"type": "string",
-						"description": "e.g. World Economic Forums"
+						"description": "e.g. World Economic Forum"
 					},
 					"summary": {
 						"type": "string",
@@ -473,7 +473,7 @@
 					},
 					"url": {
 						"type": "string",
-						"description": "e.g. http://example.com/",
+						"description": "e.g. http://world-economic-forum.example.com/",
 						"format": "uri"
 					},
 					"location": {
@@ -495,7 +495,7 @@
 					},
 					"talks": {
 						"type": "array",
-						"description": "Copy of presentations",
+						"description": "List of attended or given talks/presentations",
 						"additionalItems": false,
 						"items": {
 							"type": "object",
@@ -688,7 +688,7 @@
 		},
 		"languages": {
 			"type": "array",
-			"description": "List any other languages you speak",
+			"description": "List all languages you speak",
 			"additionalItems": false,
 			"items": {
 				"type": "object",
@@ -733,7 +733,7 @@
 		},
 		"references": {
 			"type": "array",
-			"description": "List references you have received",
+			"description": "List references/testimonials you have received",
 			"additionalItems": false,
 				"items": {
 				"type": "object",
@@ -868,10 +868,28 @@
 					"googleAnalytics": {
 						"type": "string",
 						"description": "analytics ID"
-						},
+					},
 					"piwikAnalytics": {
 						"type": "string",
 						"description": "https://piwik.example.com/piwik.php?idsite=1"
+					},
+					"showOnly": {
+						"type": "array",
+						"description": "Specify what labels are shown",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+						}
+					},
+					"showAllBut": {
+						"type": "array",
+						"description": "Specify what labels to hide",
+						"additionalItems": false,
+						"items": {
+							"type": "string",
+							"description": "e.g. recruiter, non-profit"
+						}
 					}
 				}
 			}
@@ -893,7 +911,7 @@
 			"additionalItems": false,
 			"items": {
 				"type": "string",
-				"description": "e.g. HTML"
+				"description": "e.g. HTML, Databases"
 			}
 		},
 		"highlights": {
@@ -902,7 +920,7 @@
 			"additionalItems": false,
 			"items": {
 				"type": "string",
-				"description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
+				"description": "e.g. Did something, which is quiet an achievement to highlight"
 			}
 		}
 	}
