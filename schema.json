@@ -371,16 +371,48 @@
 			"additionalItems": false,
 			"items": {
 		  	"type": "object",
-		  	"additionalProperties": true,
+		  	"additionalProperties": false,
 			"properties": {
 			  	"name": {
 			  		"type": "string",
 			  		"description": "e.g. Timothy Cook"
 			  	},
-			  	"reference": {
+				"relationship": {
+					"type": "string",
+					"descritption": "e.g. My Mentor"
+				},
+			  	"testimonial": {
 			  		"type": "string",
 			  		"description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
-			  	}
+			  	},
+				"contactInfo": {
+					"type": "object",
+		  			"additionalProperties": true,
+					"properties": {
+						"phone": {
+							"type": "string",
+							"description": "0404 444 444"
+						},
+						"employer": {
+							"type": "string",
+							"description": "e.g. Piedpiper Inc"
+						},
+						"position": {
+							"type": "string",
+							"description": "e.g. Master of Desaster"
+						}
+					}
+				},
+				"label": {
+					"type": "array",
+					"description": "Meta-data label",
+					"additionalItems": false,
+					"items": {
+						"type": "string",
+						"description": "e.g. recruiter, non-profit"
+				  	}
+				}
+
 			  }
 
 			}
