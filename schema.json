@@ -345,6 +345,10 @@
 						"type": "string",
 						"description": "Write a short summary"
 					},
+					"location": {
+						"type": "string",
+						"description": "Location for this specific education item, e.g. Australia"
+					},
 					"startDate": {
 						"type": "string",
 						"description": "Date (as per ISO 8601) e.g. 2014-06-29",
