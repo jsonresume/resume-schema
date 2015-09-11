@@ -346,8 +346,7 @@
 						"description": "Write a short summary"
 					},
 					"location": {
-						"type": "string",
-						"description": "Location for this specific education item, e.g. Australia"
+						"$ref": "http://json-schema.org/address#"
 					},
 					"startDate": {
 						"type": "string",
