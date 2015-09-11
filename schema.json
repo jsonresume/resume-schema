@@ -843,23 +843,27 @@
 								"description": "Short summary who this authority is"
 							},
 							"_item": {
-								"title": {
-									"type": "string",
-									"description": "e.g. Oracle Database 12c Administrator Certified Associate"
-								},
-								"verification": {
-									"type": "string",
-									"description": "e.g. http://example-authority.com/verify",
-									"format": "uri"
-								},
-								"expirationDate": {
-									"type": "string",
-									"description": "Date (as per ISO 8601) e.g. 2014-06-29",
-									"format": "date"
-								},
-								"permanent": {
-									"type": "boolean",
-									"description": "Specify permanency, e.g. false, true"
+								"type": "object",
+								"additionalProperties": true,
+								"properties": {
+									"title": {
+										"type": "string",
+										"description": "e.g. Oracle Database 12c Administrator Certified Associate"
+									},
+									"verification": {
+										"type": "string",
+										"description": "e.g. http://example-authority.com/verify",
+										"format": "uri"
+									},
+									"expirationDate": {
+										"type": "string",
+										"description": "Date (as per ISO 8601) e.g. 2014-06-29",
+										"format": "date"
+									},
+									"permanent": {
+										"type": "boolean",
+										"description": "Specify permanency, e.g. false, true"
+									}
 								}
 							}
 						}
