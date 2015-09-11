@@ -379,7 +379,7 @@
 			  	},
 				"relationship": {
 					"type": "string",
-					"descritption": "e.g. My Mentor"
+					"description": "e.g. My Mentor"
 				},
 			  	"testimonial": {
 			  		"type": "string",
