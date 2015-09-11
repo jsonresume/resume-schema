@@ -589,9 +589,9 @@
 						"type": "string",
 						"description": "e.g. English, Spanish"
 					},
-					"fluency": {
+					"level": {
 						"type": "string",
-						"description": "e.g. Beginner, Fluent, Native"
+						"description": "e.g. null (undisclosed [default]), Beginner, Fluent, Native"
 					},
 					"labels": {
 						"type": "object",
