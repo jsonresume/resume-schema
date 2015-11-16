@@ -86,6 +86,24 @@
 				}
 			}
 		},
+    "projects": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+      "properties": {
+          "name": {
+            "type": "string",
+            "description": "e.g. resume schema"
+          },
+          "description": {
+            "type": "string",
+            "description": "e.g. an open source project to standardise resume schema."
+          },
+        }
+      }
+    },
 		"work": {
 			"type": "array",
 			"additionalItems": false,
