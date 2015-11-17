@@ -10,7 +10,7 @@
 		},
 		"documentVersion": {
 			"type": "string",
-			"description": "Version/Revision of current document, e.g. 0.5.0",
+			"description": "Version/Revision of current document, e.g. 0.5.0"
 		},
 		"url": {
 			"type": "string",
