@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git://github.com/jsonresume/resume-schema.git"
   },
-  "author": "",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/jsonresume/resume-schema/issues"
