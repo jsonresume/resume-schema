@@ -1,25 +1,25 @@
 {
-    "name": "resume-schema",
-    "version": "0.0.16",
-    "description": "JSON Resume Schema",
-    "main": "validator.js",
-    "scripts": {
-        "test": "node ./test/index.js | tap-spec"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/jsonresume/resume-schema.git"
-    },
-    "author": "",
-    "license": "BSD-2-Clause",
-    "bugs": {
-        "url": "https://github.com/jsonresume/resume-schema/issues"
-    },
-    "dependencies": {
-        "z-schema": "~2.4.10"
-    },
-    "devDependencies": {
-        "tap-spec": "^4.1.0",
-        "tape": "^4.2.2"
-    }
+  "name": "resume-schema",
+  "version": "0.0.16",
+  "description": "JSON Resume Schema",
+  "main": "validator.js",
+  "scripts": {
+    "test": "node ./test/index.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsonresume/resume-schema.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jsonresume/resume-schema/issues"
+  },
+  "dependencies": {
+    "z-schema": "~2.4.10"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  }
 }
