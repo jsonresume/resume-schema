@@ -77,6 +77,20 @@
       "summary": "There is no spoon."
     }
   ],
+  "qualifications":[
+  	{
+	  "name": "Oracle Certified Associate",
+	  "date": "1992-04-01",
+	  "governingBody": "Oracle Inc.",
+	  "id": "5556" 
+	},
+	{
+	  "name": "New York Licenced Teacher",
+	  "date": "1989-06-21",
+	  "governingBody": "New York State Education Dept.",
+	  "id": "LD34569" 
+	}
+  ]
   "publications": [
     {
       "name": "Video compression for 3d media",
