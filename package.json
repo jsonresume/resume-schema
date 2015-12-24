@@ -15,7 +15,7 @@
     "url": "https://github.com/jsonresume/resume-schema/issues"
   },
   "dependencies": {
-    "z-schema": "~2.4.10"
+    "z-schema": "~3.16.1"
   },
   "devDependencies": {
     "tap-spec": "^4.1.0",
