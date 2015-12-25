@@ -1,13 +1,12 @@
 # Contribution Guidelines
 
-Thank you for your interest in contributing to JSONResume Schema. This guide details how to contribute to JSONResume in a way that is efficient for everyone.
+Thank you for your interest in contributing to jsonresume/resume-schema. This guide details how to contribute to jsonresume/resume-schema in a way that is efficient for everyone.
 
 ## Creating an issue
 
 * Search if the issue exist
 * If the issue exists, contribute by comments
 * If the issue doesnt exist, create one.
-* 
 
 
 ## Creating a pull request
