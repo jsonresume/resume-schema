@@ -4,9 +4,10 @@ Thank you for your interest in contributing to jsonresume/resume-schema. This gu
 
 ## Creating an issue
 
-* Search if the issue exist
-* If the issue exists, contribute by comments
-* If the issue doesnt exist, create one.
+* Search if the issue exist.
+* If the issue exists, then contribute by comments, or you can create one.
+* Try to be as descriptive, concise and specific as possible.
+* Titles must be able to stand on their own without requiring readers to click on the issue.
 
 
 ## Creating a pull request
