@@ -65,6 +65,12 @@ var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
 resumeSchema.validate(resumeObject);
 ```
 
+The JSON Resume schema is available from:
+
+```js
+require('resume-schema').schema;
+```
+
 ### People
 
 * Julian Shapiro for early prototype revisions
