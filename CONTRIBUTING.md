@@ -18,6 +18,14 @@ Thank you for your interest in contributing to jsonresume/resume-schema. This gu
 * Create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
 * Submit you pull request.
 
+
+## Tips & Tricks for a good contribution
+
+* Be consistent with resume-schema's lexicon and [schema.org](http://schema.org/).
+* Keep it simple, stupid
+* Don't repeat yourself
+* Think about localization
+
 ## Code of conduct
 
 As contributors and maintainers of the jsonresume/resume-schema project, we pledge to respect everyone who contributes by posting issues, updating documentation, submitting pull requests, providing feedback in comments, and any other activities.
