@@ -4,7 +4,7 @@ Thank you for your interest in contributing to jsonresume/resume-schema. This gu
 
 ## Code of conduct
 
-Please note that this project is released with a Contributor [Code of Conduct](). By participating in this project you agree to abide by its terms. Please report unacceptable behavior to [INSERT EMAIL ADDRESS]. The [Contributor Covenant](https://github.com/Bantik/contributor_covenant) was orginally made by [Coraline Ada Ehmke (Bantik)](https://github.com/Bantik).
+Please note that this project is released with a Contributor [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms. Please report unacceptable behavior to [INSERT EMAIL ADDRESS]. The [Contributor Covenant](https://github.com/Bantik/contributor_covenant) was orginally made by [Coraline Ada Ehmke (Bantik)](https://github.com/Bantik).
 
 ## Creating an issue
 
