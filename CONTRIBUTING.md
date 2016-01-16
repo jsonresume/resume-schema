@@ -2,6 +2,10 @@
 
 Thank you for your interest in contributing to jsonresume/resume-schema. This guide details how to contribute to jsonresume/resume-schema in a way that is efficient for everyone.
 
+## Code of conduct
+
+Please note that this project is released with a Contributor [Code of Conduct](). By participating in this project you agree to abide by its terms. Please report unacceptable behavior to [INSERT EMAIL ADDRESS]. The [Contributor Covenant](https://github.com/Bantik/contributor_covenant) was orginally made by [Coraline Ada Ehmke (Bantik)](https://github.com/Bantik).
+
 ## Creating an issue
 
 * Search if the [issue](https://github.com/jsonresume/resume-schema/issues) exist.
@@ -25,14 +29,6 @@ Thank you for your interest in contributing to jsonresume/resume-schema. This gu
 * Keep it simple, stupid
 * Don't repeat yourself
 * Think about localization
-
-## Code of conduct
-
-As contributors and maintainers of the jsonresume/resume-schema project, we pledge to respect everyone who contributes by posting issues, updating documentation, submitting pull requests, providing feedback in comments, and any other activities.
-
-Communication must be constructive and never resort to personal attacks, trolling, public or private harrassment, insults, or other unprofessional conduct.
-
-We promise to extend courtesy and respect to everyone involved in this project regardless of gender, gender identity, sexual orientation, disability, age, race, ethnicity, religion, or level of experience. We expect anyone contributing to the jsonresume/resume-schema project to do the same.
 
 ## External links
 
