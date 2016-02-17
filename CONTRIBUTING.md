@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Thank you for your interest in contributing to jsonresume/resume-schema. This guide details how to contribute to jsonresume/resume-schema in a way that is efficient for everyone.
+Glad to see you here! Thank you for your interest in contributing to jsonresume/resume-schema. This guide details how to contribute to jsonresume/resume-schema in a way that is efficient for everyone.
 
 ## Code of conduct
 
@@ -12,7 +12,7 @@ Please note that this project is released with a Contributor [Code of Conduct](C
 * If the issue exists, then contribute by comments, or you can create one.
 * Try to be as descriptive, concise and specific as possible.
 * Titles must be able to stand on their own without requiring readers to click on the issue.
-
+* Submit your issue.
 
 ## Creating a pull request
 
@@ -20,16 +20,11 @@ Please note that this project is released with a Contributor [Code of Conduct](C
 * Search for an [pull request](https://github.com/jsonresume/resume-schema/pulls) that relates to your submission. You don't want to duplicate effort.
 * [Fork the project](https://help.github.com/articles/fork-a-repo/).
 * Create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
-* Submit you pull request.
-
+* Submit your pull request.
 
 ## Tips & Tricks for a good contribution
 
-* Be consistent with resume-schema's lexicon and [schema.org](http://schema.org/).
+* Be consistent with resume-schema's lexicon and [schema.org](http://schema.org/)
 * Keep it simple, stupid
 * Don't repeat yourself
 * Think about localization
-
-## External links
-
-- [example](http://example.com) - This is an example.
