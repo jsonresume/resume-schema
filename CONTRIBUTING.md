@@ -20,6 +20,7 @@ Please note that this project is released with a Contributor [Code of Conduct](C
 * Search for an [pull request](https://github.com/jsonresume/resume-schema/pulls) that relates to your submission. You don't want to duplicate effort.
 * [Fork the project](https://help.github.com/articles/fork-a-repo/).
 * Create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
+* The pull request should be self contained and provide only changes corresponding to the issue.
 * Submit your pull request.
 
 ## Tips & Tricks for a good contribution
@@ -28,3 +29,4 @@ Please note that this project is released with a Contributor [Code of Conduct](C
 * Keep it simple, stupid
 * Don't repeat yourself
 * Think about localization
+* Keep it generic (for everyone's resume)
