@@ -17,7 +17,7 @@ Please note that this project is released with a Contributor [Code of Conduct](C
 ## Creating a pull request
 
 * Check if there is an issue related to your feature. If there is not, create one.
-* Search for an [pull request](https://github.com/jsonresume/resume-schema/pulls) that relates to your submission. You don't want to duplicate effort.
+* Search for a [pull request](https://github.com/jsonresume/resume-schema/pulls) that relates to your submission. You don't want to duplicate effort.
 * [Fork the project](https://help.github.com/articles/fork-a-repo/).
 * Create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
 * The pull request should be self contained and provide only changes corresponding to the issue.
