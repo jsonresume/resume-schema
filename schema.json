@@ -386,7 +386,7 @@
 				"description": "URL (as per RFC 3986) to latest version of this document"
 			}
 			},
-			"description": "List any key-value pairs related to this document"
+			"description": "The schema version and any other tooling configuration lives here"
 		}
 	}
 }
