@@ -133,6 +133,138 @@
 
 			}
 		},
+		"vocational": {
+			"type": "array",
+			"additionalItems": false,
+			"items": {
+		  	"type": "object",
+		  	"additionalProperties": true,
+			"properties": {
+				  	"issuingAuthority": {
+				  		"type": "string",
+				  		"description": "e.g. Oracle Inc., Institute of Mechanical Engineering, CIPD "
+				  	},
+					"website": {
+						"type": "string",
+						"description": "Issuing authority's home page",
+						"format": "uri"
+					},
+				  	"accreditations": {
+						"type": "array",
+						"additionalItems": false,
+						"items": {
+						"type": "object",
+						"additionalProperties": true,
+						"properties": {
+								"title": {
+									"type": "string",
+									"description": "e.g. Oracle Database 12c Administrator Certified Associate"
+								},
+								"website": {
+									"type": "string",
+									"description": "Link to issuing authority's description of accreditation",
+									"format": "uri"
+								},
+								"verification": {
+									"type": "string",
+									"description": "External candidate verification URL",
+									"format": "uri"
+								},
+							  	"achievedDate": {
+									"type": "string",
+									"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+									"format": "date"
+								},
+								"expireDate": {
+									"type": "string",
+									"description": "e.g. 2012-06-29",
+									"format": "date"
+								},
+								"doesNotExpire": {
+									"type": "boolean",
+									"format": "checkbox"
+								}
+							}
+						}
+					},
+				  	"exams": {
+						"type": "array",
+						"additionalItems": false,
+						"items": {
+						"type": "object",
+						"additionalProperties": true,
+						"properties": {
+								"code": {
+									"type": "string",
+									"description": "e.g. 1Z0-062"
+								},
+								"title": {
+									"type": "string",
+									"description": "e.g. Oracle Database 12c: SQL Fundamentals"
+								},
+								"website": {
+									"type": "string",
+									"description": "Link to issuing authority's description of exam",
+									"format": "uri"
+								},
+								"verification": {
+									"type": "string",
+									"description": "External candidate verification URL",
+									"format": "uri"
+								},
+							  	"achievedDate": {
+									"type": "string",
+									"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+									"format": "date"
+								},
+								"expireDate": {
+									"type": "string",
+									"description": "e.g. 2012-06-29",
+									"format": "date"
+								},
+								"doesNotExpire": {
+									"type": "boolean",
+									"format": "checkbox"
+								}
+							}
+						}
+					},
+				  	"courses": {
+						"type": "array",
+						"additionalItems": false,
+						"items": {
+						"type": "object",
+						"additionalProperties": true,
+						"properties": {
+								"title": {
+									"type": "string",
+									"description": "e.g. Oracle Database 12c: Install and Upgrade Workshop"
+								},
+								"trainingProvidor": {
+									"type": "string",
+									"description": "Training may be via a third party - Provider's name goes here"
+								},
+								"providorWebsite": {
+									"type": "string",
+									"description": "Training provider's home page",
+									"format": "uri"
+								},
+							  	"startDate": {
+									"type": "string",
+									"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+									"format": "date"
+								},
+								"endDate": {
+									"type": "string",
+									"description": "e.g. 2012-06-29",
+									"format": "date"
+								}
+							}
+						}
+					}
+			  	}
+			}
+		},		
 		"volunteer": {
 			"type": "array",
 			"additionalItems": false,
