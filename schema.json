@@ -38,28 +38,7 @@
 					"description": "Write a short 2-3 sentence biography about yourself"
 				},
 				"location": {
-					"type": "object",
-					"additionalProperties": true,
-					"properties": {
-						"address": {
-							"type": "string",
-							"description": "To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li."
-						},
-						"postalCode": {
-							"type": "string"
-						},
-						"city": {
-							"type": "string"
-						},
-						"countryCode": {
-							"type": "string",
-							"description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN"
-						},
-						"region": {
-							"type": "string",
-							"description": "The general region where you live. Can be a US state, or a province, for instance."
-						}
-					}
+					"$ref": "http://json-schema.org/address#"
 				},
 				"profiles": {
 					"type": "array",
@@ -106,6 +85,9 @@
 			  		"description": "e.g. http://facebook.com",
 			  		"format": "uri"
 			  	},
+			  	"location": {
+			  		"$ref": "http://json-schema.org/address#"
+			  	},
 			  	"startDate": {
 			  		"type": "string",
 			  		"description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
@@ -130,7 +112,6 @@
 			  		}
 			  	}
 			  }
-
 			}
 		},
 		"volunteer": {
@@ -152,6 +133,9 @@
 			  		"type": "string",
 			  		"description": "e.g. http://facebook.com",
 			  		"format": "uri"
+			  	},
+			  	"location": {
+			  		"$ref": "http://json-schema.org/address#"
 			  	},
 			  	"startDate": {
 			  		"type": "string",
@@ -190,6 +174,9 @@
 				  	"institution": {
 				  		"type": "string",
 				  		"description": "e.g. Massachusetts Institute of Technology"
+				  	},
+				  	"location": {
+				  		"$ref": "http://json-schema.org/address#"
 				  	},
 				  	"area": {
 				  		"type": "string",
