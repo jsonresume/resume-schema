@@ -373,8 +373,18 @@
 			  		"description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
 			  	}
 			  }
-
 			}
+		},
+		"meta": {
+			"type": "object",
+			"additionalProperties": true,
+			"properties": {
+			"url": {
+				"type": "string",
+				"description": "URL (as per RFC 3986) to latest version of this document"
+			}
+			},
+			"description": "The schema version and any other tooling configuration lives here"
 		}
 	}
 }
