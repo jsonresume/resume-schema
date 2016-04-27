@@ -36,7 +36,7 @@ To keep things simple, *JSON Resume tools are only expected to react to major ve
 
 ### IRC
 
-Everyone working on the early stages of the project should join our Freenode channel `#jsonresume`. You can use the web client [http://webchat.freenode.net](http://webchat.freenode.net/).
+Everyone working on the early stages of the project should join our [Gitter channel](https://gitter.im/jsonresume/public).
 
 ### Getting started
 
@@ -64,13 +64,9 @@ var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
 resumeSchema.validate(resumeObject);
 ```
 
-### People
-
-* Julian Shapiro for early prototype revisions
-
 ### Contribute
 
-We encourage anyone who's interested in participating in the formation of this standard, to join us on IRC, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
+We encourage anyone who's interested in participating in the formation of this standard, to join us on GITTER, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
 
 ### Versioning
 
