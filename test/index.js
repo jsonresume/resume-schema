@@ -18,3 +18,8 @@ test('Validates an invalid resume', function(t) {
     t.end();
   });
 });
+
+test('Exports the JSON schema', function(t) {
+  t.ok(validator.schema, 'JSON Schema is being exported');
+  t.end();
+});
