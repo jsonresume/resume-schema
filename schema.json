@@ -221,7 +221,12 @@
 				  			"type": "string",
 				  			"description": "e.g. H1302 - Introduction to American history"
 				  		}
-				  	}
+				  	},
+					"website": {
++						"type": "string",
++			  			"description": "e.g. http://www.school.edu/",
++			  			"format": "uri"
++                                        }
 			  	}
 
 
