@@ -16,6 +16,7 @@ To keep things simple, *JSON Resume tools are only expected to react to major ve
 
 ### Change log
 
+* 2016-04-26 - `meta` was added - [Dicussions](https://github.com/jsonresume/resume-schema/issues/204) - [Commit](https://github.com/jsonresume/resume-schema/pull/237)
 * 2014-07-30 - `languages` was added - [Dicussions](https://github.com/jsonresume/resume-schema/issues/34) - [Commit](https://github.com/jsonresume/resume-schema/commit/f02300e36ba076787d008928b29963c3ffce6121)
 * 2014-07-30 - `hobbies` was renamed to `interests`
 * 2014-07-30 - `volunteer` was added - [Discussion](https://github.com/jsonresume/resume-schema/issues/43) - [Commit](https://github.com/jsonresume/resume-schema/commit/dee007c2e373645b6b67d07a92aebf22fda5b95a)
