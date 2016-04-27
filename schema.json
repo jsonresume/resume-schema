@@ -377,9 +377,7 @@
 		},
 		"meta": {
 			"type": "object",
-			"additionalProperties": {
-				"type": ["string", "number"]
-	  		},
+			"additionalProperties": true,
 			"properties": {
 			"url": {
 				"type": "string",
