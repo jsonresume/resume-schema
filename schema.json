@@ -4,6 +4,17 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "A section for all meta information",
+      "properties": {
+        "canonical": {
+          "type": "string",
+          "description": "Canonical URL"
+        }
+      }
+    },
     "basics": {
       "type": "object",
       "additionalProperties": true,
