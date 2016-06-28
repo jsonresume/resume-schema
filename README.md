@@ -1,6 +1,6 @@
 # JSON Resume Schema
 
-[![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema)
+[![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema) [![Dependency Status](https://david-dm.org/jsonresume/resume-schema.svg)](https://david-dm.org/jsonresume/resume-schema)
 
 Standard, Specification, Schema
 
