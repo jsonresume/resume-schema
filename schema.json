@@ -388,7 +388,7 @@
             "additionalItems": false,
             "items": {
               "type": "string",
-              "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
+              "description": "e.g. Directs you close but not quite there"
             }
           },
           "tech": {
