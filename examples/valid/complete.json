@@ -127,6 +127,24 @@
       "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
     }
   ],
+  "projects": [
+       {
+       "name": "Miss Direction",
+       "summary": "A mapping engine that misguides you",
+       "highlights": [ 
+         "Won award at AIHacks 2016",
+         "Built by all women team of newbie programmers"
+       ],
+       "tech": [
+         "GoogleMaps", "Chrome Extension", "Javascript"
+       ],
+       "startDate": "2016-08-24",
+       "endDate": "2016-08-24", 
+       "website": "missdirection.io",
+       "team": ["Gale Core", "Dani Yes"]
+        
+       }
+  ],
   "meta": {
     "url": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "dateModified": 1461755909
