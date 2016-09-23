@@ -218,8 +218,13 @@
 				  		"description": "List notable courses/subjects",
 				  		"additionalItems": false,
 				  		"items": {
-				  			"type": "string",
-				  			"description": "e.g. H1302 - Introduction to American history"
+				  			"type": "object",
+				  			"properties": {
+				  				"name": {
+				  					"type": "string",
+				  					"description": "e.g. H1302 - Introduction to American history"
+				  				}
+				  			}
 				  		}
 				  	}
 			  	}
