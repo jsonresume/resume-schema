@@ -372,7 +372,7 @@
     },
     "projects": {
       "type": "array",
-      "description": "Specify your publications through your career",
+      "description": "Specify career projects",
       "additionalItems": false,
       "items": {
         "type": "object",
