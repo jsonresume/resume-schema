@@ -101,6 +101,10 @@
 			  		"type": "string",
 			  		"description": "e.g. Software Engineer"
 			  	},
+			  	"location": {
+			  		"type": "string",
+			  		"description": "e.g. California, United States"
+			  	},
 			  	"url": {
 			  		"type": "string",
 			  		"description": "e.g. http://facebook.com",
