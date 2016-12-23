@@ -391,9 +391,9 @@
               "description": "e.g. Directs you close but not quite there"
             }
           },
-          "tech": {
+          "keywords": {
             "type": "array",
-            "description": "Specify tech involved",
+            "description": "Specify special elements involved",
             "additionalItems": false,
             "items": {
               "type": "string",
@@ -417,15 +417,6 @@
           "summary": {
             "type": "string",
             "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
-          },
-          "team":{
-            "type": "array",
-            "description": "Specify teammates involved",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Ofo Ufeli"
-            }
           }
         }
       }

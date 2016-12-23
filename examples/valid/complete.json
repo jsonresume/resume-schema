@@ -133,15 +133,15 @@
        "summary": "A mapping engine that misguides you",
        "highlights": [ 
          "Won award at AIHacks 2016",
-         "Built by all women team of newbie programmers"
+         "Built by all women team of newbie programmers",
+         "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
        ],
-       "tech": [
+       "keywords": [
          "GoogleMaps", "Chrome Extension", "Javascript"
        ],
        "startDate": "2016-08-24",
        "endDate": "2016-08-24", 
        "website": "missdirection.io",
-       "team": ["Gale Core", "Dani Yes"]
         
        }
   ],
