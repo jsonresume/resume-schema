@@ -168,7 +168,7 @@
           },
           "highlights": {
             "type": "array",
-            "description": "Specify multiple accomplishments",
+            "description": "Specify accomplishments and achievements",
             "additionalItems": false,
             "items": {
               "type": "string",
@@ -382,6 +382,10 @@
             "type": "string",
             "description": "e.g. The World Wide Web"
           },
+          "summary": {
+            "type": "string",
+            "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
+          },
           "highlights": {
             "type": "array",
             "description": "Specify multiple features",
@@ -413,10 +417,6 @@
           "website": {
             "type": "string",
             "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
-          },
-          "summary": {
-            "type": "string",
-            "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
           }
         }
       }
