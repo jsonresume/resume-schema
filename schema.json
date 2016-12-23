@@ -372,14 +372,14 @@
     },
     "meta": {
       "type": "object",
+      "description": "The schema version and any other tooling configuration lives here",
       "additionalProperties": true,
       "properties": {
-        "url": {
+        "canonical": {
           "type": "string",
           "description": "URL (as per RFC 3986) to latest version of this document"
         }
-      },
-      "description": "The schema version and any other tooling configuration lives here"
+      }
     }
   }
 }
