@@ -29,6 +29,7 @@
   "work": [
     {
       "company": "Pied Piper",
+      "companyDescription": "Awesome Compression Company",
       "position": "CEO/President",
       "url": "http://piedpiper.com",
       "startDate": "2013-12-01",
