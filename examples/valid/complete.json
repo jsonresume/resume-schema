@@ -128,7 +128,7 @@
     }
   ],
   "meta": {
-    "url": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "dateModified": 1461755909
   }
 }
