@@ -378,6 +378,10 @@
         "canonical": {
           "type": "string",
           "description": "URL (as per RFC 3986) to latest version of this document"
+        },
+        "version": {
+          "type": "string",
+          "description": "A version field which follows semver - e.g. v1.0.0"
         }
       }
     }
