@@ -79,7 +79,7 @@
               },
               "url": {
                 "type": "string",
-                "description": "e.g. http://twitter.com/neutralthoughts"
+                "description": "e.g. http://twitter.example.com/neutralthoughts"
               }
             }
           }
@@ -107,7 +107,7 @@
           },
           "website": {
             "type": "string",
-            "description": "e.g. http://facebook.com",
+            "description": "e.g. http://facebook.example.com",
             "format": "uri"
           },
           "startDate": {
@@ -153,7 +153,7 @@
           },
           "website": {
             "type": "string",
-            "description": "e.g. http://facebook.com",
+            "description": "e.g. http://facebook.example.com",
             "format": "uri"
           },
           "startDate": {
@@ -277,7 +277,7 @@
           },
           "website": {
             "type": "string",
-            "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
+            "description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html"
           },
           "summary": {
             "type": "string",
