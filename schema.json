@@ -15,9 +15,10 @@
           "type": "string",
           "description": "e.g. Web Developer"
         },
-        "picture": {
+        "image": {
           "type": "string",
-          "description": "URL (as per RFC 3986) to a picture in JPEG or PNG format"
+          "description": "URL (as per RFC 3986) to a picture in JPEG or PNG format",
+          "format": "uri"
         },
         "email": {
           "type": "string",
@@ -28,7 +29,7 @@
           "type": "string",
           "description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
         },
-        "website": {
+        "url": {
           "type": "string",
           "description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
           "format": "uri"
@@ -79,7 +80,9 @@
               },
               "url": {
                 "type": "string",
-                "description": "e.g. http://twitter.com/neutralthoughts"
+                "description": "Your profile URL.",
+                "format": "uri"
+                }
               }
             }
           }
@@ -105,7 +108,7 @@
             "type": "string",
             "description": "e.g. Software Engineer"
           },
-          "website": {
+          "url": {
             "type": "string",
             "description": "e.g. http://facebook.com",
             "format": "uri"
@@ -151,7 +154,7 @@
             "type": "string",
             "description": "e.g. Software Engineer"
           },
-          "website": {
+          "url": {
             "type": "string",
             "description": "e.g. http://facebook.com",
             "format": "uri"
@@ -275,7 +278,7 @@
             "type": "string",
             "description": "e.g. 1990-08-01"
           },
-          "website": {
+          "url": {
             "type": "string",
             "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
           },
