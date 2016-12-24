@@ -382,6 +382,10 @@
         "version": {
           "type": "string",
           "description": "A version field which follows semver - e.g. v1.0.0"
+        },
+        "lastModified": {
+          "type": "string",
+          "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
         }
       }
     }
