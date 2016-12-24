@@ -97,6 +97,10 @@
             "type": "string",
             "description": "e.g. Facebook"
           },
+          "companyDescription": {
+            "type": "string",
+            "description": "e.g. Social Media Company"
+          },
           "position": {
             "type": "string",
             "description": "e.g. Software Engineer"
