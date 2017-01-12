@@ -144,7 +144,9 @@
        "url": "missdirection.example.com",
        "roles": [ 
          "Team lead", "Designer"
-         ]
+      ],
+      "entity": "Smoogle",
+      "type": "application"
        }
   ],
   "meta": {

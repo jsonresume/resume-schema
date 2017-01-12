@@ -427,6 +427,14 @@
               "type":"string",
               "description": "e.g. Team Lead"
             }
+          },
+          "entity":{
+            "type": "string",
+            "description": "Specify the relevant company/entity affiliations"
+          },
+          "type":{
+            "type":"string",
+            "description": " e.g. 'volunteering', 'presentation', 'talk', 'application'"
           }
         }
       }
