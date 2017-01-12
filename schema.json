@@ -416,6 +416,7 @@
           },
           "url": {
             "type": "string",
+            "format":"uri",
             "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
           }
         }
