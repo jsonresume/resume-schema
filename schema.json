@@ -382,9 +382,9 @@
             "type": "string",
             "description": "e.g. The World Wide Web"
           },
-          "summary": {
+           "description": {
             "type": "string",
-            "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
+            "description": "Short summary of project. e.g. Collated works of 2017."
           },
           "highlights": {
             "type": "array",

@@ -130,7 +130,7 @@
   "projects": [
        {
        "name": "Miss Direction",
-       "summary": "A mapping engine that misguides you",
+       "description": "A mapping engine that misguides you",
        "highlights": [ 
          "Won award at AIHacks 2016",
          "Built by all women team of newbie programmers",
