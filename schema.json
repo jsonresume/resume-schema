@@ -425,16 +425,16 @@
             "additionalItems": false,
             "items": {
               "type":"string",
-              "description": "e.g. Team Lead"
+              "description": "e.g. Team Lead, Speaker, Writer"
             }
           },
           "entity":{
             "type": "string",
-            "description": "Specify the relevant company/entity affiliations"
+            "description": "Specify the relevant company/entity affiliations e.g. 'greenpeace', 'corporationXYZ'"
           },
           "type":{
             "type":"string",
-            "description": " e.g. 'volunteering', 'presentation', 'talk', 'application'"
+            "description": " e.g. 'volunteering', 'presentation', 'talk', 'application', 'conference'"
           }
         }
       }
