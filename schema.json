@@ -95,7 +95,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "e.g. $stuff at Facebook"
+            "description": "e.g. Facebook"
           },
           "description": {
             "type": "string",
