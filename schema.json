@@ -97,7 +97,7 @@
             "type": "string",
             "description": "e.g. Facebook"
           },
-          "companyDescription": {
+          "description": {
             "type": "string",
             "description": "e.g. Social Media Company"
           },
