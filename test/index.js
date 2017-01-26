@@ -62,3 +62,10 @@ test('Validates an invalid resume', function (t) {
   });
 
 });
+
+test('Exports the JSON schema', function(t) {
+
+  t.ok(validator.schema, 'JSON Schema is being exported');
+  t.end();
+
+});
