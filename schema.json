@@ -95,7 +95,11 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "e.g. Facebook"
+            "description": "e.g. $stuff at Facebook"
+          },
+          "entity": {
+            "type": "string",
+            "description": "Facebook Inc"
           },
           "entityDescription": {
             "type": "string",
