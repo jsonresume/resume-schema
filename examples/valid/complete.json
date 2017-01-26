@@ -30,8 +30,7 @@
   "work": [
     {
       "name": "Pied Piper",
-      "entity": "Pied Piper Inc",
-      "entityDescription": "Awesome compression company",
+      "description": "Awesome compression company",
       "position": "CEO/President",
       "url": "http://piedpiper.example.com",
       "startDate": "2013-12-01",
