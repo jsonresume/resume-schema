@@ -97,11 +97,7 @@
             "type": "string",
             "description": "e.g. $stuff at Facebook"
           },
-          "entity": {
-            "type": "string",
-            "description": "Facebook Inc"
-          },
-          "entityDescription": {
+          "description": {
             "type": "string",
             "description": "e.g. Social Media Company"
           },
