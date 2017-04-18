@@ -48,7 +48,7 @@
             "postalCode": {
               "type": "string"
             },
-            "city": {
+s            "city": {
               "type": "string"
             },
             "countryCode": {
@@ -86,7 +86,7 @@
         }
       }
     },
-    "work": {
+    "works": {
       "type": "array",
       "additionalItems": false,
       "items": {
@@ -136,7 +136,7 @@
         }
       }
     },
-    "volunteer": {
+    "volunteers": {
       "type": "array",
       "additionalItems": false,
       "items": {
@@ -182,7 +182,7 @@
         }
       }
     },
-    "education": {
+    "educations": {
       "type": "array",
       "additionalItems": false,
       "items": {
