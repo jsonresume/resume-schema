@@ -133,7 +133,7 @@
               "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
             }
           },
-          "languags": {
+          "languages": {
             "type": "array",
             "description": "Languages used in this job",
             "additionalItems": false,
