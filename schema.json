@@ -132,6 +132,24 @@
               "type": "string",
               "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
             }
+          },
+          "languages": {
+            "type": "array",
+            "description": "Languages used in this job",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. Java"
+            }
+          },
+          "systems": {
+            "type":"array",
+            "description": "Systems used in this job",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. AWS"
+            }
           }
         }
       }
