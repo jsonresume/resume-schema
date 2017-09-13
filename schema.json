@@ -97,6 +97,10 @@
             "type": "string",
             "description": "e.g. Facebook"
           },
+          "location": {
+            "type": "string",
+            "description": "e.g. Menlo Park, CA"
+          },
           "description": {
             "type": "string",
             "description": "e.g. Social Media Company"
