@@ -1,5 +1,7 @@
 # JSON Resume Schema
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jsonresume/resume-schema.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://api.travis-ci.org/jsonresume/resume-schema.svg)](http://travis-ci.org/jsonresume/resume-schema) [![Dependency Status](https://david-dm.org/jsonresume/resume-schema.svg)](https://david-dm.org/jsonresume/resume-schema)
 
 Standard, Specification, Schema
