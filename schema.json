@@ -397,7 +397,6 @@
           "doesNotExpire": {
             "type": "boolean",
             "description": "if expire True if Not False",
-            "format": "checkbox"
           }
         }
       }
