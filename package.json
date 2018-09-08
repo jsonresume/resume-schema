@@ -20,14 +20,14 @@
     "validator.js"
   ],
   "dependencies": {
-    "z-schema": "~3.19.0"
+    "z-schema": "^3.23.0"
   },
   "devDependencies": {
     "promise": "^8.0.1",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.3"
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=10.0"
   }
 }
