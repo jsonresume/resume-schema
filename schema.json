@@ -457,18 +457,15 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "Specify the given name for your intellectual property",
-            "required": true
+            "description": "Specify the given name for your intellectual property"
           },
           "description": {
             "type": "string",
-            "description": "Provide a description or abstract of your intellectual property",
-            "required": false
+            "description": "Provide a description or abstract of your intellectual property"
           },
           "source": {
             "type": "object",
-            "additionalProperties": false,
-            "required": false,
+            "additionalProperties": false
             "properties": {
               "url": {
                 "type": "string",
@@ -477,41 +474,34 @@
               },
               "label": {
                 "type": "string",
-                "description": "Provide a user friendly name for the web service",
-                "required": false
+                "description": "Provide a user friendly name for the web service"
               }
             }
           },
           "type": {
             "type": "string",
-            "description": "Specify the intellectual property type e.g. patent, trademark, copyright",
-            "required": false
+            "description": "Specify the intellectual property type e.g. patent, trademark, copyright"
           },
           "co-inventors": {
             "type": "array",
-            "additionalItems": false,
             "items": {
               "type": "string",
               "description": "Specify the names of your co-inventors"
-            },
-            "required": false
+            }
           },
           "assignee": {
             "type": "string",
-            "description": "Specify the assigned owner of the intellectual property",
-            "required": false
+            "description": "Specify the assigned owner of the intellectual property"
           },
           "applicationDate": {
             "type": "string",
             "description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
-            "format": "date",
-            "required": false
+            "format": "date"
           },
           "grantDate": {
             "type": "string",
             "description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
-            "format": "date",
-            "required": false
+            "format": "date"
           }
         }
       }
