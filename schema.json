@@ -465,7 +465,7 @@
           },
           "source": {
             "type": "object",
-            "additionalProperties": false
+            "additionalProperties": false,
             "properties": {
               "url": {
                 "type": "string",
