@@ -485,8 +485,23 @@
           "co-inventors": {
             "type": "array",
             "items": {
-              "type": "string",
-              "description": "Specify the names of your co-inventors"
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name" : {
+                  "type": "string",
+                  "description": "Specify the names of your co-inventors"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "Provide a URL to a web service that provides further details of the co-inventor",
+                  "format": "uri"
+                },
+                "label": {
+                "type": "string",
+                "description": "Provide a user friendly name for the web service"
+                }
+              }
             }
           },
           "assignee": {
