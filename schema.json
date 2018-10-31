@@ -509,8 +509,18 @@
             }
           },
           "assignee": {
-            "type": "string",
-            "description": "Specify the assigned owner of the intellectual property"
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Specify the assigned owner of the intellectual property"
+              },
+              "url": {
+                "type": "string",
+                "description": "Provide a URL to a web service that provides further details of the assignee",
+                "format": "uri"
+              }
+            }
           },
           "applicationDate": {
             "type": "string",
