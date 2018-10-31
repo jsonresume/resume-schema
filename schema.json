@@ -447,6 +447,66 @@
         }
       }
     },
+    "legal": {
+      "type": "array",
+      "description": "List intellectual property that you are associated with",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify the given name for your intellectual property",
+            "required": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Provide a description or abstract of your intellectual property",
+            "required": false
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": false,
+            "properties": {
+              "url": {
+                "type": "string",
+                "description": "Provide a URL to a web service that provides further details",
+                "format": "uri"
+              },
+              "label": {
+                "type": "string",
+                "description": "Provide a user friendly name for the web service",
+                "required": false
+              }
+            }
+          },
+          "type": {
+            "type": "string",
+            "description": "Specify the intellectual property type e.g. patent, trademark, copyright",
+            "required": false
+          },
+          "assignee": {
+            "type": "string",
+            "description": "Specify the assigned owner of the intellectual property",
+            "required": false
+          },
+          "applicationDate": {
+            "type": "string",
+            "description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+            "format": "date",
+            "required": false
+          },
+          "grantDate": {
+            "type": "string",
+            "description": "resume.json uses the ISO 8601 date standard e.g. 2014-06-29",
+            "format": "date",
+            "required": false
+          }
+        }
+      }
+    },
     "meta": {
       "type": "object",
       "description": "The schema version and any other tooling configuration lives here",
