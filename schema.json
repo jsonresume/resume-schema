@@ -459,6 +459,10 @@
             "type": "string",
             "description": "Specify the given name for your intellectual property"
           },
+          "reference": {
+            "type": "string",
+            "description": "Provide a reference number for your intellectual property"
+          },
           "description": {
             "type": "string",
             "description": "Provide a description or abstract of your intellectual property"
