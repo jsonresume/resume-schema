@@ -487,6 +487,15 @@
             "description": "Specify the intellectual property type e.g. patent, trademark, copyright",
             "required": false
           },
+          "co-inventors": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "Specify the names of your co-inventors"
+            },
+            "required": false
+          },
           "assignee": {
             "type": "string",
             "description": "Specify the assigned owner of the intellectual property",
