@@ -1,6 +1,6 @@
 {
   "name": "resume-schema",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "JSON Resume Schema",
   "main": "validator.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "tape": "^4.6.3"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": "8"
   }
 }
