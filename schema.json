@@ -28,6 +28,38 @@
           "type": "string",
           "description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
         },
+        "pronouns": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/pronounSimple"
+            },
+            {
+              "$ref": "#/definitions/pronounList"
+            },
+            {
+              "type": "object",
+              "description": "pronoun string + link",
+              "additionalProperties": true,
+              "properties": {
+                "content": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/definitions/pronounSimple"
+                    },
+                    {
+                      "$ref": "#/definitions/pronounList"
+                    }
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "description": "e.g. http://my.pronoun.is/they",
+                  "format": "uri"
+                }
+              }
+            }
+          ]
+        },
         "url": {
           "type": "string",
           "description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
@@ -464,6 +496,19 @@
           "type": "string",
           "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
         }
+      }
+    }
+  },
+  "definitions": {
+    "pronounSimple": {
+      "type": "string",
+      "description": "e.g. they/them/theirs"
+    },
+    "pronounList": {
+      "type": "array",
+      "description": "An array containing your preferred pronouns, e.g. ['they', 'them', 'theirs']",
+      "items": {
+        "type": "string"
       }
     }
   }
