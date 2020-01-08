@@ -104,5 +104,5 @@ Constraint with two digits of precision.
 * [#51 - Support multiple positions within one job](https://github.com/jsonresume/resume-schema/issues/51)
 
 ### Other resume standards
-* [HR-XML](https://hr-xml.site-ym.com/store/default.aspx?)
-* [Europass](http://europass.cedefop.europa.eu/en/about)
+* [HR-XML](https://schemas.liquid-technologies.com/HR-XML/2007-04-15/)
+* [Europass](http://europass.cedefop.europa.eu/about-europass)
