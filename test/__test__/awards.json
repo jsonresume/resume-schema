@@ -1,0 +1,65 @@
+
+{
+  "awardsValid": {
+    "awards": []
+  },
+  "awardsInvalid": {
+    "awards": null
+  },
+  "titleValid": {
+    "awards": [
+      {
+        "title": "Digital Compression Pioneer Award"
+      }
+    ]
+  },
+  "titleInvalid": {
+    "awards": [
+      {
+        "title": null
+      }
+    ]
+  },
+  "dateValid": {
+    "awards": [
+      {
+        "date": "2014-11-01"
+      }
+    ]
+  },
+  "dateInvalid": {
+    "awards": [
+      {
+        "date": null
+      }
+    ]
+  },
+  "awarderValid": {
+    "awards": [
+      {
+        "awarder": "Techcrunch"
+      }
+    ]
+  },
+  "awarderInvalid": {
+    "awards": [
+      {
+        "awarder": null
+      }
+    ]
+  },
+  "summaryValid": {
+    "awards": [
+      {
+        "summary": "There is no spoon."
+      }
+    ]
+  },
+  "summaryInvalid": {
+    "awards": [
+      {
+        "summary": null
+      }
+    ]
+  }
+}
