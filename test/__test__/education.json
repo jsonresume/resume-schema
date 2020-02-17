@@ -1,0 +1,124 @@
+{
+  "educationValid": {
+    "education": []
+  },
+  "educationInvalid": {
+    "education": null
+  },
+  "institutionValid": {
+    "education": [
+      {
+        "institution": "University of Oklahoma"
+      }
+    ]
+  },
+  "institutionInvalid": {
+    "education": [
+      {
+        "institution": null
+      }
+    ]
+  },
+  "areaValid": {
+    "education": [
+      {
+        "area": "Information Technology"
+      }
+    ]
+  },
+  "areaInvalid": {
+    "education": [
+      {
+        "area": null
+      }
+    ]
+  },
+  "studyTypeValid": {
+    "education": [
+      {
+        "studyType": "Bachelor"
+      }
+    ]
+  },
+  "studyTypeInvalid": {
+    "education": [
+      {
+        "studyType": null
+      }
+    ]
+  },
+  "startDateValid": {
+    "education": [
+      {
+        "startDate": "2011-06-01"
+      }
+    ]
+  },
+  "startDateInvalid": {
+    "education": [
+      {
+        "startDate": null
+      }
+    ]
+  },
+  "endDateValid": {
+    "education": [
+      {
+        "endDate": "2014-01-01"
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "education": [
+      {
+        "endDate": null
+      }
+    ]
+  },
+  "gpaValid": {
+    "education": [
+      {
+        "gpa": "4.0"
+      }
+    ]
+  },
+  "gpaInvalid": {
+    "education": [
+      {
+        "gpa": null
+      }
+    ]
+  },
+  "coursesValid": {
+    "education": [
+      {
+        "courses": []
+      }
+    ]
+  },
+  "coursesInvalid": {
+    "education": [
+      {
+        "courses": null
+      }
+    ]
+  },
+  "coursesItemValid": {
+    "education": [
+      {
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      }
+    ]
+  },
+  "coursesItemInvalid": {
+    "education": [
+      {
+        "courses": [
+          null
+        ]
+      }
+    ]
+  }
+}

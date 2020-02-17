@@ -1,0 +1,124 @@
+{
+  "volunteerValid": {
+    "volunteer": []
+  },
+  "volunteerInvalid": {
+    "volunteer": null
+  },
+  "organizationValid": {
+    "volunteer": [
+      {
+        "organization": "CoderDojo"
+      }
+    ]
+  },
+  "organizationInvalid": {
+    "volunteer": [
+      {
+        "organization": null
+      }
+    ]
+  },
+  "positionValid": {
+    "volunteer": [
+      {
+        "position": "Teacher"
+      }
+    ]
+  },
+  "positionInvalid": {
+    "volunteer": [
+      {
+        "position": null
+      }
+    ]
+  },
+  "urlValid": {
+    "volunteer": [
+      {
+        "url": "http://coderdojo.example.com/"
+      }
+    ]
+  },
+  "urlInvalid": {
+    "volunteer": [
+      {
+        "url": null
+      }
+    ]
+  },
+  "startDateValid": {
+    "volunteer": [
+      {
+        "startDate": "2012-01-01"
+      }
+    ]
+  },
+  "startDateInvalid": {
+    "volunteer": [
+      {
+        "startDate": null
+      }
+    ]
+  },
+  "endDateValid": {
+    "volunteer": [
+      {
+        "endDate": "2013-01-01"
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "volunteer": [
+      {
+        "endDate": null
+      }
+    ]
+  },
+  "summaryValid": {
+    "volunteer": [
+      {
+        "summary": "Global movement of free coding clubs for young people."
+      }
+    ]
+  },
+  "summaryInvalid": {
+    "volunteer": [
+      {
+        "summary": null
+      }
+    ]
+  },
+  "highlightsValid": {
+    "volunteer": [
+      {
+        "highlights": []
+      }
+    ]
+  },
+  "highlightsInvalid": {
+    "volunteer": [
+      {
+        "highlights": null
+      }
+    ]
+  },
+  "highlightsItemValid": {
+    "volunteer": [
+      {
+        "highlights": [
+          "Awarded 'Teacher of the Month'"
+        ]
+      }
+    ]
+  },
+  "highlightsItemInvalid": {
+    "volunteer": [
+      {
+        "highlights": [
+          null
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "basicsValid": {
+    "basics": {}
+  },
+  "basicsInvalid": {
+    "basics": null
+  },
+  "nameValid": {
+    "basics": {
+      "name": "Richard Hendriks"
+    }
+  },
+  "nameInvalid": {
+    "basics": {
+      "name": null
+    }
+  },
+  "labelValid": {
+    "basics": {
+      "label": "Programmer"
+    }
+  },
+  "labelInvalid": {
+    "basics": {
+      "label": null
+    }
+  },
+  "imageValid": {
+    "basics": {
+      "image": "profile-image.png"
+    }
+  },
+  "imageInvalid": {
+    "basics": {
+      "image": null
+    }
+  },
+  "emailValid": {
+    "basics": {
+      "email": "richard.hendriks@mail.com"
+    }
+  },
+  "emailInvalid": {
+    "basics": {
+      "email": null
+    }
+  },
+  "phoneValid": {
+    "basics": {
+      "phone": "(912) 555-4321"
+    }
+  },
+  "phoneInvalid": {
+    "basics": {
+      "phone": null
+    }
+  },
+  "urlValid": {
+    "basics": {
+      "url": "http://richardhendricks.example.com"
+    }
+  },
+  "urlInvalid": {
+    "basics": {
+      "url": null
+    }
+  },
+  "summaryValid": {
+    "basics": {
+      "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford."
+    }
+  },
+  "summaryInvalid": {
+    "basics": {
+      "summary": null
+    }
+  },
+  "locationValid": {
+    "basics": {
+      "location": {}
+    }
+  },
+  "locationInvalid": {
+    "basics": {
+      "location": null
+    }
+  },
+  "locationAddressValid": {
+    "basics": {
+      "location": {
+        "address": "2712 Broadway St"
+      }
+    }
+  },
+  "locationAddressInvalid": {
+    "basics": {
+      "location": {
+        "address": null
+      }
+    }
+  },
+  "locationPostalValid": {
+    "basics": {
+      "location": {
+        "postalCode": "CA 94115"
+      }
+    }
+  },
+  "locationPostalInvalid": {
+    "basics": {
+      "location": {
+        "postalCode": null
+      }
+    }
+  },
+  "locationCityValid": {
+    "basics": {
+      "location": {
+        "city": "San Francisco"
+      }
+    }
+  },
+  "locationCityInvalid": {
+    "basics": {
+      "location": {
+        "city": null
+      }
+    }
+  },
+  "locationCountryValid": {
+    "basics": {
+      "location": {
+        "countryCode": "US"
+      }
+    }
+  },
+  "locationCountryInvalid": {
+    "basics": {
+      "location": {
+        "countryCode": null
+      }
+    }
+  },
+  "locationRegionValid": {
+    "basics": {
+      "location": {
+        "region": "California"
+      }
+    }
+  },
+  "locationRegionInvalid": {
+    "basics": {
+      "location": {
+        "region": null
+      }
+    }
+  },
+  "profilesValid": {
+    "basics": {
+      "profiles": []
+    }
+  },
+  "profilesInvalid": {
+    "basics": {
+      "profiles": null
+    }
+  },
+  "profilesNetworkValid": {
+    "basics": {
+      "profiles": [
+        {
+          "network": "Twitter"
+        }
+      ]
+    }
+  },
+  "profilesNetworkInvalid": {
+    "basics": {
+      "profiles": [
+        {
+          "network": null
+        }
+      ]
+    }
+  },
+  "profilesUsernameValid": {
+    "basics": {
+      "profiles": [
+        {
+          "username": "neutralthoughts"
+        }
+      ]
+    }
+  },
+  "profilesUsernameInvalid": {
+    "basics": {
+      "profiles": [
+        {
+          "username": null
+        }
+      ]
+    }
+  },
+  "profilesUrlValid": {
+    "basics": {
+      "profiles": [
+        {
+          "url": "https://twitter.com/neutralthoughts"
+        }
+      ]
+    }
+  },
+  "profilesUrlInvalid": {
+    "basics": {
+      "profiles": [
+        {
+          "url": null
+        }
+      ]
+    }
+  }
+}
