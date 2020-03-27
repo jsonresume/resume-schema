@@ -27,6 +27,20 @@
       }
     ]
   },
+  "dateValid2": {
+    "awards": [
+      {
+        "date": "2014-11"
+      }
+    ]
+  },
+  "dateValid3": {
+    "awards": [
+      {
+        "date": "2014"
+      }
+    ]
+  },
   "dateInvalid": {
     "awards": [
       {

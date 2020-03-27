@@ -104,6 +104,20 @@
       }
     ]
   },
+  "startDateValid2": {
+    "projects": [
+      {
+        "startDate": "2015-08"
+      }
+    ]
+  },
+  "startDateValid3": {
+    "projects": [
+      {
+        "startDate": "2015"
+      }
+    ]
+  },
   "startDateInvalid": {
     "projects": [
       {
@@ -115,6 +129,20 @@
     "projects": [
       {
         "endDate": "2016-08-24"
+      }
+    ]
+  },
+  "endDateValid2": {
+    "projects": [
+      {
+        "endDate": "2016-08"
+      }
+    ]
+  },
+  "endDateValid3": {
+    "projects": [
+      {
+        "endDate": "2016"
       }
     ]
   },

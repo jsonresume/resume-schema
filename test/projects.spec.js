@@ -114,8 +114,24 @@ test('projects[].keywords[item] - invalid', (t) => {
   t.end();
 });
 
-test('projects[].startDate - valid', (t) => {
+test('projects[].startDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.startDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('projects[].startDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.startDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('projects[].startDate - valid [YYYY]', (t) => {
+  validate(fixtures.startDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });
@@ -130,8 +146,24 @@ test('projects[].startDate - invalid', (t) => {
   t.end();
 });
 
-test('projects[].endDate - valid', (t) => {
+test('projects[].endDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.endDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('projects[].endDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.endDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('projects[].endDate - valid [YYYY]', (t) => {
+  validate(fixtures.endDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });

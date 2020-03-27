@@ -34,8 +34,24 @@ test('awards[].title - invalid', (t) => {
   t.end();
 });
 
-test('awards[].date - valid', (t) => {
+test('awards[].date - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.dateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('awards[].date - valid [YYYY-MM]', (t) => {
+  validate(fixtures.dateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('awards[].date - valid [YYYY]', (t) => {
+  validate(fixtures.dateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });
