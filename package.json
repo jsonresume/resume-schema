@@ -4,7 +4,9 @@
   "description": "JSON Resume Schema",
   "main": "validator.js",
   "scripts": {
-    "test": "tape **/*.spec.js | tap-spec"
+    "test": "tape **/*.spec.js | tap-spec",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
