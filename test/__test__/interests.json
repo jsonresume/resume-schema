@@ -1,0 +1,54 @@
+{
+  "interestsValid": {
+    "interests": []
+  },
+  "interestsInvalid": {
+    "interests": null
+  },
+  "nameValid": {
+    "interests": [
+      {
+        "name": "Wildlife"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "interests": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "keywordsValid": {
+    "interests": [
+      {
+        "keywords": []
+      }
+    ]
+  },
+  "keywordsInvalid": {
+    "interests": [
+      {
+        "keywords": null
+      }
+    ]
+  },
+  "keywordsItemValid": {
+    "interests": [
+      {
+        "keywords": [
+          "Ferrets"
+        ]
+      }
+    ]
+  },
+  "keywordsItemInvalid": {
+    "interests": [
+      {
+        "keywords": [
+          null
+        ]
+      }
+    ]
+  }
+}
