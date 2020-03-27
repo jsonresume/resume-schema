@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "tap-spec": "^5.0.0",
-    "tape": "^4.6.3"
+    "tape": "^4.13.2"
   },
   "engines": {
     "node": ">=10"
