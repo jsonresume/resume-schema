@@ -71,7 +71,8 @@
             "properties": {
               "network": {
                 "type": "string",
-                "description": "e.g. Facebook or Twitter"
+                "description": "e.g. Facebook or Twitter",
+                "format": "uri"
               },
               "username": {
                 "type": "string",
@@ -281,7 +282,8 @@
           },
           "url": {
             "type": "string",
-            "description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html"
+            "description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html",
+            "format": "uri"
           },
           "summary": {
             "type": "string",
@@ -454,7 +456,8 @@
       "properties": {
         "canonical": {
           "type": "string",
-          "description": "URL (as per RFC 3986) to latest version of this document"
+          "description": "URL (as per RFC 3986) to latest version of this document",
+          "format": "uri"
         },
         "version": {
           "type": "string",
