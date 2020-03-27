@@ -20,7 +20,7 @@
     "validator.js"
   ],
   "dependencies": {
-    "z-schema": "~3.19.0"
+    "z-schema": "^4.2.2"
   },
   "devDependencies": {
     "tap-spec": "^5.0.0",
