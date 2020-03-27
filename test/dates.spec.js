@@ -6,7 +6,7 @@ const fixtures = require('./__test__/dates.json');
 const mockDateSchema = {
   "type": "string",
   "description": "Mock Date Format",
-  "pattern": "^([0-9]{4}-[0-9]{2}-[0-9]{2}|[0-9]{4}-[0-9]{2}|[0-9]{4})$"
+  "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
 };
 
 function dateValidate(resumeJson, callback) {
