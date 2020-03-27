@@ -40,6 +40,20 @@
       }
     ]
   },
+  "releaseDateValid2": {
+    "publications": [
+      {
+        "releaseDate": "2014-10"
+      }
+    ]
+  },
+  "releaseDateValid3": {
+    "publications": [
+      {
+        "releaseDate": "2014"
+      }
+    ]
+  },
   "releaseDateInvalid": {
     "publications": [
       {

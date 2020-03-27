@@ -66,8 +66,24 @@ test('volunteer[].url - invalid', (t) => {
   t.end();
 });
 
-test('volunteer[].startDate - valid', (t) => {
+test('volunteer[].startDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.startDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('volunteer[].startDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.startDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('volunteer[].startDate - valid [YYYY]', (t) => {
+  validate(fixtures.startDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });

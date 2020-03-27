@@ -50,8 +50,24 @@ test('publications[].publisher - invalid', (t) => {
   t.end();
 });
 
-test('publications[].releaseDate - valid', (t) => {
+test('publications[].releaseDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.releaseDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('publications[].releaseDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.releaseDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('publications[].releaseDate - valid [YYYY]', (t) => {
+  validate(fixtures.releaseDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });

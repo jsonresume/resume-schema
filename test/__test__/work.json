@@ -82,6 +82,20 @@
       }
     ]
   },
+  "startDateValid2": {
+    "work": [
+      {
+        "startDate": "2013-12"
+      }
+    ]
+  },
+  "startDateValid3": {
+    "work": [
+      {
+        "startDate": "2013"
+      }
+    ]
+  },
   "startDateInvalid": {
     "work": [
       {
@@ -93,6 +107,20 @@
     "work": [
       {
         "endDate": "2014-12-01"
+      }
+    ]
+  },
+  "endDateValid2": {
+    "work": [
+      {
+        "endDate": "2014-12"
+      }
+    ]
+  },
+  "endDateValid3": {
+    "work": [
+      {
+        "endDate": "2014"
       }
     ]
   },
