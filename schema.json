@@ -71,8 +71,7 @@
             "properties": {
               "network": {
                 "type": "string",
-                "description": "e.g. Facebook or Twitter",
-                "format": "uri"
+                "description": "e.g. Facebook or Twitter"
               },
               "username": {
                 "type": "string",
@@ -80,7 +79,8 @@
               },
               "url": {
                 "type": "string",
-                "description": "e.g. http://twitter.example.com/neutralthoughts"
+                "description": "e.g. http://twitter.example.com/neutralthoughts",
+                "format": "uri"
               }
             }
           }
