@@ -443,6 +443,35 @@
           "type":{
             "type":"string",
             "description": " e.g. 'volunteering', 'presentation', 'talk', 'application', 'conference'"
+          },
+          "goal":{
+            "type": "string",
+            "description": "Specify the goal of the project, e.g. 'Sucessfully introducing Scrum'"
+          },
+          "authority":{
+            "type": "string",
+            "description": "Specify the contract authority, e.g. CTO, CDO, project manager"
+          },
+          "industry":{
+            "type": "string",
+            "description": "Specify the industry of the entity, e.g. automotive, energy, health"
+          },
+          "volume":{
+            "type": "string",
+            "description": "Specify the contract volume if not 100% capacity, e.g. 20d, 6m "
+          },
+          "team":{
+            "type": "string",
+            "description": "Specify your team size, e.g. 'Lead of 6 software engineers'"
+          },
+          "stakeholder":{
+            "type":"array",
+            "description": "Specify importand stakeholders",
+            "additionalItems": false,
+            "items": {
+              "type":"string",
+              "description": "e.g. CFO, marketing, The Business (TM)"
+            }
           }
         }
       }
