@@ -96,10 +96,17 @@
       }
     ]
   },
-  "endDateInvalid": {
+  "endDateNull": {
     "work": [
       {
         "endDate": null
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "work": [
+      {
+        "endDate": 0
       }
     ]
   },

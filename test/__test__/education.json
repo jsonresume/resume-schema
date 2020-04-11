@@ -68,10 +68,17 @@
       }
     ]
   },
-  "endDateInvalid": {
+  "endDateNull": {
     "education": [
       {
         "endDate": null
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "education": [
+      {
+        "endDate": 0
       }
     ]
   },

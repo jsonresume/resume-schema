@@ -118,10 +118,17 @@
       }
     ]
   },
-  "endDateInvalid": {
+  "endDateNull": {
     "projects": [
       {
         "endDate": null
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "projects": [
+      {
+        "endDate": 0
       }
     ]
   },

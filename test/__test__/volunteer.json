@@ -68,10 +68,17 @@
       }
     ]
   },
-  "endDateInvalid": {
+  "endDateNull": {
     "volunteer": [
       {
         "endDate": null
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "volunteer": [
+      {
+        "endDate": 0
       }
     ]
   },

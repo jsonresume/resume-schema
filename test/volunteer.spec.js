@@ -90,6 +90,14 @@ test('volunteer[].endDate - valid', (t) => {
   t.end();
 });
 
+test('volunteer[].endDate - null', (t) => {
+  validate(fixtures.endDateNull, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
 test('volunteer[].endDate - invalid', (t) => {
   validate(fixtures.endDateInvalid, (err, valid) => {
     t.notEqual(err, null, 'err should contain an error');
