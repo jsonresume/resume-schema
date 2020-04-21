@@ -6,13 +6,7 @@
 
 Standard, Specification, Schema
 
-We are still currently un-versioned, some core changes are being pushed out, and a version 0.0.0 will be released following [Semantic Versioning 2.0.0](SemVer.org) best practices. We will be experimenting with a `migration.js` system, where each change below will be represented with a function that can update an older version of `resume.json` to the newer versions.
-
 ### Major versions
-
-There will be a learning curve for the next few months as to how the ecosystem will revolve around versions.
-
-To keep things simple, *JSON Resume tools are only expected to react to major version changes*, everything will follow suit only after we reach version `1.0.0`. The process for patches and fixes will be informal, and we will try to make everything work for major versions.
 
 * [0.0.0 - First official version](https://github.com/jsonresume/resume-schema/blob/0.0.0/schema.json)
 
