@@ -4,6 +4,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "link to the version of the schema that can validate the resume"
+    },
     "basics": {
       "type": "object",
       "additionalProperties": true,
