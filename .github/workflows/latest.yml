@@ -1,9 +1,6 @@
 name: Latest
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   verify:
