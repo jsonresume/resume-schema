@@ -66,8 +66,24 @@ test('education[].studyType - invalid', (t) => {
   t.end();
 });
 
-test('education[].startDate - valid', (t) => {
+test('education[].startDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.startDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].startDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.startDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].startDate - valid [YYYY]', (t) => {
+  validate(fixtures.startDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });
@@ -82,8 +98,24 @@ test('education[].startDate - invalid', (t) => {
   t.end();
 });
 
-test('education[].endDate - valid', (t) => {
+test('education[].endDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.endDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].endDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.endDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].endDate - valid [YYYY]', (t) => {
+  validate(fixtures.endDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });

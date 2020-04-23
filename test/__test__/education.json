@@ -54,6 +54,20 @@
       }
     ]
   },
+  "startDateValid2": {
+    "education": [
+      {
+        "startDate": "2011-06"
+      }
+    ]
+  },
+  "startDateValid3": {
+    "education": [
+      {
+        "startDate": "2011"
+      }
+    ]
+  },
   "startDateInvalid": {
     "education": [
       {
@@ -65,6 +79,20 @@
     "education": [
       {
         "endDate": "2014-01-01"
+      }
+    ]
+  },
+  "endDateValid2": {
+    "education": [
+      {
+        "endDate": "2014-01"
+      }
+    ]
+  },
+  "endDateValid3": {
+    "education": [
+      {
+        "endDate": "2014"
       }
     ]
   },

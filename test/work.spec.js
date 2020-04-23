@@ -98,8 +98,24 @@ test('work[].url - invalid', (t) => {
   t.end();
 });
 
-test('work[].startDate - valid', (t) => {
+test('work[].startDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.startDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('work[].startDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.startDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('work[].startDate - valid [YYYY]', (t) => {
+  validate(fixtures.startDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });
@@ -114,8 +130,24 @@ test('work[].startDate - invalid', (t) => {
   t.end();
 });
 
-test('work[].endDate - valid', (t) => {
+test('work[].endDate - valid [YYYY-MM-DD]', (t) => {
   validate(fixtures.endDateValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('work[].endDate - valid [YYYY-MM]', (t) => {
+  validate(fixtures.endDateValid2, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('work[].endDate - valid [YYYY]', (t) => {
+  validate(fixtures.endDateValid3, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });
