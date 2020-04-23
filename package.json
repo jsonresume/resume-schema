@@ -17,7 +17,7 @@
     "url": "https://github.com/jsonresume/resume-schema/issues"
   },
   "files": [
-    "resume.json",
+    "sample.resume.json",
     "schema.json",
     "validator.js"
   ],
