@@ -7,36 +7,32 @@
 
 Standard, Specification, Schema
 
-### Gitter
+### Community Chat
 
-Everyone working on the early stages of the project should join our gitter channel [gitter.im/jsonresume/public](https://gitter.im/jsonresume/public).
+* [Gitter](https://gitter.im/jsonresume/public)
 
-### Getting started
+### Installation
 
+Resume-schema is intended to be installed as a dependency of your project:
+
+```sh
+npm install resume-schema
 ```
-npm install --save resume-schema
-```
 
-To use
+### Usage
+The main export of this package is an object that validates as a [JSON schema](https://json-schema.org/understanding-json-schema/). It should work with [any compliant implementation](https://json-schema.org/implementations.html#validator-javascript).
+
+#### validation
+To determine if an object is a valid JSON resume, you can do something like this:
 
 ```js
-var resumeSchema  = require('resume-schema');
-resumeSchema.validate({ name: "Thomas" }, function (err, report) {
-  if (err) {
-    console.error('The resume was invalid:', err);
-    return;
-  }
-  console.log('Resume validated successfully:', report);
-});
-```
+import schema from 'resume-schema';
+import Ajv from 'ajv'; // validator. See https://ajv.js.org/
 
-More likely
+const validate = new Ajv().compile(schema);
 
-```js
-var fs = require('fs');
-var resumeSchema  = require('resume-schema');
-var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
-resumeSchema.validate(resumeObject);
+validate({basics: {name: "Thomas"}}); // true
+validate({invalidProperty: "foo bar"}); // false
 ```
 
 The JSON Resume schema is available from:
@@ -51,7 +47,7 @@ require('resume-schema').schema;
 
 ### Contribute
 
-We encourage anyone who's interested in participating in the formation of this standard, to join us on Gitter, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
+We encourage anyone who's interested in participating in evolving this standard to join us on Gitter, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
 
 ### Versioning
 
