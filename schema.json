@@ -194,6 +194,11 @@
             "type": "string",
             "description": "e.g. Massachusetts Institute of Technology"
           },
+          "url": {
+            "type": "string",
+            "description": "e.g. http://facebook.example.com",
+            "format": "uri"
+          },
           "area": {
             "type": "string",
             "description": "e.g. Arts"
