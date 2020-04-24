@@ -1,7 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Resume Schema",
-  "type": "object",
   "additionalProperties": false,
   "definitions": {
     "iso8601": {
@@ -127,8 +125,12 @@
             "description": "e.g. http://facebook.example.com",
             "format": "uri"
           },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
+          "startDate": {
+            "$ref": "#/definitions/iso8601"
+          },
+          "endDate": {
+            "$ref": "#/definitions/iso8601"
+          },
           "summary": {
             "type": "string",
             "description": "Give an overview of your responsibilities at the company"
@@ -165,8 +167,12 @@
             "description": "e.g. http://facebook.example.com",
             "format": "uri"
           },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
+          "startDate": {
+            "$ref": "#/definitions/iso8601"
+          },
+          "endDate": {
+            "$ref": "#/definitions/iso8601"
+          },
           "summary": {
             "type": "string",
             "description": "Give an overview of your responsibilities at the company"
@@ -207,8 +213,12 @@
             "type": "string",
             "description": "e.g. Bachelor"
           },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
+          "startDate": {
+            "$ref": "#/definitions/iso8601"
+          },
+          "endDate": {
+            "$ref": "#/definitions/iso8601"
+          },
           "gpa": {
             "type": "string",
             "description": "grade point average, e.g. 3.67/4.0"
@@ -237,7 +247,9 @@
             "type": "string",
             "description": "e.g. One of the 100 greatest minds of the century"
           },
-          "date": { "$ref": "#/definitions/iso8601" },
+          "date": {
+            "$ref": "#/definitions/iso8601"
+          },
           "awarder": {
             "type": "string",
             "description": "e.g. Time Magazine"
@@ -265,7 +277,9 @@
             "type": "string",
             "description": "e.g. IEEE, Computer Magazine"
           },
-          "releaseDate": { "$ref": "#/definitions/iso8601" },
+          "releaseDate": {
+            "$ref": "#/definitions/iso8601"
+          },
           "url": {
             "type": "string",
             "description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html",
@@ -378,7 +392,7 @@
             "type": "string",
             "description": "e.g. The World Wide Web"
           },
-           "description": {
+          "description": {
             "type": "string",
             "description": "Short summary of project. e.g. Collated works of 2017."
           },
@@ -400,28 +414,32 @@
               "description": "e.g. AngularJS"
             }
           },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
+          "startDate": {
+            "$ref": "#/definitions/iso8601"
+          },
+          "endDate": {
+            "$ref": "#/definitions/iso8601"
+          },
           "url": {
             "type": "string",
-            "format":"uri",
+            "format": "uri",
             "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
           },
-          "roles":{
-            "type":"array",
+          "roles": {
+            "type": "array",
             "description": "Specify your role on this project or in company",
             "additionalItems": false,
             "items": {
-              "type":"string",
+              "type": "string",
               "description": "e.g. Team Lead, Speaker, Writer"
             }
           },
-          "entity":{
+          "entity": {
             "type": "string",
             "description": "Specify the relevant company/entity affiliations e.g. 'greenpeace', 'corporationXYZ'"
           },
-          "type":{
-            "type":"string",
+          "type": {
+            "type": "string",
             "description": " e.g. 'volunteering', 'presentation', 'talk', 'application', 'conference'"
           }
         }
@@ -447,5 +465,7 @@
         }
       }
     }
-  }
+  },
+  "title": "Resume Schema",
+  "type": "object"
 }
