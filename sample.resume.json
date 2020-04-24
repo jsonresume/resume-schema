@@ -1,160 +1,388 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
-    "image": "",
-    "email": "richard.hendriks@mail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+  "core": {
+    "title": "Software Engineer",
+    "livingArea": {
+      "location": {
+        "lat": 48.1548895,
+        "long": 11.4717966
+      },
+      "radius": "5km"
     },
+    "disposition": {
+      "travelTime": "25",
+      "authorization": [
+        "US Permanent Resident Card"
+      ],
+      "remote": true,
+      "workArea": {
+        "location": {
+          "lat": 48.1548895,
+          "long": 11.4717966
+        },
+        "radius": "5km"
+      },
+      "relocation": {
+        "willingness": true,
+        "area": "English Speaking Countries"
+      }
+    },
+    "summary": "Passionate individual looking for my next xyz challenge"
+  },
+  "personal": {
+    "name": "John Doe",
+    "legalGender": "male",
+    "identityGender": "male",
+    "pronouns": "they/their/them",
+    "email": "lucas@example.com",
+    "phone": "912-217-7923",
+    "currentLocation": {
+      "lat": 48.1548895,
+      "long": 11.4717966
+    },
+    "permanentLocation": {
+      "lat": 48.1548895,
+      "long": 11.4717966
+    },
+    "birthday": "1995-02-14",
+    "birthPlace": "Munich",
+    "citizenship": "Germany",
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
-      },
-      {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "network": "Github",
+        "username": "john_doe",
+        "url": "https://github.com/john_doe"
       }
-    ]
+    ],
+    "relationshipStatus": "married",
+    "postalAddress": "John Doe, Wittekindshof, Schulstrasse 4, 32547 Bad Oyenhausen, Germany",
+    "url": "http://www.example.com/",
+    "image": "https://resumic.org/assets/profile.svg"
   },
-  "work": [
-    {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
-    {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [ 
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": [
-        "GoogleMaps", "Chrome Extension", "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24", 
-      "url": "missdirection.example.com",
-      "roles": [ 
-        "Team lead", "Designer"
-      ],
-      "entity": "Smoogle",
-      "type": "application"
-    }
-  ],
+  "work": {
+    "work": [
+      {
+        "positions": [
+          "Software Engineer"
+        ],
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "startDate": "2017-12-29",
+        "endDate": "2018-12-29",
+        "location": {
+          "lat": 48.1548895,
+          "long": 11.4717966
+        },
+        "summary": "The work with company XYZ was a great experience taking my knowledge accumulation to new heights. The remote team setup made me aware of my love for remote working.",
+        "highlights": [
+          "Worked with mobile team at Twitter to develop remote debugging tools for mobile browsers"
+        ]
+      }
+    ],
+    "summary": "My general work experience was interrupted by a new educational experience, which now enables me to do even more."
+  },
+  "education": {
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "area": "Engineering",
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "studyStage": "higher",
+        "startDate": "2017-06-28",
+        "endDate": "2013-06-28",
+        "location": {
+          "lat": 48.1548895,
+          "long": 11.4717966
+        },
+        "score": {
+          "value": "3.4",
+          "best": "4",
+          "worst": "0",
+          "label": "GPA"
+        },
+        "honors": [
+          "Magna Cum Laude"
+        ],
+        "courses": [
+          "CS302 - Introduction to Algorithms"
+        ],
+        "summary": "My studies with institute XYZ was a great experience taking my knowledge accumulation to new heights. The campus live not only enabled meeting new friends, but to build out my network.",
+        "highlights": [
+          "Live abroad within a new culture"
+        ]
+      }
+    ],
+    "summary": "My diverse education gives me an additional context in my area of work."
+  },
+  "volunteer": {
+    "volunteer": [
+      {
+        "positions": [
+          "Open Source Contributor"
+        ],
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "startDate": "2014-06-29",
+        "endDate": "2017-06-29",
+        "location": {
+          "lat": 48.1548895,
+          "long": 11.4717966
+        },
+        "resources": [
+          {
+            "url": "http://www.example.com/my-example-slides/",
+            "label": "Slides"
+          }
+        ],
+        "summary": "Doing accounting work to keep things afloat.",
+        "highlights": [
+          "Set up huge donor run"
+        ]
+      }
+    ],
+    "summary": "Creating positive change is not only important in my professional life, but also in my private life and I do my best to help and volunteer."
+  },
+  "publications": {
+    "publications": [
+      {
+        "name": "Deep learning and Artificial Intelligence",
+        "description": "Discussion of the advent of deep learning and artificial intelligence",
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "publicationDate": "2015-08-01",
+        "roles": [
+          "Reviewer"
+        ],
+        "coAuthors": [
+          {
+            "name": "John Doe",
+            "url": "https://linkedin.com/john_doe"
+          }
+        ],
+        "identifier": [
+          {
+            "id": "10.1000/182",
+            "label": "DOI"
+          }
+        ],
+        "url": "http://www.computer.org.example.com/csdl/mags/co/2015/10/rx069-abs.html",
+        "image": "https://resumic.org/assets/publication.svg",
+        "resources": [
+          {
+            "url": "http://www.example.com/my-example-slides/",
+            "label": "Slides"
+          }
+        ],
+        "summary": "Writing this publication opened up a huge wave of new research areas. The work together with \u003cperson\u003e was the highlight of my research in the field of AI.",
+        "highlights": [
+          "Changed how we see the world"
+        ]
+      }
+    ],
+    "summary": "Thanks to my co-Authors and the willing reviewers my publications far surpass my imaginations."
+  },
+  "legal": {
+    "legal": [
+      {
+        "name": "XYZ's patent on LZW compression, a fundamental part of the widely used GIF graphics format",
+        "description": "Some legal document!",
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "legalType": "Patent, Trademark, Copyright",
+        "applicationDate": "2015-08-01",
+        "grantDate": "2016-09-01",
+        "endDate": "2020-09-03",
+        "resources": [
+          {
+            "url": "http://www.example.com/my-example-slides/",
+            "label": "Slides"
+          }
+        ],
+        "identifier": [
+          {
+            "id": "10.1000/182",
+            "label": "DOI"
+          }
+        ],
+        "currentAssignee": "John Doe",
+        "previousAssignee": "John Doe",
+        "roles": [
+          "Reviewer"
+        ],
+        "coAuthors": [
+          {
+            "name": "John Doe",
+            "url": "https://linkedin.com/john_doe"
+          }
+        ],
+        "summary": "Build out onboarding process as core maintainer"
+      }
+    ],
+    "summary": "As a hobby inventor I was able to amass a wide variety of copyright, patent and other legal objects."
+  },
+  "skills": {
+    "skills": [
+      {
+        "name": "Web Development",
+        "proficiency": "4",
+        "keywords": [
+          "HTML"
+        ]
+      }
+    ],
+    "summary": "My passion for figuring out things brings me to discover and learn new skills. I only listed only the most relevant skills. Please reach out for any further questions."
+  },
+  "awards": {
+    "awards": [
+      {
+        "name": "Nobel Peace Prize",
+        "description": "slightly known award for supposedly doing the good fight",
+        "date": "2016-06-12",
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "summary": "Due to my long time work on preventing harm, I was lucky to be awarded the Nobel Peace Prize."
+      }
+    ],
+    "summary": "Most awards are of honory mention, but I personally want to point out Award XYZ as it is one of my most precious ones."
+  },
+  "projects": {
+    "projects": [
+      {
+        "name": " Resumic",
+        "description": "Open CV standard",
+        "startDate": "2016-06-29",
+        "endDate": "2017-03-02",
+        "roles": [
+          "Team Lead"
+        ],
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "type": "open source|volunteering|hobby",
+        "location": {
+          "lat": 48.1548895,
+          "long": 11.4717966
+        },
+        "url": "http://www.example.org/csdl/mags/co/1996/10/rx069-abs.html",
+        "image": "https://resumic.org/assets/project.svg",
+        "resources": [
+          {
+            "url": "http://www.example.com/my-example-slides/",
+            "label": "Slides"
+          }
+        ],
+        "summary": "Starting a new CV standard to create a new CV was definitely not the most efficient use of time.",
+        "highlights": [
+          "Used by a broad community"
+        ],
+        "keywords": [
+          "JSON"
+        ]
+      }
+    ],
+    "summary": "Most of my projects are work related and can't be shown extensively. I'm happy to talk about them in detail on a call."
+  },
+  "certificates": {
+    "certificates": [
+      {
+        "name": "XYZ Certified Application Specialist (MCAS)",
+        "description": "software application specialization certificate",
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "startDate": "2017-06-29",
+        "endDate": "2017-06-29",
+        "code": "1Z0-062",
+        "score": {
+          "value": "3.4",
+          "best": "4",
+          "worst": "0",
+          "label": "GPA"
+        },
+        "verification": "https://www.coursera.org/account/accomplishments/verify/XYZ",
+        "perpetual": "true",
+        "image": "https://resumic.org/assets/certificate.svg"
+      }
+    ],
+    "summary": "Personally prefer the technology over specific certificates, but happy to take additional certification exams to validate my experiences."
+  },
+  "references": {
+    "references": [
+      {
+        "name": "Stephan Mark",
+        "reference": " Person was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing.",
+        "entity": {
+          "name": "Entity of Things",
+          "description": "A good things entity",
+          "url": "http://xyz.example.com",
+          "image": "https://resumic.org/assets/entity.svg"
+        },
+        "position": "Senior Software Engineer"
+      }
+    ],
+    "summary": "My references are great due to specific items. For contact details about my references please reach out directly"
+  },
+  "languages": {
+    "languages": [
+      {
+        "language": "English",
+        "level": "1"
+      }
+    ],
+    "summary": "Due to an extended time in a country my fluency is great."
+  },
+  "interests": {
+    "interests": [
+      {
+        "name": "Machine Learning",
+        "keywords": [
+          "Neural Networks"
+        ]
+      }
+    ],
+    "summary": "My interest give me the necessary downtime to balance work and family obligations."
+  },
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "canonical": "http://example.org/my-resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2017-06-29T15:53:01+01:00",
+    "uuid": "078c39ce-23ee-4970-9637-c07379132dce",
+    "tooling": {},
+    "schema": {
+      "filters": {},
+      "localization": {}
+    },
+    "schemaVersion": "v1.0.0"
   }
 }

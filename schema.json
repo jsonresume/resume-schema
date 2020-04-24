@@ -1,446 +1,1546 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Resume Schema",
-  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "additionalProperties": false,
-  "definitions": {
-    "iso8601": {
-      "type": "string",
-      "description": "e.g. 2014-06-29",
-      "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
-    }
-  },
   "properties": {
     "$schema": {
-      "type": "string",
-      "description": "link to the version of the schema that can validate the resume",
-      "format": "uri"
-    },
-    "basics": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "label": {
-          "type": "string",
-          "description": "e.g. Web Developer"
-        },
-        "image": {
-          "type": "string",
-          "description": "URL (as per RFC 3986) to a image in JPEG or PNG format"
-        },
-        "email": {
-          "type": "string",
-          "description": "e.g. thomas@gmail.com",
-          "format": "email"
-        },
-        "phone": {
-          "type": "string",
-          "description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
-        },
-        "url": {
-          "type": "string",
-          "description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
-          "format": "uri"
-        },
-        "summary": {
-          "type": "string",
-          "description": "Write a short 2-3 sentence biography about yourself"
-        },
-        "location": {
-          "type": "object",
-          "additionalProperties": true,
-          "properties": {
-            "address": {
-              "type": "string",
-              "description": "To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li."
-            },
-            "postalCode": {
-              "type": "string"
-            },
-            "city": {
-              "type": "string"
-            },
-            "countryCode": {
-              "type": "string",
-              "description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN"
-            },
-            "region": {
-              "type": "string",
-              "description": "The general region where you live. Can be a US state, or a province, for instance."
-            }
-          }
-        },
-        "profiles": {
-          "type": "array",
-          "description": "Specify any number of social networks that you participate in",
-          "additionalItems": false,
-          "items": {
-            "type": "object",
-            "additionalProperties": true,
-            "properties": {
-              "network": {
-                "type": "string",
-                "description": "e.g. Facebook or Twitter"
-              },
-              "username": {
-                "type": "string",
-                "description": "e.g. neutralthoughts"
-              },
-              "url": {
-                "type": "string",
-                "description": "e.g. http://twitter.example.com/neutralthoughts",
-                "format": "uri"
-              }
-            }
-          }
-        }
-      }
-    },
-    "work": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Facebook"
-          },
-          "location": {
-            "type": "string",
-            "description": "e.g. Menlo Park, CA"
-          },
-          "description": {
-            "type": "string",
-            "description": "e.g. Social Media Company"
-          },
-          "position": {
-            "type": "string",
-            "description": "e.g. Software Engineer"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://facebook.example.com",
-            "format": "uri"
-          },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
-          "summary": {
-            "type": "string",
-            "description": "Give an overview of your responsibilities at the company"
-          },
-          "highlights": {
-            "type": "array",
-            "description": "Specify multiple accomplishments",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-            }
-          }
-        }
-      }
-    },
-    "volunteer": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "organization": {
-            "type": "string",
-            "description": "e.g. Facebook"
-          },
-          "position": {
-            "type": "string",
-            "description": "e.g. Software Engineer"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://facebook.example.com",
-            "format": "uri"
-          },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
-          "summary": {
-            "type": "string",
-            "description": "Give an overview of your responsibilities at the company"
-          },
-          "highlights": {
-            "type": "array",
-            "description": "Specify accomplishments and achievements",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-            }
-          }
-        }
-      }
-    },
-    "education": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "institution": {
-            "type": "string",
-            "description": "e.g. Massachusetts Institute of Technology"
-          },
-          "area": {
-            "type": "string",
-            "description": "e.g. Arts"
-          },
-          "studyType": {
-            "type": "string",
-            "description": "e.g. Bachelor"
-          },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
-          "gpa": {
-            "type": "string",
-            "description": "grade point average, e.g. 3.67/4.0"
-          },
-          "courses": {
-            "type": "array",
-            "description": "List notable courses/subjects",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. H1302 - Introduction to American history"
-            }
-          }
-        }
-      }
+      "description": "url of JSON Schema used for validation",
+      "format": "uri",
+      "type": "string"
     },
     "awards": {
-      "type": "array",
-      "description": "Specify any awards you have received throughout your professional career",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "title": {
-            "type": "string",
-            "description": "e.g. One of the 100 greatest minds of the century"
+      "additionalProperties": false,
+      "description": "language section with summary and list of received awards",
+      "properties": {
+        "awards": {
+          "description": "list of awards",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "date": {
+                "description": "date of the award",
+                "format": "date",
+                "type": "string"
+              },
+              "description": {
+                "description": "short description about the award",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "name": {
+                "description": "name of the award",
+                "type": "string"
+              },
+              "summary": {
+                "description": "continous text summarizing the experiences",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "date",
+              "entity"
+            ],
+            "type": "object"
           },
-          "date": { "$ref": "#/definitions/iso8601" },
-          "awarder": {
-            "type": "string",
-            "description": "e.g. Time Magazine"
-          },
-          "summary": {
-            "type": "string",
-            "description": "e.g. Received for my work with Quantum Physics"
-          }
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full award section",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
     },
-    "publications": {
-      "type": "array",
-      "description": "Specify your publications through your career",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. The World Wide Web"
+    "certificates": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of certificates and permits",
+      "properties": {
+        "certificates": {
+          "description": "list of certificates",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "code": {
+                "description": "code of the certificate",
+                "type": "string"
+              },
+              "description": {
+                "description": "short description of the certificate",
+                "type": "string"
+              },
+              "endDate": {
+                "description": "end date",
+                "format": "date",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "image": {
+                "description": "url or src of a certification badge or another related image",
+                "type": "string"
+              },
+              "name": {
+                "description": "name of the certificate",
+                "type": "string"
+              },
+              "perpetual": {
+                "description": "validity status being perpetual or not",
+                "type": "string"
+              },
+              "score": {
+                "additionalProperties": false,
+                "description": "exam score",
+                "properties": {
+                  "best": {
+                    "description": "best possible score",
+                    "type": "string"
+                  },
+                  "label": {
+                    "description": "label/type of the score",
+                    "type": "string"
+                  },
+                  "value": {
+                    "description": "value of the score",
+                    "type": "string"
+                  },
+                  "worst": {
+                    "description": "worst possible score",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value",
+                  "best",
+                  "worst"
+                ],
+                "type": "object"
+              },
+              "startDate": {
+                "description": "start date",
+                "format": "date",
+                "type": "string"
+              },
+              "verification": {
+                "description": "public certificate verification URL",
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "entity"
+            ],
+            "type": "object"
           },
-          "publisher": {
-            "type": "string",
-            "description": "e.g. IEEE, Computer Magazine"
-          },
-          "releaseDate": { "$ref": "#/definitions/iso8601" },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html",
-            "format": "uri"
-          },
-          "summary": {
-            "type": "string",
-            "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
-          }
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full certificate section",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
     },
-    "skills": {
-      "type": "array",
-      "description": "List out your professional skill-set",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Web Development"
-          },
-          "level": {
-            "type": "string",
-            "description": "e.g. Master"
-          },
-          "keywords": {
-            "type": "array",
-            "description": "List some keywords pertaining to this skill",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. HTML"
+    "core": {
+      "additionalProperties": false,
+      "description": "core non identifying facts",
+      "properties": {
+        "disposition": {
+          "additionalProperties": false,
+          "description": " disposition or desire for work engagements",
+          "properties": {
+            "authorization": {
+              "description": "authorizations such as work and travel visa and residencies",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "commitmentType": {
+              "description": "types of work commitements desired such as fulltime, part-time, contract, permanent etc.",
+              "type": "string"
+            },
+            "relocation": {
+              "additionalProperties": false,
+              "description": "relocation preferences such as willingness and location",
+              "properties": {
+                "area": {
+                  "description": "work area which could be city or country or language area",
+                  "type": "string"
+                },
+                "willingness": {
+                  "description": "willingness to relocate",
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            },
+            "remote": {
+              "description": "desire to work remotely",
+              "type": "boolean"
+            },
+            "travelTime": {
+              "description": "percentage of time willing to travel",
+              "type": "string"
+            },
+            "workArea": {
+              "additionalProperties": false,
+              "description": "work area which could be city or country or even remote",
+              "properties": {
+                "location": {
+                  "additionalProperties": false,
+                  "description": "specific location",
+                  "properties": {
+                    "lat": {
+                      "description": "latitude part of a coordinate",
+                      "type": "number"
+                    },
+                    "long": {
+                      "description": "longitude part of a coordinate",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "lat",
+                    "long"
+                  ],
+                  "type": "object"
+                },
+                "radius": {
+                  "description": "radius denoting the area around a location",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "location",
+                "radius"
+              ],
+              "type": "object"
             }
-          }
-        }
-      }
-    },
-    "languages": {
-      "type": "array",
-      "description": "List any other languages you speak",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "language": {
-            "type": "string",
-            "description": "e.g. English, Spanish"
           },
-          "fluency": {
-            "type": "string",
-            "description": "e.g. Fluent, Beginner"
-          }
+          "type": "object"
+        },
+        "livingArea": {
+          "additionalProperties": false,
+          "description": "living area which could be city or country or even continent",
+          "properties": {
+            "location": {
+              "additionalProperties": false,
+              "description": "specific location",
+              "properties": {
+                "lat": {
+                  "description": "latitude part of a coordinate",
+                  "type": "number"
+                },
+                "long": {
+                  "description": "longitude part of a coordinate",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "lat",
+                "long"
+              ],
+              "type": "object"
+            },
+            "radius": {
+              "description": "radius denoting the area around a location",
+              "type": "string"
+            }
+          },
+          "required": [
+            "location",
+            "radius"
+          ],
+          "type": "object"
+        },
+        "summary": {
+          "description": "write a short biography about you and your achievements optionally in relation to your current application",
+          "type": "string"
+        },
+        "title": {
+          "description": "job title",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
+    },
+    "education": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of the education",
+      "properties": {
+        "education": {
+          "description": "list of education experiences",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "area": {
+                "description": "area of study",
+                "type": "string"
+              },
+              "courses": {
+                "description": "notable courses/subjects",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "degree": {
+                "description": "final or persuing degree",
+                "type": "string"
+              },
+              "endDate": {
+                "description": "end date",
+                "format": "date",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "highlights": {
+                "description": "important (bullet point) achievements",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "honors": {
+                "description": "specific honors",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "location": {
+                "additionalProperties": false,
+                "description": "location of the activity",
+                "properties": {
+                  "lat": {
+                    "description": "latitude part of a coordinate",
+                    "type": "number"
+                  },
+                  "long": {
+                    "description": "longitude part of a coordinate",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "lat",
+                  "long"
+                ],
+                "type": "object"
+              },
+              "score": {
+                "additionalProperties": false,
+                "properties": {
+                  "best": {
+                    "description": "best possible score",
+                    "type": "string"
+                  },
+                  "label": {
+                    "description": "label/type of the score",
+                    "type": "string"
+                  },
+                  "value": {
+                    "description": "value of the score",
+                    "type": "string"
+                  },
+                  "worst": {
+                    "description": "worst possible score",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value",
+                  "best",
+                  "worst"
+                ],
+                "type": "object"
+              },
+              "startDate": {
+                "description": "start date",
+                "format": "date",
+                "type": "string"
+              },
+              "studyStage": {
+                "description": "stage of study",
+                "enum": [
+                  "primary",
+                  "secondary",
+                  "higher"
+                ],
+                "type": "string"
+              },
+              "summary": {
+                "description": "continous text summarizing the work, time and experiences",
+                "type": "string"
+              }
+            },
+            "required": [
+              "entity",
+              "studyStage",
+              "startDate"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full education section",
+          "type": "string"
+        }
+      },
+      "type": "object"
     },
     "interests": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Philosophy"
+      "additionalProperties": false,
+      "description": "language section with summary and list of interests",
+      "properties": {
+        "interests": {
+          "description": "list of interests",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "keywords": {
+                "description": "keywords giving context or details about the project",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "name": {
+                "description": "name of the interest",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "type": "object"
           },
-          "keywords": {
-            "type": "array",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Friedrich Nietzsche"
-            }
-          }
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full interest section",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
     },
-    "references": {
-      "type": "array",
-      "description": "List references you have received",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Timothy Cook"
+    "languages": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of languages",
+      "properties": {
+        "languages": {
+          "description": "list of languages",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "language": {
+                "description": "name of language",
+                "type": "string"
+              },
+              "level": {
+                "description": "proficiency level for the language using numerical declaration 1=basic, 2=conversational, 3=fluent, 4=native",
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "language",
+              "level"
+            ],
+            "type": "object"
           },
-          "reference": {
-            "type": "string",
-            "description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
-          }
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full language section",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
     },
-    "projects": {
-      "type": "array",
-      "description": "Specify career projects",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. The World Wide Web"
+    "legal": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of legal items",
+      "properties": {
+        "legal": {
+          "description": "list of legal",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "applicationDate": {
+                "description": "date of the application",
+                "format": "date",
+                "type": "string"
+              },
+              "coAuthors": {
+                "description": "co-authors for this legal item",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "description": "full name",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "url to link to mentioned person",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "currentAssignee": {
+                "description": "current entity or individual assigned to the legal item",
+                "type": "string"
+              },
+              "description": {
+                "description": "short description about the document",
+                "type": "string"
+              },
+              "endDate": {
+                "description": "end date",
+                "format": "date",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "grantDate": {
+                "description": "date of the grant",
+                "format": "date",
+                "type": "string"
+              },
+              "identifier": {
+                "description": "labeled identifiers",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "description": "ID/code of the identifier",
+                      "type": "string"
+                    },
+                    "label": {
+                      "description": "label of the identifier",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "legalType": {
+                "description": "type of the document",
+                "type": "string"
+              },
+              "name": {
+                "description": "name of the document, patent, copyright assignment or the likes",
+                "type": "string"
+              },
+              "previousAssignee": {
+                "description": "previous entity or individual assigned to the legal item",
+                "type": "string"
+              },
+              "resources": {
+                "description": "multiple resources with label",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": {
+                      "description": "label of the resource",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "url of the resource",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "label"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "roles": {
+                "description": "specific roles within or around this legal item - author might be assumed as default",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "summary": {
+                "description": "summary of achievements",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "entity"
+            ],
+            "type": "object"
           },
-           "description": {
-            "type": "string",
-            "description": "Short summary of project. e.g. Collated works of 2017."
-          },
-          "highlights": {
-            "type": "array",
-            "description": "Specify multiple features",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Directs you close but not quite there"
-            }
-          },
-          "keywords": {
-            "type": "array",
-            "description": "Specify special elements involved",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. AngularJS"
-            }
-          },
-          "startDate": { "$ref": "#/definitions/iso8601" },
-          "endDate": { "$ref": "#/definitions/iso8601" },
-          "url": {
-            "type": "string",
-            "format":"uri",
-            "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
-          },
-          "roles":{
-            "type":"array",
-            "description": "Specify your role on this project or in company",
-            "additionalItems": false,
-            "items": {
-              "type":"string",
-              "description": "e.g. Team Lead, Speaker, Writer"
-            }
-          },
-          "entity":{
-            "type": "string",
-            "description": "Specify the relevant company/entity affiliations e.g. 'greenpeace', 'corporationXYZ'"
-          },
-          "type":{
-            "type":"string",
-            "description": " e.g. 'volunteering', 'presentation', 'talk', 'application', 'conference'"
-          }
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full legal section",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
     },
     "meta": {
-      "type": "object",
-      "description": "The schema version and any other tooling configuration lives here",
-      "additionalProperties": true,
+      "additionalProperties": false,
+      "description": " meta data such as resume version as well as tool provided and generated data/configuration",
       "properties": {
         "canonical": {
-          "type": "string",
-          "description": "URL (as per RFC 3986) to latest version of this document",
-          "format": "uri"
-        },
-        "version": {
-          "type": "string",
-          "description": "A version field which follows semver - e.g. v1.0.0"
+          "description": "URL (as per RFC 3986) to the latest version of this document",
+          "format": "uri",
+          "type": "string"
         },
         "lastModified": {
-          "type": "string",
-          "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
+          "description": "date-time of last modified",
+          "format": "date-time",
+          "type": "string"
+        },
+        "schema": {
+          "additionalProperties": false,
+          "description": "empty section for the schema itself to hold tooling relevant data",
+          "properties": {
+            "filters": {
+              "additionalProperties": false,
+              "description": "empty section the schema itself to add filter data",
+              "properties": {},
+              "type": "object"
+            },
+            "localization": {
+              "additionalProperties": false,
+              "description": "empty section to add lolcalization data",
+              "properties": {},
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "schemaVersion": {
+          "description": "version field for used schema which follows semver",
+          "type": "string"
+        },
+        "tooling": {
+          "additionalProperties": false,
+          "description": "empty section for tools to write to in the form of meta.tooling.\u003ctool\u003e.\u003ctool-data-section\u003e",
+          "properties": {},
+          "type": "object"
+        },
+        "uuid": {
+          "description": "uuid v4 of the resume",
+          "type": "string"
+        },
+        "version": {
+          "description": "version field which follows semver",
+          "type": "string"
         }
-      }
+      },
+      "type": "object"
+    },
+    "personal": {
+      "additionalProperties": false,
+      "description": "sensitive and potentially identifying information - should not be requested or used",
+      "properties": {
+        "birthPlace": {
+          "description": "place of birth",
+          "type": "string"
+        },
+        "birthday": {
+          "description": "date of birthday",
+          "format": "date",
+          "type": "string"
+        },
+        "citizenship": {
+          "description": "country of citizenship",
+          "type": "string"
+        },
+        "currentLocation": {
+          "additionalProperties": false,
+          "description": "current living location",
+          "properties": {
+            "lat": {
+              "description": "latitude part of a coordinate",
+              "type": "number"
+            },
+            "long": {
+              "description": "longitude part of a coordinate",
+              "type": "number"
+            }
+          },
+          "required": [
+            "lat",
+            "long"
+          ],
+          "type": "object"
+        },
+        "email": {
+          "description": "email address",
+          "format": "idn-email",
+          "type": "string"
+        },
+        "identityGender": {
+          "description": "gender you are optionally identifying with",
+          "type": "string"
+        },
+        "image": {
+          "description": "url or src of an image, photo or logo",
+          "type": "string"
+        },
+        "legalGender": {
+          "description": "legal gender",
+          "type": "string"
+        },
+        "name": {
+          "description": "full name",
+          "type": "string"
+        },
+        "permanentLocation": {
+          "additionalProperties": false,
+          "description": "permanently living location",
+          "properties": {
+            "lat": {
+              "description": "latitude part of a coordinate",
+              "type": "number"
+            },
+            "long": {
+              "description": "longitude part of a coordinate",
+              "type": "number"
+            }
+          },
+          "required": [
+            "lat",
+            "long"
+          ],
+          "type": "object"
+        },
+        "phone": {
+          "description": "phone number",
+          "type": "string"
+        },
+        "postalAddress": {
+          "description": "full address useable to send postal mail",
+          "type": "string"
+        },
+        "profiles": {
+          "description": "list of social/other networks",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "network": {
+                "description": "name of the network",
+                "type": "string"
+              },
+              "url": {
+                "description": "url of the network profile",
+                "format": "uri",
+                "type": "string"
+              },
+              "username": {
+                "description": "username in the network",
+                "type": "string"
+              }
+            },
+            "required": [
+              "network",
+              "username"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "pronouns": {
+          "description": "pronouns you feel comfortable with being used",
+          "type": "string"
+        },
+        "relationshipStatus": {
+          "description": "relevant relationship or civil status",
+          "type": "string"
+        },
+        "url": {
+          "description": "homepage url",
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "projects": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of (career-) relevant projects",
+      "properties": {
+        "projects": {
+          "description": "list of projects",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "description": {
+                "description": "short description of the project",
+                "type": "string"
+              },
+              "endDate": {
+                "description": "end date",
+                "format": "date",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "highlights": {
+                "description": "important (bullet point) achievements",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "image": {
+                "description": "url or src of an image, photo or logo",
+                "type": "string"
+              },
+              "keywords": {
+                "description": "keywords giving context or details about the project",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "location": {
+                "additionalProperties": false,
+                "description": "location of the project",
+                "properties": {
+                  "lat": {
+                    "description": "latitude part of a coordinate",
+                    "type": "number"
+                  },
+                  "long": {
+                    "description": "longitude part of a coordinate",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "lat",
+                  "long"
+                ],
+                "type": "object"
+              },
+              "name": {
+                "description": "name of the project, contribution, talk or the like",
+                "type": "string"
+              },
+              "resources": {
+                "description": "additional linkable resources identified with a label",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": {
+                      "description": "label of the resource",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "url of the resource",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "label"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "roles": {
+                "description": "specific roles within or around this project",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "startDate": {
+                "description": "start date",
+                "format": "date",
+                "type": "string"
+              },
+              "summary": {
+                "description": "continous text summarizing the experiences",
+                "type": "string"
+              },
+              "type": {
+                "description": "type of the project",
+                "type": "string"
+              },
+              "url": {
+                "description": "url of the project",
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "startDate",
+              "entity"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full project section",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "publications": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of written, spoken or conference publications",
+      "properties": {
+        "publications": {
+          "description": "list of publications",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "coAuthors": {
+                "description": "co-authors for this publication",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "description": "full name",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "url to link to mentioned person",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "description": {
+                "description": "short description about the publication",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "highlights": {
+                "description": "important (bullet point) achievements",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "identifier": {
+                "description": "labeled identifiers",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "description": "ID/code of the identifier",
+                      "type": "string"
+                    },
+                    "label": {
+                      "description": "label of the identifier",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "image": {
+                "description": "url or src of an image, photo or logo",
+                "type": "string"
+              },
+              "name": {
+                "description": "name of the publication",
+                "type": "string"
+              },
+              "publicationDate": {
+                "description": "date of publication",
+                "format": "date",
+                "type": "string"
+              },
+              "resources": {
+                "description": "additional linkable resources identified with a label",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": {
+                      "description": "label of the resource",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "url of the resource",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "label"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "roles": {
+                "description": "specific roles within or around this publication - author might be assumed as default",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "summary": {
+                "description": "continous text summarizing the experiences",
+                "type": "string"
+              },
+              "url": {
+                "description": "url of the publication",
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "entity"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full publication section",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "references": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of references",
+      "properties": {
+        "references": {
+          "description": "list of references",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "name": {
+                "description": "name of the reference",
+                "type": "string"
+              },
+              "position": {
+                "description": "position of the reference at affiliated entity",
+                "type": "string"
+              },
+              "reference": {
+                "description": "reference text",
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference",
+              "entity"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full reference section",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "skills": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of professional skill-sets",
+      "properties": {
+        "skills": {
+          "description": "list of skills",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "keywords": {
+                "description": "keywords giving context or details about the skill",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "name": {
+                "description": "name of the skill",
+                "type": "string"
+              },
+              "proficiency": {
+                "description": "proficiency level of the skill using numerical declaration 1=beginner, 2=early, 3=competent, 4=advanced, 5=expert",
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "proficiency"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "summary": {
+          "description": "continous text summarizing or adding context to the full skill section",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "volunteer": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of volunteer experiences centered on the volunteer organisation",
+      "properties": {
+        "summary": {
+          "description": "continous text summarizing or adding context to the full volunteer section",
+          "type": "string"
+        },
+        "volunteer": {
+          "description": "list of volunteering experiences",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "endDate": {
+                "description": "end date",
+                "format": "date",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "highlights": {
+                "description": "important (bullet point) achievements",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "location": {
+                "additionalProperties": false,
+                "description": "location of the activity",
+                "properties": {
+                  "lat": {
+                    "description": "latitude part of a coordinate",
+                    "type": "number"
+                  },
+                  "long": {
+                    "description": "longitude part of a coordinate",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "lat",
+                  "long"
+                ],
+                "type": "object"
+              },
+              "positions": {
+                "description": "positions or type of the contribution",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "resources": {
+                "description": "additional linkable resources identified with a label",
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": {
+                      "description": "label of the resource",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "url of the resource",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "label"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "startDate": {
+                "description": "start date",
+                "format": "date",
+                "type": "string"
+              },
+              "summary": {
+                "description": "continous text summarizing the experiences",
+                "type": "string"
+              }
+            },
+            "required": [
+              "positions",
+              "entity",
+              "startDate"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "work": {
+      "additionalProperties": false,
+      "description": "language section with summary and list of work experiences centered on the entity - bigger projects could be showcased using the projects section",
+      "properties": {
+        "summary": {
+          "description": "continous text summarizing or adding context to the full work section",
+          "type": "string"
+        },
+        "work": {
+          "description": "list of work experiences",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "endDate": {
+                "description": "end date",
+                "format": "date",
+                "type": "string"
+              },
+              "entity": {
+                "additionalProperties": false,
+                "description": "entity details",
+                "properties": {
+                  "description": {
+                    "description": "entity's primary activity",
+                    "type": "string"
+                  },
+                  "image": {
+                    "description": "url or src of an image, photo or logo",
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "url of the entity website",
+                    "format": "uri",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
+              },
+              "highlights": {
+                "description": "important (bullet point) achievements",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "location": {
+                "additionalProperties": false,
+                "description": "location of the activity",
+                "properties": {
+                  "lat": {
+                    "description": "latitude part of a coordinate",
+                    "type": "number"
+                  },
+                  "long": {
+                    "description": "longitude part of a coordinate",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "lat",
+                  "long"
+                ],
+                "type": "object"
+              },
+              "positions": {
+                "description": "concurrent positions at the company",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "startDate": {
+                "description": "start date",
+                "format": "date",
+                "type": "string"
+              },
+              "summary": {
+                "description": "continous text summarizing the work, time and experiences",
+                "type": "string"
+              }
+            },
+            "required": [
+              "positions",
+              "entity",
+              "startDate"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
     }
-  }
+  },
+  "required": [
+    "$schema",
+    "core",
+    "personal",
+    "work",
+    "education",
+    "volunteer",
+    "publications",
+    "legal",
+    "skills",
+    "awards",
+    "projects",
+    "certificates",
+    "references",
+    "languages",
+    "interests",
+    "meta"
+  ],
+  "title": "Resumic resume Schema",
+  "type": "object"
 }
