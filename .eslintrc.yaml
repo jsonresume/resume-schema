@@ -1,0 +1,9 @@
+---
+parser: babel-eslint
+extends:
+  - plugin:json/recommended
+rules:
+  editorconfig/editorconfig: error
+  json/json: error
+plugins:
+  - editorconfig
