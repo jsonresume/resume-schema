@@ -103,17 +103,17 @@
       }
     ]
   },
-  "gpaValid": {
+  "scoreValid": {
     "education": [
       {
-        "gpa": "4.0"
+        "score": "4.0"
       }
     ]
   },
-  "gpaInvalid": {
+  "scoreInvalid": {
     "education": [
       {
-        "gpa": null
+        "score": null
       }
     ]
   },
