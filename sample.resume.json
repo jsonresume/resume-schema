@@ -66,7 +66,7 @@
       "studyType": "Bachelor",
       "startDate": "2011-06-01",
       "endDate": "2014-01-01",
-      "grade": "4.0",
+      "score": "4.0",
       "courses": [
         "DB1101 - Basic SQL",
         "CS2011 - Java Introduction"
@@ -135,7 +135,7 @@
     {
       "name": "Miss Direction",
       "description": "A mapping engine that misguides you",
-      "highlights": [ 
+      "highlights": [
         "Won award at AIHacks 2016",
         "Built by all women team of newbie programmers",
         "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
@@ -144,9 +144,9 @@
         "GoogleMaps", "Chrome Extension", "Javascript"
       ],
       "startDate": "2016-08-24",
-      "endDate": "2016-08-24", 
+      "endDate": "2016-08-24",
       "url": "missdirection.example.com",
-      "roles": [ 
+      "roles": [
         "Team lead", "Designer"
       ],
       "entity": "Smoogle",
