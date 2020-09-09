@@ -1,0 +1,92 @@
+{
+  "publicationsValid": {
+    "publications": []
+  },
+  "publicationsInvalid": {
+    "publications": null
+  },
+  "nameValid": {
+    "publications": [
+      {
+        "name": "Video compression for 3d media"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "publications": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "publisherValid": {
+    "publications": [
+      {
+        "publisher": "Hooli"
+      }
+    ]
+  },
+  "publisherInvalid": {
+    "publications": [
+      {
+        "publisher": null
+      }
+    ]
+  },
+  "releaseDateValid": {
+    "publications": [
+      {
+        "releaseDate": "2014-10-01"
+      }
+    ]
+  },
+  "releaseDateValid2": {
+    "publications": [
+      {
+        "releaseDate": "2014-10"
+      }
+    ]
+  },
+  "releaseDateValid3": {
+    "publications": [
+      {
+        "releaseDate": "2014"
+      }
+    ]
+  },
+  "releaseDateInvalid": {
+    "publications": [
+      {
+        "releaseDate": null
+      }
+    ]
+  },
+  "urlValid": {
+    "publications": [
+      {
+        "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+      }
+    ]
+  },
+  "urlInvalid": {
+    "publications": [
+      {
+        "url": null
+      }
+    ]
+  },
+  "summaryValid": {
+    "publications": [
+      {
+        "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      }
+    ]
+  },
+  "summaryInvalid": {
+    "publications": [
+      {
+        "summary": null
+      }
+    ]
+  }
+}

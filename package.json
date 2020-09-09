@@ -1,10 +1,14 @@
 {
   "name": "resume-schema",
-  "version": "0.0.17",
+  "version": "0.1.3",
   "description": "JSON Resume Schema",
   "main": "validator.js",
   "scripts": {
-    "test": "node ./test/index.js | tap-spec"
+    "test": "npm run validate && npm run test-units",
+    "validate": "ajv validate -s node_modules/json-metaschema/draft-07-schema -d schema",
+    "test-units": "tape **/*.spec.js | tap-spec",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -15,19 +19,20 @@
     "url": "https://github.com/jsonresume/resume-schema/issues"
   },
   "files": [
-    "resume.json",
+    "sample.resume.json",
     "schema.json",
     "validator.js"
   ],
   "dependencies": {
-    "z-schema": "~3.19.0"
+    "z-schema": "^4.2.2"
   },
   "devDependencies": {
-    "promise": "^8.0.1",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.3"
+    "ajv-cli": "^3.1.0",
+    "json-metaschema": "^1.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.13.2"
   },
   "engines": {
-    "node": "8"
+    "node": ">=10"
   }
 }
