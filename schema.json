@@ -269,7 +269,7 @@
         "type": "object",
         "additionalProperties": true,
         "properties": {
-          "title": {
+          "name": {
             "type": "string",
             "description": "e.g. Certified Kubernetes Administrator"
           },
