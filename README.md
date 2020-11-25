@@ -7,10 +7,6 @@
 
 Standard, Specification, Schema
 
-### Gitter
-
-Everyone working on the early stages of the project should join our gitter channel [gitter.im/jsonresume/public](https://gitter.im/jsonresume/public).
-
 ### Getting started
 
 ```
@@ -20,40 +16,40 @@ npm install --save resume-schema
 To use
 
 ```js
-var resumeSchema = require('resume-schema');
-resumeSchema.validate({ name: "Thomas" }, function (err, report) {
-  if (err) {
-    console.error('The resume was invalid:', err);
-    return;
+const resumeSchema = require("resume-schema");
+resumeSchema.validate(
+  { name: "Thomas" },
+  function (err, report) {
+    if (err) {
+      console.error("The resume was invalid:", err);
+      return;
+    }
+    console.log("Resume validated successfully:", report);
+  },
+  function (err) {
+    console.error("The resume was invalid:", err);
   }
-  console.log('Resume validated successfully:', report);
-}, function(err) {
-  console.error('The resume was invalid:', err);
-});
+);
 ```
 
 More likely
 
 ```js
-var fs = require('fs');
-var resumeSchema = require('resume-schema');
-var resumeObject = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
+var fs = require("fs");
+var resumeSchema = require("resume-schema");
+var resumeObject = JSON.parse(fs.readFileSync("resume.json", "utf8"));
 resumeSchema.validate(resumeObject);
 ```
 
 The JSON Resume schema is available from:
 
 ```js
-require('resume-schema').schema;
+require("resume-schema").schema;
 ```
-
-### People
-
-* Julian Shapiro for early prototype revisions
 
 ### Contribute
 
-We encourage anyone who's interested in participating in the formation of this standard, to join us on Gitter, and/or to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
+We encourage anyone who's interested in participating in the formation of this standard to join the discussions [here on GitHub](https://github.com/jsonresume/resume-schema/issues). Also feel free to fork this project and submit new ideas to add to the JSON Resume Schema standard. To make sure all formatting is kept in check, please install the [EditorConfig plugin](http://editorconfig.org/) for your editor of choice.
 
 ### Versioning
 
@@ -66,17 +62,17 @@ a major-version release. As a result of this policy, you can (and should)
 specify any dependency on JSON Resume Schema by using the Pessimistic Version
 Constraint with two digits of precision.
 
-### Research
+We use automatic semver system.
 
-- [A more professional recruitment process with structured data](/research/A%20more%20professional%20recruitment%20process%20with%20structured%20CV%20data.pdf).
+Pull requests titles should be formatted as such
 
-### Proposals to reinvestigate
-
-* [#69 - Standard format for phone numbers](https://github.com/jsonresume/resume-schema/issues/69)
-* [#44 - Person-Job Fit ](https://github.com/jsonresume/resume-schema/issues/44)
-* [#12 - geotag location in work ](https://github.com/jsonresume/resume-schema/issues/12)
-* [#51 - Support multiple positions within one job](https://github.com/jsonresume/resume-schema/issues/51)
+```
+"fix: added something" - will bump the patch version
+"feat: added something" - will bump the minor version
+"feat!: added something" - will bump the major version
+```
 
 ### Other resume standards
-* [HR-XML](https://schemas.liquid-technologies.com/HR-XML/2007-04-15/)
-* [Europass](http://europass.cedefop.europa.eu/about-europass)
+
+- [HR-XML](https://schemas.liquid-technologies.com/HR-XML/2007-04-15/)
+- [Europass](http://europass.cedefop.europa.eu/about-europass)
