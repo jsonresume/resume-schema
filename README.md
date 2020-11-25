@@ -69,7 +69,7 @@ Pull requests titles should be formatted as such
 ```
 "fix: added something" - will bump the patch version
 "feat: added something" - will bump the minor version
-"feat!: added something" - will bump the major version
+"perf: added something" - will bump the major version
 ```
 
 ### Other resume standards
