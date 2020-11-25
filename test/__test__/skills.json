@@ -1,0 +1,68 @@
+{
+  "skillsValid": {
+    "skills": []
+  },
+  "skillsInvalid": {
+    "skills": null
+  },
+  "nameValid": {
+    "skills": [
+      {
+        "name": "Web Development"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "skills": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "levelValid": {
+    "skills": [
+      {
+        "level": "Master"
+      }
+    ]
+  },
+  "levelInvalid": {
+    "skills": [
+      {
+        "level": null
+      }
+    ]
+  },
+  "keywordsValid": {
+    "skills": [
+      {
+        "keywords": []
+      }
+    ]
+  },
+  "keywordsInvalid": {
+    "skills": [
+      {
+        "keywords": null
+      }
+    ]
+  },
+  "keywordsItemValid": {
+    "skills": [
+      {
+        "keywords": [
+          "HTML"
+        ]
+      }
+    ]
+  },
+  "keywordsItemInvalid": {
+    "skills": [
+      {
+        "keywords": [
+          null
+        ]
+      }
+    ]
+  }
+}

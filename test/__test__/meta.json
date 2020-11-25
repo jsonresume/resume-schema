@@ -1,0 +1,38 @@
+{
+  "metaValid": {
+    "meta": {}
+  },
+  "metaInvalid": {
+    "meta": null
+  },
+  "canonicalValid": {
+    "meta": {
+      "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json"
+    }
+  },
+  "canonicalInvalid": {
+    "meta": {
+      "canonical": null
+    }
+  },
+  "versionValid": {
+    "meta": {
+      "version": "v1.0.0"
+    }
+  },
+  "versionInvalid": {
+    "meta": {
+      "version": null
+    }
+  },
+  "lastModifiedValid": {
+    "meta": {
+      "lastModified": "2017-12-24T15:53:00"
+    }
+  },
+  "lastModifiedInvalid": {
+    "meta": {
+      "lastModified": null
+    }
+  }
+}

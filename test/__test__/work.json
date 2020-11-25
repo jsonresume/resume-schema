@@ -1,0 +1,180 @@
+{
+  "workValid": {
+    "work": []
+  },
+  "workInvalid": {
+    "work": null
+  },
+  "nameValid": {
+    "work": [
+      {
+        "name": "Pied Piper"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "work": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "locationValid": {
+    "work": [
+      {
+        "location": "Palo Alto, CA"
+      }
+    ]
+  },
+  "locationInvalid": {
+    "work": [
+      {
+        "location": null
+      }
+    ]
+  },
+  "descriptionValid": {
+    "work": [
+      {
+        "description": "Awesome compression company"
+      }
+    ]
+  },
+  "descriptionInvalid": {
+    "work": [
+      {
+        "description": null
+      }
+    ]
+  },
+  "positionValid": {
+    "work": [
+      {
+        "position": "CEO/President"
+      }
+    ]
+  },
+  "positionInvalid": {
+    "work": [
+      {
+        "position": null
+      }
+    ]
+  },
+  "urlValid": {
+    "work": [
+      {
+        "url": "http://piedpiper.example.com"
+      }
+    ]
+  },
+  "urlInvalid": {
+    "work": [
+      {
+        "url": null
+      }
+    ]
+  },
+  "startDateValid": {
+    "work": [
+      {
+        "startDate": "2013-12-01"
+      }
+    ]
+  },
+  "startDateValid2": {
+    "work": [
+      {
+        "startDate": "2013-12"
+      }
+    ]
+  },
+  "startDateValid3": {
+    "work": [
+      {
+        "startDate": "2013"
+      }
+    ]
+  },
+  "startDateInvalid": {
+    "work": [
+      {
+        "startDate": null
+      }
+    ]
+  },
+  "endDateValid": {
+    "work": [
+      {
+        "endDate": "2014-12-01"
+      }
+    ]
+  },
+  "endDateValid2": {
+    "work": [
+      {
+        "endDate": "2014-12"
+      }
+    ]
+  },
+  "endDateValid3": {
+    "work": [
+      {
+        "endDate": "2014"
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "work": [
+      {
+        "endDate": null
+      }
+    ]
+  },
+  "summaryValid": {
+    "work": [
+      {
+        "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression."
+      }
+    ]
+  },
+  "summaryInvalid": {
+    "work": [
+      {
+        "summary": null
+      }
+    ]
+  },
+  "highlightsValid": {
+    "work": [
+      {
+        "highlights": []
+      }
+    ]
+  },
+  "highlightsInvalid": {
+    "work": [
+      {
+        "highlights": null
+      }
+    ]
+  },
+  "highlightsItemValid": {
+    "work": [
+      {
+        "highlights": [
+          "Successfully won Techcrunch Disrupt"
+        ]
+      }
+    ]
+  },
+  "highlightsItemInvalid": {
+    "work": [
+      {
+        "highlights": [
+          null
+        ]
+      }
+    ]
+  }
+}

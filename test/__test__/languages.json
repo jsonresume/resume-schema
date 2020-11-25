@@ -1,0 +1,36 @@
+{
+  "languagesValid": {
+    "languages": []
+  },
+  "languagesInvalid": {
+    "languages": null
+  },
+  "languageValid": {
+    "languages": [
+      {
+        "language": "English"
+      }
+    ]
+  },
+  "languageInvalid": {
+    "languages": [
+      {
+        "language": null
+      }
+    ]
+  },
+  "fluencyValid": {
+    "languages": [
+      {
+        "fluency": "Native speaker"
+      }
+    ]
+  },
+  "fluencyInvalid": {
+    "languages": [
+      {
+        "fluency": null
+      }
+    ]
+  }
+}

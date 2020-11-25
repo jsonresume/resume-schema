@@ -1,0 +1,152 @@
+{
+  "educationValid": {
+    "education": []
+  },
+  "educationInvalid": {
+    "education": null
+  },
+  "institutionValid": {
+    "education": [
+      {
+        "institution": "University of Oklahoma"
+      }
+    ]
+  },
+  "institutionInvalid": {
+    "education": [
+      {
+        "institution": null
+      }
+    ]
+  },
+  "areaValid": {
+    "education": [
+      {
+        "area": "Information Technology"
+      }
+    ]
+  },
+  "areaInvalid": {
+    "education": [
+      {
+        "area": null
+      }
+    ]
+  },
+  "studyTypeValid": {
+    "education": [
+      {
+        "studyType": "Bachelor"
+      }
+    ]
+  },
+  "studyTypeInvalid": {
+    "education": [
+      {
+        "studyType": null
+      }
+    ]
+  },
+  "startDateValid": {
+    "education": [
+      {
+        "startDate": "2011-06-01"
+      }
+    ]
+  },
+  "startDateValid2": {
+    "education": [
+      {
+        "startDate": "2011-06"
+      }
+    ]
+  },
+  "startDateValid3": {
+    "education": [
+      {
+        "startDate": "2011"
+      }
+    ]
+  },
+  "startDateInvalid": {
+    "education": [
+      {
+        "startDate": null
+      }
+    ]
+  },
+  "endDateValid": {
+    "education": [
+      {
+        "endDate": "2014-01-01"
+      }
+    ]
+  },
+  "endDateValid2": {
+    "education": [
+      {
+        "endDate": "2014-01"
+      }
+    ]
+  },
+  "endDateValid3": {
+    "education": [
+      {
+        "endDate": "2014"
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "education": [
+      {
+        "endDate": null
+      }
+    ]
+  },
+  "scoreValid": {
+    "education": [
+      {
+        "score": "4.0"
+      }
+    ]
+  },
+  "scoreInvalid": {
+    "education": [
+      {
+        "score": null
+      }
+    ]
+  },
+  "coursesValid": {
+    "education": [
+      {
+        "courses": []
+      }
+    ]
+  },
+  "coursesInvalid": {
+    "education": [
+      {
+        "courses": null
+      }
+    ]
+  },
+  "coursesItemValid": {
+    "education": [
+      {
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      }
+    ]
+  },
+  "coursesItemInvalid": {
+    "education": [
+      {
+        "courses": [
+          null
+        ]
+      }
+    ]
+  }
+}

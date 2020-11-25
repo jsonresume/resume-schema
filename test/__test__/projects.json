@@ -1,0 +1,216 @@
+{
+  "projectsValid": {
+    "projects": []
+  },
+  "projectsInvalid": {
+    "projects": null
+  },
+  "nameValid": {
+    "projects": [
+      {
+        "name": "Miss Direction"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "projects": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "descriptionValid": {
+    "projects": [
+      {
+        "description": "A mapping engine that misguides you"
+      }
+    ]
+  },
+  "descriptionInvalid": {
+    "projects": [
+      {
+        "description": null
+      }
+    ]
+  },
+  "highlightsValid": {
+    "projects": [
+      {
+        "highlights": []
+      }
+    ]
+  },
+  "highlightsInvalid": {
+    "projects": [
+      {
+        "highlights": null
+      }
+    ]
+  },
+  "highlightsItemValid": {
+    "projects": [
+      {
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ]
+      }
+    ]
+  },
+  "highlightsItemInvalid": {
+    "projects": [
+      {
+        "highlights": [
+          null
+        ]
+      }
+    ]
+  },
+  "keywordsValid": {
+    "projects": [
+      {
+        "keywords": []
+      }
+    ]
+  },
+  "keywordsInvalid": {
+    "keywords": [
+      {
+        "keywords": null
+      }
+    ]
+  },
+  "keywordsItemValid": {
+    "projects": [
+      {
+        "keywords": [
+          "GoogleMaps"
+        ]
+      }
+    ]
+  },
+  "keywordsItemInvalid": {
+    "projects": [
+      {
+        "keywords": [
+          null
+        ]
+      }
+    ]
+  },
+  "startDateValid": {
+    "projects": [
+      {
+        "startDate": "2015-08-24"
+      }
+    ]
+  },
+  "startDateValid2": {
+    "projects": [
+      {
+        "startDate": "2015-08"
+      }
+    ]
+  },
+  "startDateValid3": {
+    "projects": [
+      {
+        "startDate": "2015"
+      }
+    ]
+  },
+  "startDateInvalid": {
+    "projects": [
+      {
+        "startDate": null
+      }
+    ]
+  },
+  "endDateValid": {
+    "projects": [
+      {
+        "endDate": "2016-08-24"
+      }
+    ]
+  },
+  "endDateValid2": {
+    "projects": [
+      {
+        "endDate": "2016-08"
+      }
+    ]
+  },
+  "endDateValid3": {
+    "projects": [
+      {
+        "endDate": "2016"
+      }
+    ]
+  },
+  "endDateInvalid": {
+    "projects": [
+      {
+        "endDate": null
+      }
+    ]
+  },
+  "rolesValid": {
+    "projects": [
+      {
+        "roles": []
+      }
+    ]
+  },
+  "rolesInvalid": {
+    "keywords": [
+      {
+        "roles": null
+      }
+    ]
+  },
+  "rolesItemValid": {
+    "projects": [
+      {
+        "roles": [
+          "Team lead"
+        ]
+      }
+    ]
+  },
+  "rolesItemInvalid": {
+    "projects": [
+      {
+        "roles": [
+          null
+        ]
+      }
+    ]
+  },
+  "entityValid": {
+    "projects": [
+      {
+        "entity": "Smoogle"
+      }
+    ]
+  },
+  "entityInvalid": {
+    "projects": [
+      {
+        "entity": null
+      }
+    ]
+  },
+  "typeValid": {
+    "projects": [
+      {
+        "type": "application"
+      }
+    ]
+  },
+  "typeInvalid": {
+    "projects": [
+      {
+        "type": null
+      }
+    ]
+  }
+}
