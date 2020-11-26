@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git://github.com/jsonresume/resume-schema.git"
   },
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsonresume/resume-schema/issues"
   },
