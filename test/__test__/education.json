@@ -117,6 +117,20 @@
       }
     ]
   },
+  "summaryValid": {
+    "education": [
+      {
+        "summary": "I wrote an awesome Master's Thesis."
+      }
+    ]
+  },
+  "summaryInvalid": {
+    "education": [
+      {
+        "summary": null
+      }
+    ]
+  },
   "coursesValid": {
     "education": [
       {
