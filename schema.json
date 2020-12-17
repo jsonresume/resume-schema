@@ -1,13 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "additionalProperties": false,
-  "definitions": {
-    "iso8601": {
-      "type": "string",
-      "description": "e.g. 2014-06-29",
-      "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
-    }
-  },
   "properties": {
     "$schema": {
       "type": "string",
@@ -126,10 +119,12 @@
             "format": "uri"
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "summary": {
             "type": "string",
@@ -168,10 +163,12 @@
             "format": "uri"
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "summary": {
             "type": "string",
@@ -214,10 +211,12 @@
             "description": "e.g. Bachelor"
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "score": {
             "type": "string",
@@ -248,7 +247,8 @@
             "description": "e.g. One of the 100 greatest minds of the century"
           },
           "date": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "awarder": {
             "type": "string",
@@ -307,7 +307,8 @@
             "description": "e.g. IEEE, Computer Magazine"
           },
           "releaseDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "url": {
             "type": "string",
@@ -444,10 +445,12 @@
             }
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "format": "date"
           },
           "url": {
             "type": "string",
@@ -490,6 +493,7 @@
         },
         "lastModified": {
           "type": "string",
+          "format": "date-time",
           "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
         }
       }
