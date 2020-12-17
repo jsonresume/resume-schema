@@ -42,7 +42,8 @@
         "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
         "Successfully won Techcrunch Disrupt",
         "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
+      ],
+      "keywords": ["middle out compression", "neural networks"]
     }
   ],
   "volunteer": [
