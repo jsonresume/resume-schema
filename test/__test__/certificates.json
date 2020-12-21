@@ -1,0 +1,64 @@
+{
+  "certificatesValid": {
+    "certificates": []
+  },
+  "certificatesInvalid": {
+    "certificates": null
+  },
+  "nameValid": {
+    "certificates": [
+      {
+        "name": "Certified Cisco Developer"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "certificates": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "dateValid": {
+    "certificates": [
+      {
+        "date": "2008-03-12"
+      }
+    ]
+  },
+  "dateInvalid": {
+    "certificates": [
+      {
+        "date": null
+      }
+    ]
+  },
+  "urlValid": {
+    "certificates": [
+      {
+        "url": "https://example.com/me"
+      }
+    ]
+  },
+  "urlInvalid": {
+    "certificates": [
+      {
+        "url": null
+      }
+    ]
+  },
+  "issuerValid": {
+    "certificates": [
+      {
+        "issuer": "Cisco"
+      }
+    ]
+  },
+  "issuerInvalid": {
+    "certificates": [
+      {
+        "issuer": null
+      }
+    ]
+  }
+}
