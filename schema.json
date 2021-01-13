@@ -143,6 +143,15 @@
               "type": "string",
               "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
             }
+          },
+          "skills": {
+            "type": "array",
+            "description": "Specify skills used at the position",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. sales, C#, JS, etc"
+            }
           }
         }
       }
