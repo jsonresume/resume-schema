@@ -6,15 +6,15 @@ const fixtures = require('./__test__/dates.json');
 const mockDateSchema = {
   "type": "string",
   "description": "Mock Date Format",
-  "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
+  "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3}|present)$"
 };
 
 function dateValidate(resumeJson, callback) {
-  var callbackWrapper = function(err, valid) {
-    if(err) {
+  var callbackWrapper = function (err, valid) {
+    if (err) {
       callback(err)
     } else {
-      callback(null, {valid: valid});
+      callback(null, { valid: valid });
     }
   }
 
@@ -39,6 +39,14 @@ test('dates - YYYY-MM', (t) => {
 
 test('dates - YYYY', (t) => {
   dateValidate(fixtures.yearMonthDay, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('dates - present', (t) => {
+  dateValidate(fixtures.present, (err, valid) => {
     t.equal(err, null, 'err should be null');
     t.true(valid, 'valid is true');
   });
