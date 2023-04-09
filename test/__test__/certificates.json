@@ -1,0 +1,79 @@
+
+{
+  "certificatesValid": {
+    "certificates": []
+  },
+  "certificatesInvalid": {
+    "certificates": null
+  },
+  "nameValid": {
+    "certificates": [
+      {
+        "name": "Software Development Technician Level 3"
+      }
+    ]
+  },
+  "nameInvalid": {
+    "certificates": [
+      {
+        "name": null
+      }
+    ]
+  },
+  "dateValid": {
+    "certificates": [
+      {
+        "date": "2019-05-20"
+      }
+    ]
+  },
+  "dateValid2": {
+    "certificates": [
+      {
+        "date": "2019-05"
+      }
+    ]
+  },
+  "dateValid3": {
+    "certificates": [
+      {
+        "date": "2019"
+      }
+    ]
+  },
+  "dateInvalid": {
+    "certificates": [
+      {
+        "date": null
+      }
+    ]
+  },
+  "urlValid": {
+    "certificates": [
+      {
+        "url": "https://yewtu.be/watch?v=dQw4w9WgXcQ"
+      }
+    ]
+  },
+  "urlInvalid": {
+    "certificates": [
+      {
+        "url": null
+      }
+    ]
+  },
+  "issuerValid": {
+    "certificates": [
+      {
+        "issuer": "Institute for Apprenticeships"
+      }
+    ]
+  },
+  "issuerInvalid": {
+    "certificates": [
+      {
+        "issuer": null
+      }
+    ]
+  }
+}
