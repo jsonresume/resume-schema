@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "additionalProperties": false,
   "definitions": {
     "iso8601": {
@@ -52,8 +52,23 @@
           "additionalProperties": true,
           "properties": {
             "address": {
-              "type": "string",
-              "description": "To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li."
+              "title": "Address",
+              "description": "The address, use an array to specify multiple address lines.",
+              "type": [
+                "string",
+                "array"
+              ],
+              "items": {
+                "title": "Address Line",
+                "description": "A single line of an address.",
+                "type": "string"
+              },
+              "examples": [
+                [
+                  "1234 Glücklichkeit Straße",
+                  "Hinterhaus 5. Etage li"
+                ]
+              ]
             },
             "postalCode": {
               "type": "string"
