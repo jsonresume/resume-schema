@@ -143,6 +143,15 @@
               "type": "string",
               "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
             }
+          },
+          "keywords": {
+            "type": "array",
+            "description": "List some technologies or skills used",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. python"
+            }
           }
         }
       }
