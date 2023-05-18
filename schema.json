@@ -315,6 +315,10 @@
           "summary": {
             "type": "string",
             "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
+          },
+          "doi":{
+            "type": "string",
+            "description": "The DOI of the publication"
           }
         }
       }
