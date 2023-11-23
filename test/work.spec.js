@@ -82,6 +82,22 @@ test('work[].position - invalid', (t) => {
   t.end();
 });
 
+test('work[].positions - valid', (t) => {
+  validate(fixtures.positionsValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('work[].positions - invalid', (t) => {
+  validate(fixtures.positionsInvalid, (err, valid) => {
+    t.notEqual(err, null, 'err should contain an error');
+    t.false(valid, 'valid is false');
+  });
+  t.end();
+});
+
 test('work[].url - valid', (t) => {
   validate(fixtures.urlValid, (err, valid) => {
     t.equal(err, null, 'err should be null');
