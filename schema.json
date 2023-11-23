@@ -116,6 +116,27 @@
             "type": "string",
             "description": "e.g. Social Media Company"
           },
+          "positions": {
+            "type": "array",
+            "description": "Define multiple positions at the same company.",
+            "additionalItems": false,
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "description": "e.g. Software Engineer"
+                },
+                "startDate": {
+                  "$ref": "#/definitions/iso8601"
+                },
+                "endDate": {
+                  "$ref": "#/definitions/iso8601"
+                }
+              }
+            }
+          },
           "position": {
             "type": "string",
             "description": "e.g. Software Engineer"
