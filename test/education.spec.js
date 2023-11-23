@@ -177,3 +177,35 @@ test('education[].courses[item] - invalid', (t) => {
   });
   t.end();
 });
+
+test('education[].degrees - valid', (t) => {
+  validate(fixtures.degreesValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].degrees - invalid', (t) => {
+  validate(fixtures.degreesInvalid, (err, valid) => {
+    t.notEqual(err, null, 'err should contain an error');
+    t.false(valid, 'valid is false');
+  });
+  t.end();
+});
+
+test('education[].degrees[item] - valid', (t) => {
+  validate(fixtures.degreesItemValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].degrees[item] - invalid', (t) => {
+  validate(fixtures.degreesItemInvalid, (err, valid) => {
+    t.notEqual(err, null, 'err should contain an error');
+    t.false(valid, 'valid is false');
+  });
+  t.end();
+});
