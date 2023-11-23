@@ -148,5 +148,37 @@
         ]
       }
     ]
+  },
+  "degreesValid": {
+    "education": [
+      {
+        "degrees": []
+      }
+    ]
+  },
+  "degreesInvalid": {
+    "education": [
+      {
+        "degrees": null
+      }
+    ]
+  },
+  "degreesItemValid": {
+    "education": [
+      {
+        "degrees": [
+          "Master of Science in Circus Performance"
+        ]
+      }
+    ]
+  },
+  "degreesItemInvalid": {
+    "education": [
+      {
+        "degrees": [
+          null
+        ]
+      }
+    ]
   }
 }
