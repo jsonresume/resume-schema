@@ -5,7 +5,7 @@
 [![Latest Status](https://github.com/jsonresume/resume-schema/workflows/Latest/badge.svg)](https://github.com/vanillawc/wc-template/actions)
 [![Release Status](https://github.com/jsonresume/resume-schema/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-template/actions)
 
-![Discord Shield](https://discord.com/api/guilds/1251175132370702406/widget.png?style=shield)
+[![](https://dcbadge.limes.pink/api/server/GTZtn8pTXC)](https://discord.gg/GTZtn8pTXC)
 
 Standard, Specification, Schema
 
