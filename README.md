@@ -40,7 +40,12 @@ More likely
 var fs = require("fs");
 var resumeSchema = require("resume-schema");
 var resumeObject = JSON.parse(fs.readFileSync("resume.json", "utf8"));
-resumeSchema.validate(resumeObject);
+resumeSchema.validate(
+  resumeObject,
+  function (err) {
+    console.error("The resume was invalid:", err);
+  }
+);
 ```
 
 The JSON Resume schema is available from:
