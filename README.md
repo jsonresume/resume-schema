@@ -9,6 +9,12 @@
 
 Standard, Specification, Schema
 
+## Important Note  
+
+The current working version of the schema is `v1.0.0` that is represented by the `master` branch and the files `schema.json` and `sample.resume.json`. 
+
+All PR's for the next version should be made against the `develop` branch. 
+
 ### Getting started
 
 ```
