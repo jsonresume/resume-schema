@@ -15,16 +15,18 @@ The current working version of the schema is `v1.0.0` that is represented by the
 
 All PR's for the next version should be made against the `develop` branch. 
 
+This enforces that the schema package, always has the official stable release of the schema.
+
 ### Getting started
 
 ```
-npm install --save resume-schema
+npm install --save @jsonresume/schema
 ```
 
 To use
 
 ```js
-const resumeSchema = require("resume-schema");
+const resumeSchema = require("@jsonresume/schema");
 resumeSchema.validate(
   { name: "Thomas" },
   function (err, report) {

@@ -1,7 +1,8 @@
 {
-  "name": "resume-schema",
+  "name": "@jsonresume/schema",
   "version": "1.0.1",
   "description": "JSON Resume Schema",
+  "private": false,
   "main": "validator.js",
   "scripts": {
     "test": "npm run validate && npm run test-units",
