@@ -1,6 +1,6 @@
 {
   "name": "@jsonresume/schema",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "JSON Resume Schema",
   "private": false,
   "main": "validator.js",
@@ -27,7 +27,7 @@
     "validator.js"
   ],
   "dependencies": {
-    "z-schema": "^4.2.4"
+    "jsonschema": "^1.4.1",
   },
   "devDependencies": {
     "ajv-cli": "^3.3.0",

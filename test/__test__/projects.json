@@ -73,7 +73,7 @@
     ]
   },
   "keywordsInvalid": {
-    "keywords": [
+    "projects": [
       {
         "keywords": null
       }
@@ -161,7 +161,7 @@
     ]
   },
   "rolesInvalid": {
-    "keywords": [
+    "projects": [
       {
         "roles": null
       }

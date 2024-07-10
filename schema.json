@@ -1,10 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+" $id": "http://example.com/example.json",
+  "additionalProperties": true,
   "definitions": {
     "iso8601": {
       "type": "string",
-      "description": "e.g. 2014-06-29",
+      "description": "Similar to the standard date type, but each section after the year is optional. e.g. 2014-06-29 or 2023-04",
       "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
     }
   },
@@ -274,9 +275,7 @@
             "description": "e.g. Certified Kubernetes Administrator"
           },
           "date": {
-            "type": "string",
-            "description": "e.g. 1989-06-12",
-            "format": "date"
+            "$ref": "#/definitions/iso8601"
           },
           "url": {
             "type": "string",
