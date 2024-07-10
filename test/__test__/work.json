@@ -47,6 +47,27 @@
       }
     ]
   },
+  "positionsValid": {
+    "work": [
+      {
+        "positions": [
+          {
+            "title": "Cat Herder",
+            "startDate": "2014-02-12",
+            "endDate": "2014-02-13"
+          },
+          {}
+        ]
+      }
+    ]
+  },
+  "positionsInvalid": {
+    "work": [
+      {
+        "positions": null
+      }
+    ]
+  },
   "positionValid": {
     "work": [
       {
