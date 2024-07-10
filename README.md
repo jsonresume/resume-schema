@@ -15,7 +15,14 @@ The current working version of the schema is `v1.0.0` that is represented by the
 
 All PR's for the next version should be made against the `develop` branch. 
 
-This enforces that the schema package, always has the official stable release of the schema.
+This enforces that the schema package always has the official stable release of the schema.
+
+### Homepage and Registry
+
+If you are looking for the homepage, registry, tooling or themes, see the JSON Resume monorepo
+
+[@jsonresume/jsonresume.org](https://github.com/jsonresume/jsonresume.org/)
+ 
 
 ### Getting started
 
@@ -26,9 +33,9 @@ npm install --save @jsonresume/schema
 To use
 
 ```js
-const resumeSchema = require("@jsonresume/schema");
+import resumeSchema from '@jsonresume/schema';
 resumeSchema.validate(
-  { name: "Thomas" },
+  { basics: { name: "Thomas" } },
   function (err, report) {
     if (err) {
       console.error("The resume was invalid:", err);
@@ -42,12 +49,12 @@ resumeSchema.validate(
 );
 ```
 
-More likely
+Or against a full `resume.json`
 
 ```js
-var fs = require("fs");
-var resumeSchema = require("resume-schema");
-var resumeObject = JSON.parse(fs.readFileSync("resume.json", "utf8"));
+import fs = require('fs');
+import schema from 'resume-schema';
+const resumeObject = JSON.parse(fs.readFileSync('./resume.json', 'utf8'));
 resumeSchema.validate(resumeObject);
 ```
 
@@ -86,6 +93,12 @@ Pull requests titles should be formatted as such
 ### Job Description Schema
 
 A draft schema for job descriptions is available in this project as well. It is not yet finalized, but we encourage you to check it out and provide feedback. See `job-schema.json` and `sample.job.json`.
+
+The JSON Job schema is available from:
+
+```js
+require("resume-schema").jobSchema;
+```
 
 ### Other resume standards
 
