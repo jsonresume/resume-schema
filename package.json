@@ -27,7 +27,7 @@
     "validator.js"
   ],
   "dependencies": {
-    "jsonschema": "^1.4.1",
+    "jsonschema": "^1.4.1"
   },
   "devDependencies": {
     "ajv-cli": "^3.3.0",
