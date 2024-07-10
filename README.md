@@ -75,6 +75,10 @@ Pull requests titles should be formatted as such
 
 `major` version bumps will be few and far between for this schema.
 
+### Job Description Schema
+
+A draft schema for job descriptions is available in this project as well. It is not yet finalized, but we encourage you to check it out and provide feedback. See `job-schema.json` and `sample.job.json`.
+
 ### Other resume standards
 
 - [HR-XML](https://schemas.liquid-technologies.com/HR-XML/2007-04-15/)

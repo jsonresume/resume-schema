@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "additionalProperties": false,
+  "additionalProperties": true,
   "definitions": {
     "iso8601": {
       "type": "string",

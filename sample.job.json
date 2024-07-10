@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Web Developer",
+    "company": "Microsoft",
+    "type": "Full-time",
+    "date": "2024-07",
+    "description": "We are looking for a skilled Web Developer to join our team. The role involves building and maintaining web applications.",
+    "location": {
+      "address": "1234 Glücklichkeit Straße\nHinterhaus 5. Etage li.",
+      "postalCode": "10115",
+      "city": "Berlin",
+      "countryCode": "DE",
+      "region": "Berlin"
+    },
+    "remote": "Hybrid",
+    "salary": "100000",
+    "experience": "Mid-level",
+    "responsibilities": [
+      "Develop and maintain web applications",
+      "Collaborate with cross-functional teams",
+      "Ensure the technical feasibility of UI/UX designs",
+      "Optimize applications for maximum speed and scalability"
+    ],
+    "qualifications": [
+      "Bachelor's degree in Computer Science or related field",
+      "3+ years of experience in web development",
+      "Strong understanding of JavaScript, HTML, and CSS"
+    ],
+    "skills": [
+      {
+        "name": "Web Development",
+        "level": "Master",
+        "keywords": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js"
+        ]
+      },
+      {
+        "name": "Database Management",
+        "level": "Intermediate",
+        "keywords": [
+          "SQL",
+          "NoSQL",
+          "MongoDB"
+        ]
+      }
+    ],
+    "meta": {
+      "canonical": "http://example.com/jobs/web-developer",
+      "version": "v1.0.0",
+      "lastModified": "2024-07-10T15:00:00"
+    }
+  }
+  
