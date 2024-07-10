@@ -146,6 +146,22 @@ test('education[].score - invalid', (t) => {
   t.end();
 });
 
+test('education[].summary - valid', (t) => {
+  validate(fixtures.summaryValid, (err, valid) => {
+    t.equal(err, null, 'err should be null');
+    t.true(valid, 'valid is true');
+  });
+  t.end();
+});
+
+test('education[].summary - invalid', (t) => {
+  validate(fixtures.summaryInvalid, (err, valid) => {
+    t.notEqual(err, null, 'err should contain an error');
+    t.false(valid, 'valid is false');
+  });
+  t.end();
+});
+
 test('education[].courses - valid', (t) => {
   validate(fixtures.coursesValid, (err, valid) => {
     t.equal(err, null, 'err should be null');
