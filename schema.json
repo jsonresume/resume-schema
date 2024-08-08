@@ -197,6 +197,15 @@
         "type": "object",
         "additionalProperties": true,
         "properties": {
+          "degrees": {
+            "type": "array",
+            "description": "Degrees/certificates awarded from this institution",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. Bachelor of Science in Circus Performance"
+            }
+          },
           "institution": {
             "type": "string",
             "description": "e.g. Massachusetts Institute of Technology"
