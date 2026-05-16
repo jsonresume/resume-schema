@@ -28,6 +28,7 @@ jobs:
       - name: Verify
         run: |
           npm ci
+          npm run build
           npm t
   npm:
     runs-on: ubuntu-latest

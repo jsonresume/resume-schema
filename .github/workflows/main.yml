@@ -20,8 +20,12 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Build
+        run: npm run build
+
       - name: Test
         run: npm test
+
 
   release:
     needs: test
