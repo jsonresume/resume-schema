@@ -11,12 +11,17 @@ import resumeSchema from '../schema.json' with { type: 'json' }
 const ajv = new Ajv({
 	formats: fmts,
 	code: {
+		lines: true,
 		source: true,
+		optimize: true,
 		esm: true,
 		formats: _`require("../tools/ajv-formats-micro.mjs")`,
 	},
+	// it can be useful for cleaning up the object
+	removeAdditional: true,
 	allErrors: true,
-	coerceTypes: true,
+	coerceTypes: false,
+	validateSchema: false,
 })
 
 const validate = ajv.compile(resumeSchema)

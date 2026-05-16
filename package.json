@@ -9,18 +9,19 @@
       "require": "./validator.js",
       "import": "./validator.js"
     },
-    "./ajv": {
+    "./all": {
       "require": "./dist/index.cjs",
       "import": "./index.mjs"
     },
-    "./schema.json": "./schema.json",
-    "./job-schema.json": "./job-schema.json"
+    "./validate": "./validate.mjs",
+    "./schemas/resume.json": "./schema.json",
+    "./schemas/job.json": "./job-schema.json"
   },
   "scripts": {
     "build": "node tools/build.mjs",
     "test": "npm run validate && npm run test-units",
     "validate": "ajv validate -s node_modules/json-metaschema/draft-07-schema -d schema",
-    "test-units": "tape **/*.spec.js | tap-spec",
+    "test-units": "tape **/*.spec.js **/*.spec.cjs **/*.spec.mjs | tap-spec",
     "preversion": "npm test",
     "postversion": "git push --follow-tags"
   },
@@ -36,6 +37,7 @@
     "dist/resume-validator.mjs",
     "dist/index.cjs",
     "index.mjs",
+    "validate.mjs",
     "sample.resume.json",
     "sample.job.json",
     "schema.json",
