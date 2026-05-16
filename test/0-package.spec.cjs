@@ -1,7 +1,7 @@
 'use strict'
 
 const tape = require('tape')
-const { validate, schema, jobSchema } = require('@jsonresume/schema/all')
+const { validate, schema, jobSchema } = require('@jsonresume/schema')
 
 tape('CJS package export - validate', (t) => {
 	t.equal(typeof validate, 'function', 'package should export "validate" function')

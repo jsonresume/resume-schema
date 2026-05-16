@@ -1,5 +1,5 @@
 import tape from 'tape'
-import { validate, schema, jobSchema } from '@jsonresume/schema/all'
+import { validate, schema, jobSchema } from '@jsonresume/schema'
 
 import treeValidate      from '@jsonresume/schema/validate'
 import treeSchemasResume from '@jsonresume/schema/schemas/resume.json'  with { type: 'json' }

@@ -1,5 +1,5 @@
 var test = require('tape');
-var { validate } = require('../validator');
+var { validate } = require("@jsonresume/schema");
 const fixtures = require('./__test__/meta.json');
 
 test('meta - valid', (t) => {

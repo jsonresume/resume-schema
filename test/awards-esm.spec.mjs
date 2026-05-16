@@ -1,5 +1,5 @@
 import test from 'tape'
-import { validate } from '@jsonresume/schema/all'
+import validate from '@jsonresume/schema/validate'
 
 import fixtures from './__test__/awards.json' with { type: 'json' }
 
