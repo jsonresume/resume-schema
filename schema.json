@@ -72,6 +72,10 @@
             }
           }
         },
+        "timeZone": {
+          "type": "string",
+          "description": "The time zone where you reside. Use IANA timezone codes, e.g. 'Africa/Johannesburg' or 'Etc/GMT+5' (note the inverted GMT sign)"
+        },
         "profiles": {
           "type": "array",
           "description": "Specify any number of social networks that you participate in",
