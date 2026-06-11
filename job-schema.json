@@ -48,7 +48,7 @@
           },
           "region": {
             "type": "string",
-            "description": "The general region where you live. Can be a US state, or a province, for instance."
+            "description": "The general region of the job. Can be a US state, or a province, for instance."
           }
         }
       },
